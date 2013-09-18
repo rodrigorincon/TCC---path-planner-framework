@@ -1,1 +1,4 @@
-public class Bla6{}
+public class Bla6{
+  
+  //cheio de merda essa bosta
+}
