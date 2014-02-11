@@ -1,4 +1,7 @@
 http://pt.wikipedia.org/wiki/Bluetooth
+http://pt.wikipedia.org/wiki/Perfis_Bluetooth
 http://pt.wikipedia.org/wiki/Wi-fi
 http://www.infowester.com/bluetooth.php
 http://www.infowester.com/wifi.php
+
+wep, wpa, wpa2, md5, sha1, gsm, 3g, 4g
