@@ -1,3 +1,4 @@
-bosta1
-bosta2
-bosta3
+http://pt.wikipedia.org/wiki/Bluetooth
+http://pt.wikipedia.org/wiki/Wi-fi
+http://www.infowester.com/bluetooth.php
+http://www.infowester.com/wifi.php
