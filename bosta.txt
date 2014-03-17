@@ -25,3 +25,9 @@ http://www.robotroom.com/RBFB.html
 http://www.societyofrobots.com/
 http://www.battlekits.com/
 
+http://melonjs.github.io/tutorial/
+http://www.binpress.com/tutorial/create-a-mobile-rpg-for-beginners/1
+http://blogs.shephertz.com/2013/12/23/using-vibrations-in-html5-mobile-web-appgame/
+http://www.html5rocks.com/en/tutorials/casestudies/gopherwoord-studios-resizing-html5-games/
+http://code.tutsplus.com/tutorials/an-introduction-to-the-html5-gamepad-api--active-10686
+http://msdn.microsoft.com/en-us/hh563503.aspx
