@@ -20,3 +20,5 @@ http://blogs.shephertz.com/2013/12/23/using-vibrations-in-html5-mobile-web-appga
 http://www.html5rocks.com/en/tutorials/casestudies/gopherwoord-studios-resizing-html5-games/
 http://code.tutsplus.com/tutorials/an-introduction-to-the-html5-gamepad-api--active-10686
 http://msdn.microsoft.com/en-us/hh563503.aspx
+
+http://www.tecgraf.puc-rio.br/~mgattass/fcg/trb13/DavidsonFellipe/t1.html
