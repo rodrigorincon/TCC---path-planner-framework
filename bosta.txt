@@ -23,3 +23,4 @@ http://msdn.microsoft.com/en-us/hh563503.aspx
 
 http://www.tecgraf.puc-rio.br/~mgattass/fcg/trb13/DavidsonFellipe/t1.html
 http://tableless.com.br/file-api-trabalhando-com-arquivos-locais-usando-javascript/
+http://www.dirceupauka.com/tag/javascript
