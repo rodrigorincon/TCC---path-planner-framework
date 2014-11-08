@@ -1,0 +1,81 @@
+\changetocdepth {4}
+\select@language {brazil}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{19}{chapter.1}
+\contentsline {section}{\numberline {1.1}O Problema}{19}{section.1.1}
+\contentsline {section}{\numberline {1.2}Quest\IeC {\~a}o de Pesquisa}{19}{section.1.2}
+\contentsline {section}{\numberline {1.3}Justificativa}{20}{section.1.3}
+\contentsline {section}{\numberline {1.4}Objetivos}{20}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Objetivo Geral}{20}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Objetivos Espec\IeC {\'\i }ficos}{20}{subsection.1.4.2}
+\contentsline {section}{\numberline {1.5}Organiza\IeC {\c c}\IeC {\~a}o do Trabalho}{21}{section.1.5}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Referencial Te\IeC {\'o}rico}}{23}{chapter.2}
+\contentsline {section}{\numberline {2.1}A base da rob\IeC {\'o}tica}{23}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Defini\IeC {\c c}\IeC {\~a}o de rob\IeC {\'o}tica}{23}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Rob\IeC {\^o}s industriais e m\IeC {\'o}veis}{23}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Estruturas f\IeC {\'\i }sicas de rob\IeC {\^o}s com rodas}{24}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Rob\IeC {\'o}tica a n\IeC {\'\i }vel de software}{26}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Dificuldades da rob\IeC {\'o}tica m\IeC {\'o}vel}{26}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Paradigmas de defini\IeC {\c c}\IeC {\~a}o de trajet\IeC {\'o}ria}{27}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Vis\IeC {\~a}o geral sobre navega\IeC {\c c}\IeC {\~a}o}{29}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Mapeamento e modelagem dos obst\IeC {\'a}culos}{31}{section.2.3}
+\contentsline {section}{\numberline {2.4}Algor\IeC {\'\i }tmos globais de defini\IeC {\c c}\IeC {\~a}o de trajet\IeC {\'o}ria}{33}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Grafos de Visibilidade}{34}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Voronoi}{34}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Quadtree}{35}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}Wavefront}{37}{subsection.2.4.4}
+\contentsline {section}{\numberline {2.5}Frameworks e padr\IeC {\~o}es de projeto}{37}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Arquitetura e componentes}{39}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Padr\IeC {\~o}es de projeto}{40}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Caixa-preta e Caixa-branca}{41}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.4}Hot spot e Frozen spot}{42}{subsection.2.5.4}
+\contentsline {subsection}{\numberline {2.5.5}Processo de desenvolvimento orientado a hot spots}{44}{subsection.2.5.5}
+\contentsline {subsection}{\numberline {2.5.6}Abordagem de projetos}{45}{subsection.2.5.6}
+\contentsline {section}{\numberline {2.6}Trabalhos relacionados}{46}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Carmen}{46}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}ROS}{47}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}Tese de Morten Strandberg}{47}{subsection.2.6.3}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Suporte Tecnol\IeC {\'o}gico}}{49}{chapter.3}
+\contentsline {section}{\numberline {3.1}Linguagem de programa\IeC {\c c}\IeC {\~a}o}{49}{section.3.1}
+\contentsline {section}{\numberline {3.2}Ferramentas e plugins}{49}{section.3.2}
+\contentsline {section}{\numberline {3.3}Lego NXT}{49}{section.3.3}
+\contentsline {section}{\numberline {3.4}Differential Steering}{50}{section.3.4}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Proposta}}{53}{chapter.4}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Metodologia}}{55}{chapter.5}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclus\IeC {\~a}o}}{57}{chapter.6}
+\vspace {\cftbeforechapterskip }
+\renewcommand *{\cftappendixname }{AP\^ENDICE \space }
+\setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
+\cftinsert {A}
+\contentsline {part}{\uppercase {Ap\^endices}}{59}{section*.10}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Primeiro Ap\IeC {\^e}ndice}}{61}{appendix.A}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Segundo Ap\IeC {\^e}ndice}}{63}{appendix.B}
+\cftinsert {AAA}
+\renewcommand *{\cftappendixname }{ANEXO \space }
+\setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
+\cftinsert {A}
+\contentsline {part}{\uppercase {Anexos}}{65}{section*.11}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Primeiro Anexo}}{67}{appendix.anexochapback.1}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Segundo Anexo}}{69}{appendix.anexochapback.2}

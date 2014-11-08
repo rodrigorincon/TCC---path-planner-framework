@@ -1,0 +1,54 @@
+\chapter[Introdução]{Introdução}
+
+O ramo da robótica costuma atrair a atenção de leigos e profissionais, explorando um campo onde a imaginação trabalha ao máximo. A robótica móvel em específico tem levado as máquinas para mais perto da população e trazendo desafios aos desenvolvedores destas máquinas. Para construir uma máquina autônoma há uma série de dificuldades, cada uma fonte de pesquisas e trabalho. Para mover uma máquina entre dois pontos é preciso o controle de motores, mapeamento e sensoriamento da região, estudo da cinemática do robô, planejamento da trajetória e monitoramento do movimento; muito esforço para fazer sua locomoção.
+
+Produzir um robô exige conhecimento tanto mecânico quanto eletrônico e de software. Kits de robótica entregam a máquina pronta, com manuais de uso e um \textit{firmware} para facilitar a programação. Porém cada kit funciona de forma diferente e costumeiramente seus códigos são complicados de entender, não seguindo as boas práticas de programação.
+
+\section{O Problema}
+
+Atualmente existe muito pouco conteúdo \textit{open-source} para quem busca desenvolver na área, tendo muitas vezes de começar tudo do zero. Parte disso acontece pelas diferenças físicas entre as máquinas e por na área pouco se desenvolver pensando em reuso de software e em boas práticas de programação. As soluções existentes funcionam apenas no kit no qual foram desenvolvidas e com interfaces diferentes, muitas vezes impedindo que o desenvolvedor reutilize seu código em outra plataforma.
+
+\section{Questão de Pesquisa}
+
+Considerando essas dificuldades, este trabalho busca ajudar a comunidade de robótica em uma das áreas de navegação: a definição da trajetória, com um \textit{framework} \textit{open-source} que permita a implementação destes algoritmos nos mais variados tipos de robôs móveis.
+
+Para tanto é preciso analisar o cenário existente de robótica e se perguntar: é possível abstrair a definição de trajetória do hardware do robô, tornando a prática independente da plataforma usada? Para responder é necessário analisar o quanto é necessário conhecer do hardware e dos sensores e com que outros módulos da navegação ele está diretamente ligado.
+
+\section{Justificativa}
+
+O objetivo deste trabalho é ajudar a comunidade de robótica a alcançar maior reuso e portabilidade em seus códigos, deixando-o menos acoplado ao hardware utilizado. Como não há bibliotecas e ferramentas projetadas para funcionarem em vários kits, cada sistema fica acoplado às bibliotecas de seus respectivos kits. Este problema diminui a reusabilidade e quase anula a chance de portabilidade.
+
+Conforme Larman (2005), Goodliffe (2007) e McConnel (2004), alto acoplamento é indesejado, pois torna o código sensível a falhas e de difícil manutenção. Segundo eles, o reuso facilita e agiliza o desenvolvimento, diminuindo o esforço para tarefas repetitivas e/ou que possam ser isoladas.
+
+Ao produzir um \textit{framework} será gerado um módulo independente que desacopla a definição de trajetória do resto do sistema. Um \textit{framework} de código aberto permite ainda o uso de um código comum a toda a comunidade, induzindo o reuso e um padrão de utilização da área contemplada. Tudo isso ainda acaba por facilitar a compreensão de outros códigos. A implementação do \textit{framework} terá a visão de fazê-lo funcionar na maioria das plataformas e deixá-lo extensível para inclusão posterior de novas plataformas e algoritmo. A própria comunidade pode contribuir para sua expansão, tornando-o compatível com mais hardwares e implementando novos algoritmos para traçar rotas.
+
+\section{Objetivos}
+
+Os objetivos deste trabalho, tanto de forma geral como mais específicos, são listados a seguir.
+
+\subsection{Objetivo Geral}
+
+Este trabalho de conclusão de curso busca entregar um \textit{framework} manutenível e extensível sobre algoritmos de definição de trajetória para robôs móveis. Será utilizado algoritmos clássicos para quando o ambiente é previamente conhecido (algoritmos globais). Este \textit{framework} será implementado, provendo uma prova de conceito conduzida através de experimentações em ambiente controlado. A implementação compreenderá demonstrar um robô \textit{differential steering} em funcionamento, usando como base o \textit{framework} proposto.
+
+\subsection{Objetivos Específicos}
+
+Este trabalho tem por objetivos, principalmente:
+\begin{enumerate}
+	\item Investigar abordagens para desenvolvimento de \textit{framework}s;
+	\item Explorar algoritmos de definição de trajetória considerando a estratégia de algoritmos globais;
+	\item Aplicar boas práticas de modelagem e programação, como alta coesão, baixo acoplamento, funções atômicas, comentários e nomenclatura correta de variáveis;
+	\item Usar padrões de projeto no intuito de prover uma interface comum a todos os algoritmos e a fácil troca entre eles, além de maior portabilidade da solução proposta para outros tipos de hardware;
+	\item Aplicar testes, principalmente unitários, na solução proposta;
+	\item Prover um teste prático do \textit{framework} usando como base o kit educacional da LEGO (http://mindstorms.lego.com);
+\end{enumerate}
+
+\section{Organização do Trabalho}
+
+O trabalho está dividido em 5 capítulos principais além deste:
+\begin{enumerate}
+	\item Referencial Teórico: explana sobre o estado da arte da robótica e questões mecânicas pertinentes à locomoção do robô, além de uma rápida análise dos módulos de navegação além do abordado neste trabalho
+	\item Suporte tecnológico: explica sobre as tecnologias utilizadas para o desenvolvimento tanto do \textit{framework} quanto da prova de conceito, listando ferramentas, \textit{plugins} e kits utilizados.	
+	\item Proposta: detalhamento do funcionamento do \textit{framework}: explicação da arquitetura e padrões usados na modelagem, técnicas de programação utilizadas e algoritmos implementados
+	\item Metodologia: análise das dificuldades e riscos do projeto, descrição e fluxo das atividades e cronograma e métodos utilizados.
+	\item Conclusão: apresentação dos resultados esperados e obtidos até então.
+\end{enumerate}
