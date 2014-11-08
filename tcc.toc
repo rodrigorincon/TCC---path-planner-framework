@@ -32,13 +32,13 @@
 \contentsline {subsection}{\numberline {2.4.4}Wavefront}{37}{subsection.2.4.4}
 \contentsline {section}{\numberline {2.5}Frameworks e padr\IeC {\~o}es de projeto}{37}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Arquitetura e componentes}{39}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Padr\IeC {\~o}es de projeto}{40}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.2}Padr\IeC {\~o}es de projeto}{41}{subsection.2.5.2}
 \contentsline {subsection}{\numberline {2.5.3}Caixa-preta e Caixa-branca}{41}{subsection.2.5.3}
 \contentsline {subsection}{\numberline {2.5.4}Hot spot e Frozen spot}{42}{subsection.2.5.4}
 \contentsline {subsection}{\numberline {2.5.5}Processo de desenvolvimento orientado a hot spots}{44}{subsection.2.5.5}
-\contentsline {subsection}{\numberline {2.5.6}Abordagem de projetos}{45}{subsection.2.5.6}
+\contentsline {subsection}{\numberline {2.5.6}Abordagem de projetos}{46}{subsection.2.5.6}
 \contentsline {section}{\numberline {2.6}Trabalhos relacionados}{46}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Carmen}{46}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.1}Carmen}{47}{subsection.2.6.1}
 \contentsline {subsection}{\numberline {2.6.2}ROS}{47}{subsection.2.6.2}
 \contentsline {subsection}{\numberline {2.6.3}Tese de Morten Strandberg}{47}{subsection.2.6.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
@@ -49,6 +49,8 @@
 \contentsline {section}{\numberline {3.4}Differential Steering}{50}{section.3.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Proposta}}{53}{chapter.4}
+\contentsline {section}{\numberline {4.1}O mapa}{54}{section.4.1}
+\contentsline {section}{\numberline {4.2}A arquitetura}{54}{section.4.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Metodologia}}{55}{chapter.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
