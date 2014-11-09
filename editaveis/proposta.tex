@@ -1,6 +1,6 @@
 \chapter[Proposta]{Proposta}
 
-Como já dito, a proposta deste trabalho é a construção de um \textit{framework} de definição de trajetória para robôs móveis, mais especificamente, algoritmos globais de definição de trajetória. Um mapa do ambiente é recebido da camada acima e o algoritmo cria um grafo a partir dele, definindo os caminhos livres que podem ser percorridos. Após isso é rodado um algoritmo de menor caminho (como Djikstra) para definir o caminho a ser percorrido pelo robô. 
+Como já dito, a proposta deste trabalho é a construção de um \textit{framework} de definição de trajetória para robôs móveis, mais especificamente, algoritmos globais de definição de trajetória. Um mapa do ambiente é recebido da camada acima e o algoritmo cria um grafo a partir dele, definindo os caminhos livres que podem ser percorridos. Após isso é rodado um algoritmo de melhor caminho (como Djikstra) para definir o caminho a ser percorrido pelo robô. 
 
 A imagem abaixo demonstra as tarefas principais do \textit{framework}, bem como suas entradas e saídas. Essas entradas e saídas definem como ele se comunicará com as demais camadas do robô e as dependências dele para cumprir seu funcionamento. Cada tarefa apresentada se tornará um módulo do \textit{framework} e as interações entre eles as estruturas de dados utilizadas para se comunicarem.
  
@@ -34,21 +34,71 @@ O \textit{framework} usa uma estrutura própria para armazenar estes dados, por�
 
 A arquitetura de navegação costuma ser em camadas, como mostrado no capítulo anterior. Este \textit{framework} trabalhará dentro de uma destas camadas apenas e terá uma estrutura baseada em componentes. Uma arquitetura em camadas dentro de outra poderia gerar indireções desnecessárias, além de uma abordagem por componentes suprir melhor as necessidades do \textit{framework}.
 
-Cada funcionalidade será um componente diferente, projetado para consumir o mínimo de memória e depender o mínimo de outros componentes e de bibliotecas externas (incluindo as próprias do Java). Cada módulo terá a preocupação de ser o mais auto-suficiente possível, tendo apenas as interações necessárias para o seu funcionamento. Cada um dos módulos será constantemente avaliado quando a seu acoplamento, coesão,  simplicidade e facilidade de compreensão. Estas características serão melhor definidas na seção 4.5.
+Cada funcionalidade será um componente diferente, projetado para consumir o mínimo de memória e depender o mínimo de outros componentes e de bibliotecas externas (incluindo as próprias do Java). Cada módulo terá a preocupação de ser o mais auto-suficiente possível, tendo apenas as interações necessárias para o seu funcionamento. Cada um dos módulos será constantemente avaliado quando a seu acoplamento, coesão,  simplicidade e facilidade de compreensão. Estas características serão melhor definidas na seção 4.4.
 
-diagramas, caixa-branca, topdown
+O \textit{framework} segue o padrão caixa-branca, pois é desejável que o mesmo seja transparente e configurável pelo usuário. O usuário do \textit{framework} é livre para usar as implementação já prontas dos algoritmos de definição de trajetória e melhor caminho ou criar as suas próprias a partir das classes abstratas dadas. Além disso o usuário deve conhecer as sub-classes existentes para optar por uma delas ao utilizar o \textit{framework}.
 
-\section{Componentes do framework}
+O diagrama de componentes abaixo mostra os módulos do sistema e suas interações. Nele mostramos quais componentes são conhecidos por quais, mas não quais classes. Levando em conta o princípio de programar para interfaces, as classes conhecidas serão sempre as interfaces e classes abstratas (exceto nos compententes de estrutra de dados). Para simplificar o diagrama, as classes concretas foram retiradas e criado um diagrama para detalhar cada módulo.
 
-explicar o componente e os padrões usados em cada um
+\begin{figure}[h]
+	\centering
+	\label{fig20}
+		\includegraphics[keepaspectratio=true,scale=0.4]{figuras/componentes.png}
+	\caption{diagrama de pacotes do sistema}
+\end{figure}
 
-\subsection{Map}
-\subsection{Path Planner}
-\subsection{Graph}
-\subsection{Shortest Path}
+A seguir cada componente é descrito mais detalhadamente e abordado suas classes abstratas e concretas.
+
 \subsection{Controller}
 
+\begin{figure}[h]
+	\centering
+	\label{fig21}
+		\includegraphics[keepaspectratio=true,scale=0.5]{figuras/pkgcontroller.png}
+	\caption{componente Controller}
+\end{figure}
+
+\subsection{Map}
+
+\begin{figure}[h]
+	\centering
+	\label{fig22}
+		\includegraphics[keepaspectratio=true,scale=0.5]{figuras/pkgmap.png}
+	\caption{componente Map}
+\end{figure}
+
+\subsection{Path Planner}
+
+\begin{figure}[h]
+	\centering
+	\label{fig23}
+		\includegraphics[keepaspectratio=true,scale=0.5]{figuras/pkgpathplanner.png}
+	\caption{componente PathPlanner}
+\end{figure}
+
+\subsection{Graph}
+
+\begin{figure}[h]
+	\centering
+	\label{fig24}
+		\includegraphics[keepaspectratio=true,scale=0.5]{figuras/pkggraph.png}
+	\caption{componente Graph}
+\end{figure}
+
+\subsection{Best Path}
+
+\begin{figure}[h]
+	\centering
+	\label{fig25}
+		\includegraphics[keepaspectratio=true,scale=0.5]{figuras/pkgbestPath.png}
+	\caption{componente BestPath}
+\end{figure}
+
 \section{Hot-spots do framework}
+
+Como definido pelo processo de produção de \textit{framework} de Fayad (1999) a análise de \textit{hot-spot} é algo iterativo, levantado ao longo da produção com apoio de um especialista. Porém, já de início foi realizado uma análise sobre todo o projeto e foram levantados os principais \textit{hot-spots} do sistema. Estes \textit{hot-spots} são o componente \textit{pathPlanner} e \textit{bestPath}. O usuário pode incrementar e configurar estes dois módulos, escolhendo entre abordagens e inserindo novas. Suas interfaces servem de gancho para mudanças.
+
+Para dar a variabilidade necessária para a variância destes pontos foi utilizado os padrões de dprojeto descritos no tópico acima. Eles dão a flexibilidade para mudança sem gerar mudanças nos demais módulos, mantendo a coesão alta e o acoplamento entre os módulos baixo.
 
 \section{Boas práticas de programação}
 citar também coesão, acoplamento, complexidade ciclomatica.

@@ -10,11 +10,17 @@
 \contentsline {figure}{\numberline {9}{\ignorespaces a) decomposi\IeC {\c c}\IeC {\~a}o celular usando regi\IeC {\~o}es de tamanho fixo b) Quadtree encontrando um caminho estreito entre dois obst\IeC {\'a}culos}}{36}{figure.2.9}
 \contentsline {figure}{\numberline {10}{\ignorespaces algor\IeC {\'\i }tmo Wavefront, com grafo em azul}}{37}{figure.2.10}
 \contentsline {figure}{\numberline {11}{\ignorespaces exemplo de arquitetura em camadas, Larman (2005, pg 225)}}{40}{figure.2.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces \textit {Hot spot} em um \textit {framework} caixa-preta e caixa-branca. Fayad (1999, pg 357)}}{43}{figure.2.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces Estruturas dos subsistemas \textit {hot spot}. Fayad (1999, pg 363 e 364)}}{43}{figure.2.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces Processo de desenvolvimento orientado a \textit {hot spot}. Fayad (1999, pg 385)}}{44}{figure.2.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces \textit {hot spot card}. Fayad (1999, pg 387)}}{45}{figure.2.15}
+\contentsline {figure}{\numberline {12}{\ignorespaces \textit {hot-spot} em um \textit {framework} caixa-preta e caixa-branca. Fayad (1999, pg 357)}}{43}{figure.2.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Estruturas dos subsistemas \textit {hot-spot}. Fayad (1999, pg 363 e 364)}}{43}{figure.2.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Processo de desenvolvimento orientado a \textit {hot-spot}. Fayad (1999, pg 385)}}{44}{figure.2.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces \textit {hot-spot card}. Fayad (1999, pg 387)}}{45}{figure.2.15}
 \contentsline {figure}{\numberline {16}{\ignorespaces foto do rob\IeC {\^o} utilizado}}{50}{figure.3.16}
 \contentsline {figure}{\numberline {17}{\ignorespaces exemplos de estruturas differential steering}}{51}{figure.3.17}
-\contentsline {figure}{\numberline {18}{\ignorespaces estrutura do funcionamento do framework}}{53}{figure.4.18}
+\contentsline {figure}{\numberline {18}{\ignorespaces estrutura do funcionamento do \textit {framework}}}{53}{figure.4.18}
 \contentsline {figure}{\numberline {19}{\ignorespaces arquitetura a navega\IeC {\c c}\IeC {\~a}o considerada, Nehmzow (2003, pg 15)}}{54}{figure.4.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces diagrama de pacotes do sistema}}{55}{figure.4.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces componente Controller}}{56}{figure.4.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces componente Map}}{56}{figure.4.22}
+\contentsline {figure}{\numberline {23}{\ignorespaces componente PathPlanner}}{57}{figure.4.23}
+\contentsline {figure}{\numberline {24}{\ignorespaces componente Graph}}{57}{figure.4.24}
+\contentsline {figure}{\numberline {25}{\ignorespaces componente BestPath}}{58}{figure.4.25}
