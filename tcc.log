@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.21)  9 NOV 2014 00:34
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.21)  9 NOV 2014 16:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1140,7 +1140,7 @@ Underfull \vbox (badness 1325) has occurred while \output is active []
 
  [17]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 69.
+(Font)              <14.4> on input line 70.
 )
 [18]) (./editaveis/introducao.tex [19
 
@@ -1149,21 +1149,21 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (./editaveis/referencial_teorico.tex [21] [22
 
 ] [23]
-<figuras/1bracorobotico.jpg, id=326, 370.0224pt x 277.5168pt>
+<figuras/1bracorobotico.jpg, id=332, 370.0224pt x 277.5168pt>
 File: figuras/1bracorobotico.jpg Graphic file (type jpg)
 
 <use figuras/1bracorobotico.jpg>
 Package pdftex.def Info: figuras/1bracorobotico.jpg used on input line 26.
 (pdftex.def)             Requested size: 222.01514pt x 166.51135pt.
 
-<figuras/1rodas.png, id=327, 264.23718pt x 156.585pt>
+<figuras/1rodas.png, id=333, 264.23718pt x 156.585pt>
 File: figuras/1rodas.png Graphic file (type png)
  <use figuras/1rodas.png>
 Package pdftex.def Info: figuras/1rodas.png used on input line 41.
 (pdftex.def)             Requested size: 264.23653pt x 156.58461pt.
 
 [24 <./figuras/1bracorobotico.jpg>]
-<figuras/2ackerman.png, id=333, 241.65282pt x 167.12437pt>
+<figuras/2ackerman.png, id=339, 241.65282pt x 167.12437pt>
 File: figuras/2ackerman.png Graphic file (type png)
 
 <use figuras/2ackerman.png>
@@ -1180,7 +1180,7 @@ Underfull \vbox (badness 1286) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28]
-<figuras/arqRoboMoveis0.png, id=352, 313.9228pt x 155.07938pt>
+<figuras/arqRoboMoveis0.png, id=358, 313.9228pt x 155.07938pt>
 File: figuras/arqRoboMoveis0.png Graphic file (type png)
 
 <use figuras/arqRoboMoveis0.png>
@@ -1190,7 +1190,7 @@ Package pdftex.def Info: figuras/arqRoboMoveis0.png used on input line 105.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [30]
-<figuras/6arquiteturaSPA.png, id=363, 325.215pt x 154.32657pt>
+<figuras/6arquiteturaSPA.png, id=369, 325.215pt x 154.32657pt>
 File: figuras/6arquiteturaSPA.png Graphic file (type png)
 
 <use figuras/6arquiteturaSPA.png>
@@ -1200,7 +1200,7 @@ Package pdftex.def Info: figuras/6arquiteturaSPA.png used on input line 136.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [32]
-<figuras/5diagramaSequencia.png, id=373, 687.31781pt x 548.0475pt>
+<figuras/5diagramaSequencia.png, id=379, 687.31781pt x 548.0475pt>
 File: figuras/5diagramaSequencia.png Graphic file (type png)
 
 <use figuras/5diagramaSequencia.png>
@@ -1208,7 +1208,7 @@ Package pdftex.def Info: figuras/5diagramaSequencia.png used on input line 171.
 
 (pdftex.def)             Requested size: 412.39386pt x 328.83104pt.
  [33 <./figuras/5diagramaSequencia.png>]
-<figuras/7visibilityGraph.png, id=378, 787.44188pt x 258.9675pt>
+<figuras/7visibilityGraph.png, id=384, 787.44188pt x 258.9675pt>
 File: figuras/7visibilityGraph.png Graphic file (type png)
 
 <use figuras/7visibilityGraph.png>
@@ -1222,7 +1222,7 @@ Overfull \hbox (17.46877pt too wide) in paragraph at lines 190--191
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[34] <figuras/8voronoi.png, id=383, 447.92343pt x 310.91156pt>
+[34] <figuras/8voronoi.png, id=389, 447.92343pt x 310.91156pt>
 File: figuras/8voronoi.png Graphic file (type png)
 
 <use figuras/8voronoi.png>
@@ -1238,7 +1238,7 @@ Overfull \hbox (0.6105pt too wide) in paragraph at lines 215--216
 ato pré-determinado,
  []
 
-<figuras/9quadtree.png, id=390, 928.21782pt x 330.48468pt>
+<figuras/9quadtree.png, id=396, 928.21782pt x 330.48468pt>
 File: figuras/9quadtree.png Graphic file (type png)
 
 <use figuras/9quadtree.png>
@@ -1253,7 +1253,7 @@ Overfull \hbox (9.10777pt too wide) in paragraph at lines 220--221
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [36 <./figuras/8voronoi.png> <./figuras/9quadtree.png>]
-<figuras/10wavefront.png, id=396, 340.27126pt x 236.38312pt>
+<figuras/10wavefront.png, id=402, 340.27126pt x 236.38312pt>
 File: figuras/10wavefront.png Graphic file (type png)
 
 <use figuras/10wavefront.png>
@@ -1269,7 +1269,7 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 251.
  [38]
-<figuras/arqcamadas.jpg, id=406, 235.88126pt x 315.1775pt>
+<figuras/arqcamadas.jpg, id=412, 235.88126pt x 315.1775pt>
 File: figuras/arqcamadas.jpg Graphic file (type jpg)
 
 <use figuras/arqcamadas.jpg>
@@ -1283,40 +1283,46 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [39]
-Underfull \vbox (badness 4608) has occurred while \output is active []
-
- [40 <./figuras/arqcamadas.jpg>] [41]
-<figuras/hotspotbox.jpg, id=420, 700.6175pt x 294.09875pt>
+[40 <./figuras/arqcamadas.jpg>] [41] [42]
+<figuras/hotspotbox.jpg, id=430, 700.6175pt x 294.09875pt>
 File: figuras/hotspotbox.jpg Graphic file (type jpg)
 
 <use figuras/hotspotbox.jpg>
-Package pdftex.def Info: figuras/hotspotbox.jpg used on input line 317.
+Package pdftex.def Info: figuras/hotspotbox.jpg used on input line 319.
 (pdftex.def)             Requested size: 210.18686pt x 88.2303pt.
+
+<figuras/subsistemaHotspot.jpg, id=431, 654.445pt x 225.84375pt>
+File: figuras/subsistemaHotspot.jpg Graphic file (type jpg)
+
+<use figuras/subsistemaHotspot.jpg>
+Package pdftex.def Info: figuras/subsistemaHotspot.jpg used on input line 330.
+(pdftex.def)             Requested size: 261.77336pt x 90.33589pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[42] <figuras/subsistemaHotspot.jpg, id=425, 654.445pt x 225.84375pt>
-File: figuras/subsistemaHotspot.jpg Graphic file (type jpg)
-
-<use figuras/subsistemaHotspot.jpg>
-Package pdftex.def Info: figuras/subsistemaHotspot.jpg used on input line 328.
-(pdftex.def)             Requested size: 261.77336pt x 90.33589pt.
- [43 <./figuras/hotspotbox.jpg> <./figuras/subsistemaHotspot.jpg>]
-<figuras/hotspotdd.jpg, id=430, 420.57124pt x 479.7925pt>
+[43 <./figuras/hotspotbox.jpg>]
+<figuras/hotspotdd.jpg, id=436, 420.57124pt x 479.7925pt>
 File: figuras/hotspotdd.jpg Graphic file (type jpg)
 
 <use figuras/hotspotdd.jpg>
-Package pdftex.def Info: figuras/hotspotdd.jpg used on input line 341.
+Package pdftex.def Info: figuras/hotspotdd.jpg used on input line 343.
 (pdftex.def)             Requested size: 168.22551pt x 191.91359pt.
- [44 <./figuras/hotspotdd.jpg>]
-<figuras/hotspotcard.jpg, id=435, 357.335pt x 261.97874pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[44 <./figuras/subsistemaHotspot.jpg>]
+<figuras/hotspotcard.jpg, id=441, 357.335pt x 261.97874pt>
 File: figuras/hotspotcard.jpg Graphic file (type jpg)
 
 <use figuras/hotspotcard.jpg>
-Package pdftex.def Info: figuras/hotspotcard.jpg used on input line 356.
+Package pdftex.def Info: figuras/hotspotcard.jpg used on input line 358.
 (pdftex.def)             Requested size: 142.93146pt x 104.78964pt.
- [45 <./figuras/hotspotcard.jpg>] [46] [47])
+
+Underfull \vbox (badness 2547) has occurred while \output is active []
+
+ [45 <./figuras/hotspotdd.jpg> <./figuras/hotspotcard.jpg>] [46] [47])
 (./editaveis/suporte_tecnologico.tex [48]
 Overfull \hbox (264.8028pt too wide) in paragraph at lines 13--14
 []\T1/lmr/m/n/12 Para o de-sen-vol-vi-mento do pro-jeto será usado a IDE Eclips
@@ -1325,14 +1331,14 @@ e In-digo (http://www.eclipse.org/downloads/packages/release/Indigo/SR2).
 
 [49
 
-] <figuras/5nxtBrick.png, id=458, 877.2775pt x 780.9175pt>
+] <figuras/5nxtBrick.png, id=464, 877.2775pt x 780.9175pt>
 File: figuras/5nxtBrick.png Graphic file (type png)
 
 <use figuras/5nxtBrick.png>
 Package pdftex.def Info: figuras/5nxtBrick.png used on input line 26.
 (pdftex.def)             Requested size: 350.90479pt x 312.36147pt.
 
-<figuras/3differentialSteering.png, id=459, 493.0922pt x 141.52875pt>
+<figuras/3differentialSteering.png, id=465, 493.0922pt x 141.52875pt>
 File: figuras/3differentialSteering.png Graphic file (type png)
 
 <use figuras/3differentialSteering.png>
@@ -1347,14 +1353,14 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 erentialSteering.png>] [52
 
 ]
-<figuras/framework.png, id=474, 121.45375pt x 160.6pt>
+<figuras/framework.png, id=480, 121.45375pt x 160.6pt>
 File: figuras/framework.png Graphic file (type png)
 
 <use figuras/framework.png>
 Package pdftex.def Info: figuras/framework.png used on input line 10.
 (pdftex.def)             Requested size: 121.45343pt x 160.5996pt.
 
-<figuras/arqusada.jpg, id=475, 257.96375pt x 107.40125pt>
+<figuras/arqusada.jpg, id=481, 257.96375pt x 107.40125pt>
 File: figuras/arqusada.jpg Graphic file (type jpg)
 
 <use figuras/arqusada.jpg>
@@ -1365,14 +1371,14 @@ Package pdftex.def Info: figuras/arqusada.jpg used on input line 19.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [53 <./figuras/framework.png>] [54 <./figuras/arqusada.jpg>]
-<figuras/componentes.png, id=486, 1037.37563pt x 579.66562pt>
+<figuras/componentes.png, id=492, 1037.37563pt x 579.66562pt>
 File: figuras/componentes.png Graphic file (type png)
 
 <use figuras/componentes.png>
 Package pdftex.def Info: figuras/componentes.png used on input line 46.
 (pdftex.def)             Requested size: 414.9429pt x 231.86214pt.
 
-<figuras/pkgcontroller.png, id=487, 855.195pt x 392.96812pt>
+<figuras/pkgcontroller.png, id=493, 855.195pt x 392.96812pt>
 File: figuras/pkgcontroller.png Graphic file (type png)
 
 <use figuras/pkgcontroller.png>
@@ -1382,73 +1388,77 @@ Package pdftex.def Info: figuras/pkgcontroller.png used on input line 57.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figuras/pkgmap.png, id=488, 698.61pt x 368.87813pt>
+[55 <./figuras/componentes.png>]
+<figuras/executeController.png, id=499, 1085.55562pt x 750.55406pt>
+File: figuras/executeController.png Graphic file (type png)
+
+<use figuras/executeController.png>
+Package pdftex.def Info: figuras/executeController.png used on input line 74.
+(pdftex.def)             Requested size: 434.21455pt x 300.21631pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figuras/pkgmap.png, id=500, 698.61pt x 368.87813pt>
 File: figuras/pkgmap.png Graphic file (type png)
  <use figuras/pkgmap.png>
-Package pdftex.def Info: figuras/pkgmap.png used on input line 66.
+Package pdftex.def Info: figuras/pkgmap.png used on input line 83.
 (pdftex.def)             Requested size: 349.30414pt x 184.4386pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figuras/pkgpathplanner.png, id=489, 698.61pt x 524.71031pt>
+[56 <./figuras/pkgcontroller.png>]
+<figuras/pkgpathplanner.png, id=506, 706.13812pt x 524.71031pt>
 File: figuras/pkgpathplanner.png Graphic file (type png)
 
 <use figuras/pkgpathplanner.png>
-Package pdftex.def Info: figuras/pkgpathplanner.png used on input line 75.
-(pdftex.def)             Requested size: 349.30414pt x 262.3545pt.
+Package pdftex.def Info: figuras/pkgpathplanner.png used on input line 96.
+(pdftex.def)             Requested size: 353.06819pt x 262.3545pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figuras/pkggraph.png, id=490, 434.37282pt x 350.05782pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [57 <./figuras/executeController.png> <./figuras/pkgmap.png>]
+<figuras/pkggraph.png, id=513, 593.21625pt x 462.22687pt>
 File: figuras/pkggraph.png Graphic file (type png)
 
 <use figuras/pkggraph.png>
-Package pdftex.def Info: figuras/pkggraph.png used on input line 84.
-(pdftex.def)             Requested size: 217.18587pt x 175.02847pt.
+Package pdftex.def Info: figuras/pkggraph.png used on input line 109.
+(pdftex.def)             Requested size: 296.60739pt x 231.11287pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figuras/pkgbestPath.png, id=491, 662.475pt x 521.69907pt>
+<figuras/pkgbestPath.png, id=514, 662.475pt x 521.69907pt>
 File: figuras/pkgbestPath.png Graphic file (type png)
 
 <use figuras/pkgbestPath.png>
-Package pdftex.def Info: figuras/pkgbestPath.png used on input line 93.
+Package pdftex.def Info: figuras/pkgbestPath.png used on input line 122.
 (pdftex.def)             Requested size: 331.2367pt x 260.84889pt.
+ [58 <./figuras/pkgpathplanner.png>] [59 <./figuras/pkggraph.png> <./figuras/pk
+gbestPath.png>] [60] [61]
+Overfull \hbox (11.77635pt too wide) in paragraph at lines 164--165
+[]\T1/lmr/m/n/12 Os obs-tá-cu-los se-rão re-pre-sen-ta-dos por cé-lu-las de va-
+lo-res di-fe-ren-tes no mapa, marcado-
+ []
 
+[62] <figuras/expansao.png, id=539, 462.97969pt x 315.42844pt>
+File: figuras/expansao.png Graphic file (type png)
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+<use figuras/expansao.png>
+Package pdftex.def Info: figuras/expansao.png used on input line 171.
+(pdftex.def)             Requested size: 231.48927pt x 157.71382pt.
+) (./editaveis/metodologia.tex [63 <./figuras/expansao.png>] [64
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [55 <./figuras/componentes.png>] [56 <./figuras/pkgcontroller.png> <./figuras/
-pkgmap.png>]) (./editaveis/metodologia.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [57 <./figuras/pkgpathplanner.png> <./figuras/pkggraph.png>] [58 <./figuras/pk
-gbestPath.png>]) (./editaveis/conclusao.tex [59
-
-] [60
+]) (./editaveis/conclusao.tex [65] [66
 
 ])
 No file tcc.bbl.
-(./editaveis/apendices.tex [61] [62
-
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 4.
-
-[63
-
-] [64] [65
-
-] [66
-
-]) (./editaveis/anexos.tex [67] [68
+(./editaveis/apendices.tex [67] [68
 
 ]
 
@@ -1461,11 +1471,24 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 ] [72
 
+]) (./editaveis/anexos.tex [73] [74
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\uppercase' on input line 4.
+
+[75
+
+] [76] [77
+
+] [78
+
 ])
 No file tcc.ind.
 
 AED: lastpage setting LastPage
-[73]
+[79]
 \tf@lof=\write5
 \openout5 = `tcc.lof'.
 
@@ -1483,10 +1506,10 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 42.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 42.
  ) 
 Here is how much of TeX's memory you used:
- 12571 strings out of 493304
- 183248 string characters out of 6139870
- 305008 words of memory out of 5000000
- 15509 multiletter control sequences out of 15000+600000
+ 12593 strings out of 493304
+ 183610 string characters out of 6139870
+ 305127 words of memory out of 5000000
+ 15520 multiletter control sequences out of 15000+600000
  76149 words of font info for 54 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  41i,13n,38p,1557b,522s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1500,10 +1523,10 @@ type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb><
 /usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1
 /public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></us
 r/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on tcc.pdf (75 pages, 3618398 bytes).
+Output written on tcc.pdf (81 pages, 3750768 bytes).
 PDF statistics:
- 863 PDF objects out of 1000 (max. 8388607)
- 719 compressed objects within 8 object streams
- 185 named destinations out of 1000 (max. 500000)
- 679 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 903 PDF objects out of 1000 (max. 8388607)
+ 749 compressed objects within 8 object streams
+ 194 named destinations out of 1000 (max. 500000)
+ 697 words of extra memory for PDF output out of 10000 (max. 10000000)
 
