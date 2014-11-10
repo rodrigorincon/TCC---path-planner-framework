@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.21)  9 NOV 2014 16:50
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.21)  9 NOV 2014 21:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1454,41 +1454,47 @@ Package pdftex.def Info: figuras/expansao.png used on input line 171.
 (pdftex.def)             Requested size: 231.48927pt x 157.71382pt.
 ) (./editaveis/metodologia.tex [63 <./figuras/expansao.png>] [64
 
-]) (./editaveis/conclusao.tex [65] [66
+] [65] <figuras/fluxoatvd.png, id=555, 930.47626pt x 853.68938pt>
+File: figuras/fluxoatvd.png Graphic file (type png)
+
+<use figuras/fluxoatvd.png>
+Package pdftex.def Info: figuras/fluxoatvd.png used on input line 22.
+(pdftex.def)             Requested size: 372.18391pt x 341.4697pt.
+) (./editaveis/conclusao.tex [66 <./figuras/fluxoatvd.png>] [67] [68
 
 ])
 No file tcc.bbl.
-(./editaveis/apendices.tex [67] [68
+(./editaveis/apendices.tex [69] [70
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 4.
 
-[69
+[71
 
-] [70] [71
+] [72] [73
 
-] [72
+] [74
 
-]) (./editaveis/anexos.tex [73] [74
+]) (./editaveis/anexos.tex [75] [76
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 4.
 
-[75
+[77
 
-] [76] [77
+] [78] [79
 
-] [78
+] [80
 
 ])
 No file tcc.ind.
 
 AED: lastpage setting LastPage
-[79]
+[81]
 \tf@lof=\write5
 \openout5 = `tcc.lof'.
 
@@ -1503,13 +1509,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 42.
  (./tcc.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 42.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 42.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 42.
  ) 
 Here is how much of TeX's memory you used:
- 12593 strings out of 493304
- 183610 string characters out of 6139870
+ 12606 strings out of 493304
+ 183792 string characters out of 6139870
  305127 words of memory out of 5000000
- 15520 multiletter control sequences out of 15000+600000
+ 15527 multiletter control sequences out of 15000+600000
  76149 words of font info for 54 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  41i,13n,38p,1557b,522s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1523,10 +1533,10 @@ type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb><
 /usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1
 /public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></us
 r/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on tcc.pdf (81 pages, 3750768 bytes).
+Output written on tcc.pdf (83 pages, 3891345 bytes).
 PDF statistics:
- 903 PDF objects out of 1000 (max. 8388607)
- 749 compressed objects within 8 object streams
- 194 named destinations out of 1000 (max. 500000)
- 697 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 923 PDF objects out of 1000 (max. 8388607)
+ 765 compressed objects within 8 object streams
+ 199 named destinations out of 1000 (max. 500000)
+ 718 words of extra memory for PDF output out of 10000 (max. 10000000)
 

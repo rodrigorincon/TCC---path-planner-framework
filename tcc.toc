@@ -61,31 +61,33 @@
 \contentsline {section}{\numberline {4.5}Os obst\IeC {\'a}culos}{62}{section.4.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Metodologia}}{65}{chapter.5}
+\contentsline {section}{\numberline {5.1}Processo de produ\IeC {\c c}\IeC {\~a}o}{65}{section.5.1}
+\contentsline {section}{\numberline {5.2}Atividades e fluxo de atividades}{66}{section.5.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclus\IeC {\~a}o}}{67}{chapter.6}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclus\IeC {\~a}o}}{69}{chapter.6}
 \vspace {\cftbeforechapterskip }
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Ap\^endices}}{69}{section*.10}
+\contentsline {part}{\uppercase {Ap\^endices}}{71}{section*.10}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Primeiro Ap\IeC {\^e}ndice}}{71}{appendix.A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Primeiro Ap\IeC {\^e}ndice}}{73}{appendix.A}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Segundo Ap\IeC {\^e}ndice}}{73}{appendix.B}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Segundo Ap\IeC {\^e}ndice}}{75}{appendix.B}
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Anexos}}{75}{section*.11}
+\contentsline {part}{\uppercase {Anexos}}{77}{section*.11}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Primeiro Anexo}}{77}{appendix.anexochapback.1}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Primeiro Anexo}}{79}{appendix.anexochapback.1}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Segundo Anexo}}{79}{appendix.anexochapback.2}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Segundo Anexo}}{81}{appendix.anexochapback.2}
