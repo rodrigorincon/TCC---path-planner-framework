@@ -1,29 +1,29 @@
 \select@language {brazil}
-\contentsline {figure}{\numberline {1}{\ignorespaces bra\IeC {\c c}o rob\IeC {\'o}tico usado na rob\IeC {\'o}tica industrial}}{24}{figure.2.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces a) roda padr\IeC {\~a}o, b) roda castor, c) roda su\IeC {\'e}ca d) roda esf\IeC {\'e}rica}}{25}{figure.2.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Ackerman Steering}}{26}{figure.2.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces camadas de execu\IeC {\c c}\IeC {\~a}o na navega\IeC {\c c}\IeC {\~a}o do rob\IeC {\^o}}}{29}{figure.2.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces arquitetura SPA}}{31}{figure.2.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces diagrama de sequ\IeC {\^e}ncia da cria\IeC {\c c}\IeC {\~a}o do caminho}}{33}{figure.2.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces grafos de visibilidade a) tradicional b) com expans\IeC {\~a}o dos obst\IeC {\'a}culos }}{35}{figure.2.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Diagrama de Voronoi}}{36}{figure.2.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces a) decomposi\IeC {\c c}\IeC {\~a}o celular usando regi\IeC {\~o}es de tamanho fixo b) Quadtree encontrando um caminho estreito entre dois obst\IeC {\'a}culos}}{36}{figure.2.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces algor\IeC {\'\i }tmo Wavefront, com grafo em azul}}{37}{figure.2.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces exemplo de arquitetura em camadas, Larman (2005, pg 225)}}{40}{figure.2.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces \textit {hot-spot} em um \textit {framework} caixa-preta e caixa-branca. Fayad (1999, pg 357)}}{43}{figure.2.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces Estruturas dos subsistemas \textit {hot-spot}. Fayad (1999, pg 363 e 364)}}{44}{figure.2.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces Processo de desenvolvimento orientado a \textit {hot-spot}. Fayad (1999, pg 385)}}{45}{figure.2.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces \textit {hot-spot card}. Fayad (1999, pg 387)}}{45}{figure.2.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces foto do rob\IeC {\^o} utilizado}}{50}{figure.3.16}
-\contentsline {figure}{\numberline {17}{\ignorespaces exemplos de estruturas differential steering}}{51}{figure.3.17}
-\contentsline {figure}{\numberline {18}{\ignorespaces estrutura do funcionamento do \textit {framework}}}{53}{figure.4.18}
-\contentsline {figure}{\numberline {19}{\ignorespaces arquitetura a navega\IeC {\c c}\IeC {\~a}o considerada, Nehmzow (2003, pg 15)}}{54}{figure.4.19}
-\contentsline {figure}{\numberline {20}{\ignorespaces diagrama de pacotes do sistema}}{55}{figure.4.20}
-\contentsline {figure}{\numberline {21}{\ignorespaces componente Controller}}{56}{figure.4.21}
-\contentsline {figure}{\numberline {22}{\ignorespaces diagrama de sequ\IeC {\^e}ncia do componente controller}}{57}{figure.4.22}
-\contentsline {figure}{\numberline {23}{\ignorespaces componente Map}}{57}{figure.4.23}
-\contentsline {figure}{\numberline {24}{\ignorespaces componente PathPlanner}}{58}{figure.4.24}
-\contentsline {figure}{\numberline {25}{\ignorespaces componente Graph}}{59}{figure.4.25}
-\contentsline {figure}{\numberline {26}{\ignorespaces componente BestPath}}{59}{figure.4.26}
-\contentsline {figure}{\numberline {27}{\ignorespaces obst\IeC {\'a}culo real em preto e a expans\IeC {\~a}o incrementada em amarelo}}{63}{figure.4.27}
-\contentsline {figure}{\numberline {28}{\ignorespaces fluxo de atividades propostas}}{66}{figure.5.28}
+\contentsline {figure}{\numberline {1}{\ignorespaces bra\IeC {\c c}o rob\IeC {\'o}tico usado na rob\IeC {\'o}tica industrial \cite {IMG_ROB_IND_SITE}}}{18}{figure.2.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces a) roda padr\IeC {\~a}o, b) roda castor, c) roda su\IeC {\'e}ca d) roda esf\IeC {\'e}rica \cite {Siegwart2004}}}{19}{figure.2.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Ackerman Steering \cite {Secchi2008}}}{20}{figure.2.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces camadas de execu\IeC {\c c}\IeC {\~a}o na navega\IeC {\c c}\IeC {\~a}o do rob\IeC {\^o} \cite {Vieira2005}}}{24}{figure.2.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces arquitetura SPA \cite {Mataric2007}}}{25}{figure.2.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces diagrama de sequ\IeC {\^e}ncia da cria\IeC {\c c}\IeC {\~a}o do caminho}}{28}{figure.2.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces grafos de visibilidade a) tradicional b) com expans\IeC {\~a}o dos obst\IeC {\'a}culos \cite {Thomsen2010} e \cite {MRIT_SITE}}}{29}{figure.2.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Diagrama de Voronoi \cite {Siegwart2004}}}{30}{figure.2.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces a) decomposi\IeC {\c c}\IeC {\~a}o celular usando regi\IeC {\~o}es de tamanho fixo b) Quadtree encontrando um caminho estreito entre dois obst\IeC {\'a}culos \cite {Siegwart2004}}}{31}{figure.2.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces algor\IeC {\'\i }tmo Wavefront, com grafo em azul \cite {MRIT_SITE}}}{32}{figure.2.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces exemplo de arquitetura em camadas, \cite {Larman2005}}}{34}{figure.2.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces \textit {hot-spot} em um \textit {framework} caixa-preta e caixa-branca. \cite {Fayad1999}}}{37}{figure.2.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Estruturas dos subsistemas \textit {hot-spot}. \cite {Fayad1999}}}{38}{figure.2.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Processo de desenvolvimento orientado a \textit {hot-spot}. \cite {Fayad1999}}}{39}{figure.2.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces \textit {hot-spot card}. \cite {Fayad1999}}}{40}{figure.2.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces foto do rob\IeC {\^o} utilizado}}{46}{figure.3.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces exemplos de estruturas differential steering \cite {IMG_DIFFERENTIAL_STEERING_SITE}}}{47}{figure.3.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces estrutura do funcionamento do \textit {framework}}}{49}{figure.4.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces arquitetura a navega\IeC {\c c}\IeC {\~a}o considerada, \cite {Nehmzow2003}}}{50}{figure.4.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces diagrama de pacotes do sistema}}{51}{figure.4.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces componente Controller}}{52}{figure.4.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces diagrama de sequ\IeC {\^e}ncia do componente controller}}{53}{figure.4.22}
+\contentsline {figure}{\numberline {23}{\ignorespaces componente Map}}{53}{figure.4.23}
+\contentsline {figure}{\numberline {24}{\ignorespaces componente PathPlanner}}{54}{figure.4.24}
+\contentsline {figure}{\numberline {25}{\ignorespaces componente Graph}}{55}{figure.4.25}
+\contentsline {figure}{\numberline {26}{\ignorespaces componente BestPath}}{55}{figure.4.26}
+\contentsline {figure}{\numberline {27}{\ignorespaces obst\IeC {\'a}culo real em preto e a expans\IeC {\~a}o incrementada em amarelo \cite {MRIT_SITE}}}{59}{figure.4.27}
+\contentsline {figure}{\numberline {28}{\ignorespaces fluxo de atividades propostas}}{62}{figure.5.28}

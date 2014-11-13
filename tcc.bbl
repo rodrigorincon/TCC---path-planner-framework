@@ -1,0 +1,219 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.2 }
+
+\bibitem[Abreu 2001]{Abreu2001}
+\abntrefinfo{Abreu}{ABREU}{2001}
+{ABREU, P. \emph{robótica industrial}. Portugal: [s.n.], 2001.
+Visualizado em 23/09/2014.
+Dispon{\'\i}vel em: \url{http://paginas.fe.up.pt/~aml/maic\_files/introd.pdf}.}
+
+\bibitem[Bagnall 2011]{Bagnall2011}
+\abntrefinfo{Bagnall}{BAGNALL}{2011}
+{BAGNALL, B. \emph{Intelligence Unleashed, Creating LEGO NXT Robots with Java}.
+  1. ed. EUA: Variant Express, 2011. 519~p.}
+
+\bibitem[Borenstein, Everett e Feng 1996]{Borenstein1996}
+\abntrefinfo{Borenstein, Everett e Feng}{BORENSTEIN; EVERETT; FENG}{1996}
+{BORENSTEIN, J.; EVERETT, H.~R.; FENG, L. \emph{Where i am? Sensors and Methods
+  for Mobile Robot Positioning}. 1. ed. Michigan, EUA: Universidade de
+  Michigan, 1996. 282~p.}
+
+\bibitem[Carmen site do framework]{CARMEN_SITE}
+\abntrefinfo{Carmen\ldots}{CARMEN\ldots}{}
+{CARMEN site do framework.
+Visualizado em 23/10/2014.
+Dispon{\'\i}vel em: \url{http://carmen.sourceforge.net/intro.html}.}
+
+\bibitem[Choset et al. 2005]{Choset2005}
+\abntrefinfo{Choset et al.}{CHOSET et al.}{2005}
+{CHOSET, H. et al. \emph{Principles of Robot Motion. Theory, Algorithms, and
+  Implementations}. 1. ed. Massachusetts, EUA: The MIT Press, 2005. 626~p.}
+
+\bibitem[Eclemma, plugin para coberturade código]{ECLEMMA_SITE}
+\abntrefinfo{Eclemma\ldots}{ECLEMMA\ldots}{}
+{ECLEMMA, plugin para coberturade código.
+Visualizado em 01/10/2014.
+Dispon{\'\i}vel em: \url{http://www.eclemma.org/installation.html}.}
+
+\bibitem[Eclipse, ferramenta de desenvolvimento na versão
+  utilizada]{ECLIPSE_SITE}
+\abntrefinfo{Eclipse\ldots}{ECLIPSE\ldots}{}
+{ECLIPSE, ferramenta de desenvolvimento na versão utilizada.
+Visualizado em 01/10/2014.
+Dispon{\'\i}vel em:
+  \url{http://www.eclipse.org/downloads/packages/release/Indigo/SR2}.}
+
+\bibitem[exemplos de estruturas de direção
+  diferencial]{IMG_DIFFERENTIAL_STEERING_SITE}
+\abntrefinfo{exemplos\ldots}{EXEMPLOS\ldots}{}
+{EXEMPLOS de estruturas de direção diferencial.
+Visualizado em 09/10/2014.
+Dispon{\'\i}vel em: \url{http://www.enigmaindustries.com/configurations.htm}.}
+
+\bibitem[Fayad, Johnson e Shmidt 1999]{Fayad1999}
+\abntrefinfo{Fayad, Johnson e Shmidt}{FAYAD; JOHNSON; SHMIDT}{1999}
+{FAYAD, M.~E.; JOHNSON, R.~E.; SHMIDT, D.~C. \emph{Building Aplication
+  Frameworks: Object-Oriented Foundations of Framework Design}. 1. ed. EUA:
+  Wiley Computer Publishing, 1999. 664~p.}
+
+\bibitem[Gamma et al. 1995]{Gamma1995}
+\abntrefinfo{Gamma et al.}{GAMMA et al.}{1995}
+{GAMMA, E. et al. \emph{Padrões de projeto}. 1. ed. Brasil: Bookman, 1995.
+  370~p.}
+
+\bibitem[Goodliffe 2007]{Goodliffe2007}
+\abntrefinfo{Goodliffe}{GOODLIFFE}{2007}
+{GOODLIFFE, P. \emph{Code Craft}. 1. ed. San Francisco, EUA: No Starch Press,
+  2007. 580~p.}
+
+\bibitem[Guzmán et al. 2008]{Guzman2008}
+\abntrefinfo{Guzmán et al.}{GUZMáN et al.}{2008}
+{GUZMáN, J.~L. et al. Interactive tool for mobile robot motion planning.
+\emph{Robotics and Autonomous Systems}, Elsevier, n.~56, p. 396–409, 2008.}
+
+\bibitem[Holdgaard-Thomsen 2010]{Thomsen2010}
+\abntrefinfo{Holdgaard-Thomsen}{HOLDGAARD-THOMSEN}{2010}
+{HOLDGAARD-THOMSEN, J.
+\emph{Path Planning of Robots}.
+90~p. Disserta\c{c}\~{a}o (Mestrado) --- Technical University of Denmark,
+  Dinamarca, 2010. Visualizado em 23/10/2014.
+Dispon{\'\i}vel em: \url{http://etd.dtu.dk/thesis/258988/ep10\_05.pdf}.}
+
+\bibitem[imagem de braço robótico]{IMG_ROB_IND_SITE}
+\abntrefinfo{imagem\ldots}{IMAGEM\ldots}{}
+{IMAGEM de braço robótico.
+Visualizado em 01/10/2014.
+Dispon{\'\i}vel em: \url{http://sicmscj.com.br/links/roca1024.jpg}.}
+
+\bibitem[Larman 2005]{Larman2005}
+\abntrefinfo{Larman}{LARMAN}{2005}
+{LARMAN, C. \emph{Utilizando UML e Padrões}. 3. ed. Brasil: Bookman, 2005.
+  695~p.}
+
+\bibitem[Lego site]{SITE_LEGO}
+\abntrefinfo{Lego\ldots}{LEGO\ldots}{}
+{LEGO site.
+Visualizado em 25/08/2014.
+Dispon{\'\i}vel em: \url{http://mindstorms.lego.com}.}
+
+\bibitem[Lejos, plataforma Java para robôs da Lego]{LEJOS_SITE}
+\abntrefinfo{Lejos\ldots}{LEJOS\ldots}{}
+{LEJOS, plataforma Java para robôs da Lego.
+Visualizado em 01/10/2014.
+Dispon{\'\i}vel em: \url{http://www.lejos.org/nxj.php}.}
+
+\bibitem[Mataric 2007]{Mataric2007}
+\abntrefinfo{Mataric}{MATARIC}{2007}
+{MATARIC, M.~J. \emph{The Robotics Primer}. 1. ed. Cambridge, EUA:
+  Massachusetts Institute of Technology, 2007. 323~p.}
+
+\bibitem[McConnel 2004]{McConnel2004}
+\abntrefinfo{McConnel}{MCCONNEL}{2004}
+{MCCONNEL, S. \emph{Code Complete}. 2. ed. Washington, EUA: Microsoft Press,
+  2004. 914~p.}
+
+\bibitem[Medeiros, Silva e Yanasse 2011]{Medeiros2011}
+\abntrefinfo{Medeiros, Silva e Yanasse}{MEDEIROS; SILVA; YANASSE}{2011}
+{MEDEIROS, F. L.~L.; SILVA, J. D.~S. da; YANASSE, H.~H. Simplificação de
+  grafos de visibilidade construídos através de modelos digitais de
+  elevação. In:  . Instituto Nacional de Pesquisas Espaciais, 2011. p.~4.
+  Visualizado em 15/09/2014. Dispon{\'\i}vel em:
+  \url{http://mtc-m18.sid.inpe.br/col/sid.inpe.br/mtc-m18/2011/10.18.01.32/doc/worcap2011\_submission\_13.pdf?ibiurl.language=en}.}
+
+\bibitem[MRIT, ferramenta de simulação de algoritmos de definição de
+  trajetória]{MRIT_SITE}
+\abntrefinfo{MRIT\ldots}{MRIT\ldots}{}
+{MRIT, ferramenta de simulação de algoritmos de definição de trajetória.
+Visualizado em 01/10/2014.
+Dispon{\'\i}vel em: \url{http://aer.ual.es/mrit/}.}
+
+\bibitem[Nehmzow 2003]{Nehmzow2003}
+\abntrefinfo{Nehmzow}{NEHMZOW}{2003}
+{NEHMZOW, U. \emph{Mobile Robotics, A Pratical Introduction}. 2. ed.
+  Inglaterra: Springer, 2003. 280~p.}
+
+\bibitem[Pereira 2003]{Pereira2003}
+\abntrefinfo{Pereira}{PEREIRA}{2003}
+{PEREIRA, J.
+\emph{Avaliação e correção do modelo cinemático de robôs móveis visando
+  a redução de erros no seguimento de trajetórias}.
+141~p. Disserta\c{c}\~{a}o (Mestrado) --- Universidade Do Estado De Santa
+  Catarina, Joinvile, Brasil, 2003. Visualizado em 24/09/2014.
+Dispon{\'\i}vel em:
+  \url{http://www.tede.udesc.br/tde\_arquivos/8/TDE-2006-05-19T054914Z-190/Publico/Jonas\%20Pereira.pdf}.}
+
+\bibitem[plugin para ferramenta de teste sunitários]{JUNIT_SITE}
+\abntrefinfo{plugin\ldots}{PLUGIN\ldots}{a}
+{PLUGIN para ferramenta de teste sunitários.
+Visualizado em 01/10/2014.
+Dispon{\'\i}vel em: \url{http://junit.org/}.}
+
+\bibitem[plugin para programação Java para o kit Lego NXT]{PLUGIN_NXT_SITE}
+\abntrefinfo{plugin\ldots}{PLUGIN\ldots}{b}
+{PLUGIN para programação Java para o kit Lego NXT.
+Visualizado em 01/10/2014.
+Dispon{\'\i}vel em:
+  \url{http://lejos.sourceforge.net/tools/eclipse/plugin/nxj}.}
+
+\bibitem[ROS site do framework]{ROS_SITE}
+\abntrefinfo{ROS\ldots}{ROS\ldots}{}
+{ROS site do framework.
+Visualizado em 23/10/2014.
+Dispon{\'\i}vel em: \url{http://wiki.ros.org/ROS}.}
+
+\bibitem[Secchi 2008]{Secchi2008}
+\abntrefinfo{Secchi}{SECCHI}{2008}
+{SECCHI, H.~A. \emph{Uma Introdução a Robôs Móveis}. Argentina, 2008. 91~p.
+  Visualizado em 08/10/2014. Dispon{\'\i}vel em:
+  \url{http://www.obr.org.br/wp-content/uploads/2013/04/Uma\_Introducao\_aos\_Robos\_Moveis.pdf}.}
+
+\bibitem[Siegwart e Nourbakhsh 2004]{Siegwart2004}
+\abntrefinfo{Siegwart e Nourbakhsh}{SIEGWART; NOURBAKHSH}{2004}
+{SIEGWART, R.; NOURBAKHSH, I.~R. \emph{Introduction to autonomous mobile
+  robots}. 1. ed. Massachusetts, EUA: Massachusetts Institute of Technology,
+  2004. 336~p.}
+
+\bibitem[Souza 2008]{Souza2008}
+\abntrefinfo{Souza}{SOUZA}{2008}
+{SOUZA, S. C.~B. de.
+\emph{Planejamento de trajetória para um robô móvel com duas rodas
+  utilizando um algoritmo A-estrela modificado}.
+110~p. Disserta\c{c}\~{a}o (Mestrado) --- Universidade Federal do Rio de
+  Janeiro, Rio de Janeiro, Brasil, 2008. Visualizado em 02/10/2014.
+Dispon{\'\i}vel em:
+  \url{http://www.pee.ufrj.br/teses/textocompleto/2008121701.pdf}.}
+
+\bibitem[Strandberg 2004]{Strandberg2004}
+\abntrefinfo{Strandberg}{STRANDBERG}{2004}
+{STRANDBERG, M.
+\emph{Robot Path Planning: An Object-Oriented Approach}.
+254~p. Tese (Doutorado) --- Royal Institute of Technology, Estocolmo, Suécia,
+  2004. Visualizado em 06/11/2014.
+Dispon{\'\i}vel em:
+  \url{http://www.diva-portal.org/smash/get/diva2:7803/FULLTEXT01.pdf}.}
+
+\bibitem[Szyperski 2002]{Szyperski2002}
+\abntrefinfo{Szyperski}{SZYPERSKI}{2002}
+{SZYPERSKI, C. \emph{Component Software}. 2. ed. New York, EUA: acm press,
+  2002. 589~p.}
+
+\bibitem[Vieira 2005]{Vieira2005}
+\abntrefinfo{Vieira}{VIEIRA}{2005}
+{VIEIRA, F.~C.
+\emph{Controle Dinâmico de robôs móveis com acionamento diferencial}.
+106~p. Disserta\c{c}\~{a}o (Mestrado) --- Universidade Federal do Rio Grande do
+  Norte, Natal, Brasil, 2005. Visualizado em 11/10/2014.
+Dispon{\'\i}vel em:
+  \url{ftp://ftp.ufrn.br/pub/biblioteca/ext/bdtd/FredericoCV.pdf}.}
+
+\bibitem[Voronoi site]{VORONOI_SITE}
+\abntrefinfo{Voronoi\ldots}{VORONOI\ldots}{}
+{VORONOI site.
+Visualizado em 29/10/2014.
+Dispon{\'\i}vel em: \url{http://www.Voronoi.com}.}
+
+\end{thebibliography}

@@ -1,0 +1,80 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: tcc.aux
+The style file: abntex2-alf.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Database file #1: abntex2-options.bib
+Database file #2: bibliografia.bib
+Warning--entry type for "Abreu2001" isn't style-file defined
+--line 136 of file bibliografia.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Warning--campo year vazio ou faltando em CARMEN_SITE
+Warning--campo year vazio ou faltando em ECLEMMA_SITE
+Warning--campo year vazio ou faltando em ECLIPSE_SITE
+Warning--campo year vazio ou faltando em IMG_DIFFERENTIAL_STEERING_SITE
+Warning--campo year vazio ou faltando em IMG_ROB_IND_SITE
+Warning--campo year vazio ou faltando em SITE_LEGO
+Warning--campo year vazio ou faltando em LEJOS_SITE
+Warning--campo year vazio ou faltando em MRIT_SITE
+Warning--campo year vazio ou faltando em JUNIT_SITE
+Warning--campo year vazio ou faltando em PLUGIN_NXT_SITE
+Warning--campo year vazio ou faltando em ROS_SITE
+Warning--campo year vazio ou faltando em VORONOI_SITE
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.2           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://abntex2.googlecode.com                           |
++---------------------------------------------------------+
+You've used 34 entries,
+            6711 wiz_defined-function locations,
+            1417 strings with 14368 characters,
+and the built_in function-call counts, 44772 in all, are:
+= -- 5781
+> -- 530
+< -- 1023
++ -- 1409
+- -- 161
+* -- 2542
+:= -- 5424
+add.period$ -- 147
+call.type$ -- 34
+change.case$ -- 272
+chr.to.int$ -- 69
+cite$ -- 45
+duplicate$ -- 4077
+empty$ -- 2017
+format.name$ -- 762
+if$ -- 9677
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 595
+newline$ -- 182
+num.names$ -- 105
+pop$ -- 753
+preamble$ -- 1
+purify$ -- 115
+quote$ -- 0
+skip$ -- 5032
+stack$ -- 1
+substring$ -- 1728
+swap$ -- 1457
+text.length$ -- 23
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 104
+warning$ -- 12
+while$ -- 174
+width$ -- 0
+write$ -- 519
+(There were 13 warnings)
