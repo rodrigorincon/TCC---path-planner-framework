@@ -53,9 +53,9 @@
 \contentsline {section}{\numberline {4.2}A arquitetura}{50}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Controller}{51}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Map}{52}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Path Planner}{54}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.3}Path Planner}{53}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}Graph}{54}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Best Path}{55}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.5}Best Path}{54}{subsection.4.2.5}
 \contentsline {section}{\numberline {4.3}Hot-spots do framework}{56}{section.4.3}
 \contentsline {section}{\numberline {4.4}Boas pr\IeC {\'a}ticas de programa\IeC {\c c}\IeC {\~a}o}{56}{section.4.4}
 \contentsline {section}{\numberline {4.5}Os obst\IeC {\'a}culos}{58}{section.4.5}

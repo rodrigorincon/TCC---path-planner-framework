@@ -2,20 +2,20 @@
 
 Como já dito, a proposta deste trabalho é a construção de um \textit{framework} de definição de trajetória para robôs móveis, mais especificamente, algoritmos globais de definição de trajetória. Um mapa do ambiente é recebido da camada acima e o algoritmo cria um grafo a partir dele, definindo os caminhos livres que podem ser percorridos. Após isso é rodado um algoritmo de melhor caminho (como Djikstra) para definir o caminho a ser percorrido pelo robô. 
 
-A imagem abaixo demonstra as tarefas principais do \textit{framework}, bem como suas entradas e saídas. Essas entradas e saídas definem como ele se comunicará com as demais camadas do robô e as dependências dele para cumprir seu funcionamento. Cada tarefa apresentada se tornará um módulo do \textit{framework} e as interações entre eles as estruturas de dados utilizadas para se comunicarem.
+A figura 19 demonstra as tarefas principais do \textit{framework}, bem como suas entradas e saídas. Essas entradas e saídas definem como ele se comunicará com as demais camadas do robô e as dependências dele para cumprir seu funcionamento. Cada tarefa apresentada se tornará um módulo do \textit{framework} e as interações entre eles as estruturas de dados utilizadas para se comunicarem.
  
 \begin{figure}[h]
 	\centering
-	\label{fig18}
+	\label{fig19}
 		\includegraphics[keepaspectratio=true,scale=1]{figuras/framework.png}
 	\caption{estrutura do funcionamento do \textit{framework}}
 \end{figure} 
 
-A arquitetura geral do robô será considerada como na imagem abaixo apresentada por \cite{Nehmzow2003}. Todas as abordagens da arquitetura de navegação seguiam uma lógica semelhante e apresentavam pequenas diferenças entre si. Assim sendo, esta estrutura mantêm as características apresentadas no capítulo anterior.
+A arquitetura geral do robô será considerada como na figura 20 apresentada por \cite{Nehmzow2003}. Todas as abordagens da arquitetura de navegação seguiam uma lógica semelhante e apresentavam pequenas diferenças entre si. Assim sendo, esta estrutura mantêm as características apresentadas no capítulo anterior.
 
 \begin{figure}[h]
 	\centering
-	\label{fig19}
+	\label{fig20}
 		\includegraphics[keepaspectratio=true,scale=1]{figuras/arqusada.jpg}
 	\caption{arquitetura a navegação considerada, \cite{Nehmzow2003}}
 \end{figure}
@@ -38,11 +38,11 @@ Cada funcionalidade será um componente diferente, projetado para consumir o mí
 
 O \textit{framework} segue o padrão caixa-branca, pois é desejável que o mesmo seja transparente e configurável pelo usuário. O usuário do \textit{framework} é livre para usar as implementação já prontas dos algoritmos de definição de trajetória e melhor caminho ou criar as suas próprias a partir das classes abstratas dadas. Além disso o usuário deve conhecer as sub-classes existentes para optar por uma delas ao utilizar o \textit{framework}.
 
-O diagrama de componentes abaixo mostra os módulos do sistema e suas interações. Nele mostramos quais componentes são conhecidos por quais, mas não quais classes. Levando em conta o princípio de programar para interfaces, as classes conhecidas serão sempre as interfaces e classes abstratas (exceto nos compententes de estrutra de dados). Para simplificar o diagrama, as classes concretas foram retiradas e criado um diagrama para detalhar cada módulo.
+O diagrama de componentes da figura 21 mostra os módulos do sistema e suas interações. Nele mostramos quais componentes são conhecidos por quais, mas não quais classes. Levando em conta o princípio de programar para interfaces, as classes conhecidas serão sempre as interfaces e classes abstratas (exceto nos compententes de estrutra de dados). Para simplificar o diagrama, as classes concretas foram retiradas e criado um diagrama para detalhar cada módulo.
 
 \begin{figure}[h]
 	\centering
-	\label{fig20}
+	\label{fig21}
 		\includegraphics[keepaspectratio=true,scale=0.4]{figuras/componentes.png}
 	\caption{diagrama de pacotes do sistema}
 \end{figure}
@@ -53,7 +53,7 @@ A seguir cada componente é descrito mais detalhadamente e abordado suas classes
 
 \begin{figure}[h]
 	\centering
-	\label{fig21}
+	\label{fig22}
 		\includegraphics[keepaspectratio=true,scale=0.5]{figuras/pkgcontroller.png}
 	\caption{componente Controller}
 \end{figure}
@@ -66,11 +66,11 @@ Os padrões utilizados são os o Fachada e a Injeção de Dependência.
 
 É também atribuído a esse módulo a responsabilidade por criar a estrutura local do mapa. O controlador o inicializa e define os pontos iniciais e finais, além de limpá-lo das alterações feitas ao final, deixando ao componente PathPlanner apenas a tarefa de utiliza-lo.
 
-O diagrama de sequência apresentado na seção 2.4 mostra de forma bastante superficial o funcionamento do sistema para dar uma visão geral das funcionalidades e sequência de ações. O diagrama abaixo demonstra mais aprofundadamente como realmente é feito o trabalho do framework, com foco no componente controller.
+O diagrama de sequência apresentado na seção 2.4 mostra de forma bastante superficial o funcionamento do sistema para dar uma visão geral das funcionalidades e sequência de ações. O diagrama na figura 23 demonstra mais aprofundadamente como realmente é feito o trabalho do framework, com foco no componente controller.
 
 \begin{figure}[h]
 	\centering
-	\label{fig22}
+	\label{fig23}
 		\includegraphics[keepaspectratio=true,scale=0.4]{figuras/executeController.png}
 	\caption{diagrama de sequência do componente controller}
 \end{figure}
@@ -79,7 +79,7 @@ O diagrama de sequência apresentado na seção 2.4 mostra de forma bastante sup
 
 \begin{figure}[h]
 	\centering
-	\label{fig23}
+	\label{fig24}
 		\includegraphics[keepaspectratio=true,scale=0.5]{figuras/pkgmap.png}
 	\caption{componente Map}
 \end{figure}
@@ -92,7 +92,7 @@ Para proteger os dados do mapa, seus valores são todos passados via construtor 
 
 \begin{figure}[h]
 	\centering
-	\label{fig24}
+	\label{fig25}
 		\includegraphics[keepaspectratio=true,scale=0.5]{figuras/pkgpathplanner.png}
 	\caption{componente PathPlanner}
 \end{figure}
@@ -105,7 +105,7 @@ Graças à interface comum aos algoritmos é possível tratá-los de forma igual
 
 \begin{figure}[h]
 	\centering
-	\label{fig25}
+	\label{fig26}
 		\includegraphics[keepaspectratio=true,scale=0.5]{figuras/pkggraph.png}
 	\caption{componente Graph}
 \end{figure}
@@ -118,7 +118,7 @@ A classe grafo possui métodos para a construção, busca e eliminação de nós
 
 \begin{figure}[h]
 	\centering
-	\label{fig26}
+	\label{fig27}
 		\includegraphics[keepaspectratio=true,scale=0.5]{figuras/pkgbestPath.png}
 	\caption{componente BestPath}
 \end{figure}
@@ -167,7 +167,7 @@ O robô é considerado como um ponto (seu centro), o que pode gerar problemas se
 
 \begin{figure}[h]
 	\centering
-	\label{fig27}
+	\label{fig28}
 		\includegraphics[keepaspectratio=true,scale=0.5]{figuras/expansao.png}
 	\caption{obstáculo real em preto e a expansão incrementada em amarelo \cite{MRIT_SITE}}
 \end{figure}

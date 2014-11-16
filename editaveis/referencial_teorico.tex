@@ -12,7 +12,7 @@ O termo robô foi criado em 1921 pelo dramaturgo tcheco Karel Capek, em sua obra
 
 \cite{Mataric2007} apresenta uma definição mais genérica, que abrange não só robôs industriais, mas todos os grupos, segundo ele "um robô é um sistema autônomo que existe no mundo físico, que reconhece o ambiente a volta e poder agir sobre ele para alcançar suas metas".
 
-Segundo \cite{Secchi2008} existem três tipos de robôs: industriais, médicos e móveis, apesar das demais bibliografias fazerem referência apenas aos robôs industriais e móveis.
+Segundo \cite{Secchi2008} existem três tipos de robôs: industriais, médicos e móveis, apesar das demais bibliografias fazerem referência apenas aos robôs industriais e móveis. Essas duas áreas podem se dividir em diversos mercados menores (principalmente os móveis), como militar, de entretenimento, doméstico, etc.
 
 \subsection{Robôs industriais e móveis}
 
@@ -46,7 +46,7 @@ A definição das rodas determina a quantidade de liberdade de movimento da estr
 
 \cite{Secchi2008} e \cite{Borenstein1996} também apresentam máquinas do modelo triciclo, que possuem uma roda orientável centralizada afrente e duas convencionais presas ao mesmo eixo atrás, como as rodas de trás de um carro. A roda da frente tem função de direcionar e de tração, enquanto as duas traseiras apenas acompanham o movimento. Outro modelo semelhante é o modelo de quadriciclo, que funciona igual a um carro, com duas rodas de tração-direção na frente ligadas ao mesmo motor e atrás duas rodas de tração também presas ao mesmo eixo. 
 
-Ambos os modelos acima sofrem erros de odometria (estimação da posição do robô) e apresentam problemas de derrapagem em curvas. Essa derrapagem ocorre pelo fato da roda interna à curva fazer um arco menor que a roda externa, obrigando essa a derrapar e desgastar o pneu. Esse problema pode ser consertado com um modelo chamado \textit{Ackerman Steering}. Segundo \cite{Borenstein1996}, \cite{Secchi2008} e \cite{Bagnall2011} o sistema \textit{Ackerman} inclina mais uma roda que a outra para compensar a diferença de espaço percorrido, fazendo com que o eixo de cada roda sempre esteja apontando para o centro da curva, conforme a Fig.3 mostra.
+Ambos os modelos acima sofrem erros de odometria (estimação da posição do robô) e apresentam problemas de derrapagem em curvas. Essa derrapagem ocorre pelo fato da roda interna à curva fazer um arco menor que a roda externa, obrigando essa a derrapar e desgastar o pneu. Esse problema pode ser consertado com um modelo chamado \textit{Ackerman Steering}. Segundo \cite{Borenstein1996}, \cite{Secchi2008} e \cite{Bagnall2011} o sistema \textit{Ackerman} inclina mais uma roda que a outra para compensar a diferença de espaço percorrido, fazendo com que o eixo de cada roda sempre esteja apontando para o centro da curva, conforme a figura 3 mostra.
 
 \begin{figure}[h]
 	\centering
@@ -59,7 +59,7 @@ Robôs do tipo \textit{differential steering} possuem três rodas: duas fixas pa
 
 \section{Software na robótica}
 
-A nível de software a robótica móvel apresenta diversos desafios a serem superados. Dotar uma máquina com a capacidade de locomover-se sozinha esconde diversas dificuldades, que advém do fato de que a navegação deve integrar sensoriamento, atuação, planejamento, arquitetura, hardware, eficiência e computação \cite{Souza2008}. A navegação do robô por um terreno envolve mapeamento da região, controle dos motores, sensoriamento, auto-localização e definição de trajetória. Uma visão geral sobre cada uma é dada a seguir para ajudar a compreender o trabalho de navegação como um todo e a importância de cada um.
+A nível de software a robótica móvel apresenta diversos desafios a serem superados. Dotar uma máquina com a capacidade de locomover-se sozinha esconde diversas dificuldades, que advém do fato de que a navegação deve integrar sensoriamento, atuação, planejamento, arquitetura, hardware, eficiência e computação \cite{Souza2008}. A navegação do robô por um terreno envolve mapeamento da região, controle dos motores, sensoriamento, auto-localização e definição de trajetória. Uma visão geral sobre cada uma é dada a seguir para auxiliar a compreensão do trabalho de navegação como um todo e a importância de cada um.
 
 \subsection{Dificuldades da robótica móvel}
 
@@ -67,7 +67,7 @@ A primeira dificuldade da navegação de um robô é a correta locomoção do ro
 
 Outro desafio é definir a real posição da máquina. A locomoção nem sempre ocorre como esperado. Derrapagem, atoleiros e forças externas que empurram o robô geram uma alteração da sua real posição com a esperada inicialmente. A odometria procura obter incrementalmente informações do movimento do robô, lendo a quantidade de giros que cada roda realizou para determinar a localização final. Porém essa solução possui alto índice de erros cumulativos que o tornam inadequado para longas distâncias \cite{Pereira2003}. Outras soluções são a de \textit{beacons} (faróis), que se comunicam com o robô dando sua coordenada dentro daquela região mapeada. O sistema de \textit{beacon} mais abrangente é o de GPS, porém faróis locais também são comuns para localização dentro de áreas pré-determinadas. Marcas no chão para auto localização pelo robô também são muito usados em ambientes fechados. Outra solução é através de processamento de imagens, onde o robô conhece alguns objetos ou locais únicos e suas posições no mapa e ao passar por estes referenciais é capaz de inferir sua posição. \cite{Borenstein1996} explica cada um dos algoritmos de localização.
 
-O mapeamento consiste na modelagem do ambiente que contém o robô através do uso de mapas obtidos pelo sistema sensorial ou previamente armazenados \cite{Souza2008}. Considerando o sensoriamento, a forma de escanear a região depende muito dos tipos de sensores usados e seu alcance. Uma representação do mundo real dentro da máquina ajuda nas tomadas de decisão apesar de ocupar muita memória.
+O mapeamento consiste na modelagem do ambiente que contém o robô através do uso de mapas obtidos pelo sistema sensorial ou previamente armazenados \cite{Souza2008}. Considerando o sensoriamento, a forma de escanear a região depende muito dos tipos de sensores usados e seu alcance. Uma representação do mundo real dentro da máquina facilita nas tomadas de decisão apesar de ocupar muita memória.
 
 A definição do caminho a ser percorrido também gera um desafio. Apesar de ser algo complexo, não necessariamente é mais crítico ou mais difícil que os anteriores. Porém, por ser o tema deste trabalho, será abordado mais profundamente que os demais no tópico a seguir.
 
@@ -75,7 +75,7 @@ A definição do caminho a ser percorrido também gera um desafio. Apesar de ser
 
 Há duas estratégias mais abordadas para a definição de trajetórias: uma em que o robô não conhece nada ao seu redor (algoritmos locais) e uma em que o robô conhece previamente todo o ambiente (algoritmos globais).
 
-\cite{Guzman2008} explica que os algoritmos locais o robô procura seguir em linha reta até um ponto desejado e ao encontrar um obstáculo ele contorna o objeto até que não detecte mais nada entre ele e o ponto final. Neste tipo de algoritmo a comunicação com os sensores de presença se fazem essencial. Um defeito deste paradigma é encontrar um mínimo local, aonde o robô entra mas não consiga sair \cite{Souza2008}. \cite{Secchi2008} explica o funcionamento de alguns métodos locais. 
+\cite{Guzman2008} explica que os algoritmos locais o robô procura seguir em linha reta até um ponto desejado e ao encontrar um obstáculo ele contorna o objeto até que não detecte mais nada entre ele e o ponto final. Neste tipo de algoritmo a comunicação com os sensores de presença se fazem essencial. Um defeito deste paradigma ocorre ao encontrar um mínimo local, aonde o robô entra mas não consiga sair \cite{Souza2008}. \cite{Secchi2008} explica o funcionamento de alguns métodos locais. 
 
 Dentre os algorítmos locais, um que vale ser comentado é o algorítmo potencial, comentado por \cite{Secchi2008}, \cite{Souza2008}, \cite{Guzman2008}, \cite{Choset2005}, \cite{Siegwart2004} e \cite{Thomsen2010}. Este algorítmo funciona sem uma rota pré-definida e, ao invés disso, usa uma ideia de atração e repulsão para se locomover. O objetivo tem um efeito atrativo, puxando o robô para sua direção enquanto os obstáculos tem efeito repulsivo, distanciando o robô de si. Como o ponto final é conhecido desde o início ele tem seu efeito atrativo funcionando a todo instante enquanto o efeito repulsivo dos obstáculos só ocorre quando o obstáculo está ao alcance dos sensores.
 
@@ -87,7 +87,7 @@ Os dois podem ser usados juntos para obter melhores resultados, usando o global 
 
 Os deliberativos conhecem o mapa todo previamente e fazem toda a análise antes de agir. Essa análise prévia é descrita como o grande problema desse paradigma, pois o robô precisa ficar muito tempo parado para tomar a decisão. "Se o problema exige uma grande dose de planejamento antecipado e não envolve nenhuma pressão de tempo, e, ao mesmo tempo que apresenta um ambiente estático e baixa incerteza na execução, então esse paradigma atende bem ao caso" \cite{Mataric2007}. 
 
-Os reativos possuem a mesma descrição que os algoritmos locais definidos por \cite{Guzman2008}, \cite{Souza2008} e os demais autores. "Ele é baseado em uma estreita ligação entre os sensores e atuadores do robô. Sistemas puramente reativos não usa quaisquer representações internas do ambiente. Eles operam em uma escala de tempo curto e reagem à informações sensoriais atuais." ({Mataric2007}). Isso os dá agilidade de processamento, porém não garante confiabilidade.
+Os reativos possuem a mesma descrição que os algoritmos locais definidos por \cite{Guzman2008}, \cite{Souza2008} e os demais autores. "Ele é baseado em uma estreita ligação entre os sensores e atuadores do robô. Sistemas puramente reativos não usa quaisquer representações internas do ambiente. Eles operam em uma escala de tempo curto e reagem à informações sensoriais atuais." \cite{Mataric2007}. Isso os dá agilidade de processamento, porém não garante confiabilidade.
 
 A navegação híbrida é uma mistura dos dois. A ideia básica por trás deste paradigma é obter o melhor dos dois mundos: a velocidade de controle reativo e os cérebros de controle deliberativo. Isso é alcançado através de três camadas, um planejador deliberativo, um reativo que comunica com os atuadores e uma intermediária ligando as duas. Essa solução usa os algoritmos deliberativos para longas distâncias (definindo o percurso de forma macro até o ponto final) e os reativos para distâncias curtas, entre cada ponto do percurso. Como já dito acima, \cite{Souza2008} dá uma descrição parecida de navegação híbrida, apesar de não usar essa nomenclatura. O problema desta solução é a dificuldade de implementá-la.
 
@@ -97,7 +97,7 @@ Há outros métodos de definição de trajetória. \cite{Guzman2008} comenta rap
 
 \subsection{Visão geral sobre navegação}
 
-\cite{Vieira2005} define uma arquitetura de navegação de robôs móveis, onde cada camada é uma área de pesquisa e juntas realizam a navegação do robô (figura 04). A primeira é a percepção do ambiente pelo robô, através de sensores. Após tratar esses dados e saber o que o cerca, é executada a camada de decisão, onde a máquina avalia a informação e decide que ações tomar. Essa camada é o cérebro do robô e pode possuir algoritmos de inteligência artificial	.
+\cite{Vieira2005} define uma arquitetura de navegação de robôs móveis, onde cada camada é uma área de pesquisa e juntas realizam a navegação do robô (figura 04). A primeira é a percepção do ambiente pelo robô, através de sensores. Após tratar esses dados e saber o que o cerca, é executada a camada de decisão, onde a máquina avalia a informação e decide que ações tomar. Essa camada é o cérebro do robô e pode possuir algoritmos de inteligência artificial.
 
 \begin{figure}[h]
 	\centering
@@ -145,9 +145,16 @@ Um mapa é uma representação simplificada do mundo real dentro da memória do 
 
 \cite{Choset2005} descreve três formas de construir um mapa: topologia, geometria e por malhas. Um mapa topológico é baseado em grafo, onde cada nó representa um local distinguível e as arestas são o caminho entre um local e outro. Qualquer ponto que possa ser diferenciável (uma sala, uma encruzilhada, uma marca no chão...) pode ser um nó. \cite{Mataric2007} descreve os mapas topológicos como um mapa baseado em "\textit{landmarks}" (marcas). Por ser baseado nas características físicas do ambiente, as arestas ligando estes pontos não necessariamente são uma linha reta ou um corredor a ser seguido, mas uma série de movimentos que o leva até aquele ponto (segue reto, vira na primeira a direita e à esquerda na junção em "T").
 
-O modelo geométrico usa formas geométricas para representar o ambiente \cite{Choset2005}. Ele detecta o ambiente e os obstáculos com maior detalhamento e define um objeto com o formato mais próximo do real. 
+O modelo geométrico usa formas geométricas para representar o ambiente \cite{Choset2005}. Ele detecta o ambiente e os obstáculos com maior detalhamento e define um objeto com o formato mais próximo do real. \cite{Secchi2008} afirma que um mapa geométrico representa os objetos de acordo com suas relações geométricas absolutas como um mapa de polígonos e linhas. Ele também afirma que este modelo é empregado em navegação baseada em uma planificação (como uma planta baixa) com base em coordenadas geométricas e trajetórias pré-fixadas. 
 
 O modelo de malha de ocupação (\textit{occupancy grid}) divide o espaço em uma matriz, onde cada célula representa um pequeno pedaço do ambiente e seu valor a propabilidade daquela célula está ocupada. \cite{Borenstein1996} lista as vantagens e desvantagens da malha de ocupação, essa abordagem permite maior densidade de dados, requer menos processamento ao longo da definição de trajetória e é mais fácil de criar, porém possui áreas de incerteza, tem dificuldades com obstáculos dinâmicos e exige um processo de estimativa complexo.
+
+\begin{figure}[h]
+	\centering
+	\label{fig06}
+		\includegraphics[keepaspectratio=true,scale=0.6]{figuras/mapas.png}
+	\caption{diferentes tipos de mapeamento: a) mapa real b) mapa geométrico c) grade de ocupação d) topológico}
+\end{figure}
 
 \subsection{Otimização do processo de mapeamento}
 
@@ -159,7 +166,7 @@ Porém, mesmo abstraindo o máximo de informações, o espaço ocupado na memór
 
 Há duas abordagens para a busca pelo menor caminho nos mapas, os \textit{roadmaps} e a decomposição celular.
 
-Um \textit{roadmap} é um mapa com um conjunto de posições específicas livres (nós). O \textit{roadmap} liga duas posições através de um caminho livre, não necessariamente linear (aresta). \cite{Choset2005} define um \textit{roadmap} como uma classe de mapa topológico e o compara como um mapa de uma auto-estrada, que liga locais específicos por caminhos que se possam trafegar formando um grafo.
+Um \textit{roadmap} é um mapa com um conjunto de posições específicas livres (nós). O \textit{roadmap} liga duas posições através de um caminho livre, não necessariamente linear (aresta). \cite{Choset2005} define um \textit{roadmap} como uma classe de mapa topológico e o compara a um mapa de uma auto-estrada, que liga locais específicos por caminhos que se possam trafegar formando um grafo.
 
 A decomposição celular porém funciona dividindo o mapa em regiões livres, aonde qualquer lugar dentro daquela região é navegável. As regiões vizinhas são deslocáveis de uma para outra, podendo passar pela borda entre eles sem problemas. Assim, os algoritmos que usam essa abordagem ligam as regiões vizinhas como nós adjacentes em um grafo, dizendo que aquelas duas regiões são trafegáveis entre si. As regiões podem ter todas o mesmo tamanho ou variar drasticamente, mas o robô deve sempre caber em seu interior.
 
@@ -169,11 +176,11 @@ A decomposição celular é dividida em dois sub-gupos: a exata, aonde cada regi
 
 Como comentado anteriormente, o foco do trabalho será na definição de trajetória usando algoritmos globais. Esse grupo de algoritmos já conhecem o ambiente, tendo um mapa da região e dos obstáculos presentes. A partir deste mapeamento é definido uma trajetória para o robô percorrer sem colidir com nenhum dos obstáculos. Os obstáculos serão considerados estáticos para este trabalho.
 
-Para fazer essa análise, os algoritmos transformam o mapa em um grafo e depois rodam um algoritmo de melhor caminho nele (como por exemplo Djikstra ou A*) para definir a trajetória. Cada algoritmo gera um grafo diferente e, portanto, uma trajetória diferente. Porém após definido o grafo todos funcionam de forma semelhante, rodando o algoritmo de Djikstra ou semelhante para solucioná-lo e criar o percurso \cite{Guzman2008}. A figura 06 mostra o diagrama de sequência que ilustra esse funcionamento, onde a classe PathPlaning representa a classe do sistema projetado que abstrai o funcionamento.
+Para fazer essa análise, os algoritmos transformam o mapa em um grafo e depois rodam um algoritmo de melhor caminho nele (como por exemplo Djikstra ou A*) para definir a trajetória. Cada algoritmo gera um grafo diferente e, portanto, uma trajetória diferente. Porém após definido o grafo todos funcionam de forma semelhante, rodando o algoritmo de Djikstra ou semelhante para solucioná-lo e criar o percurso \cite{Guzman2008}. A figura 07 mostra o diagrama de sequência que ilustra esse funcionamento, onde a classe PathPlaning representa a classe do sistema projetado que abstrai o funcionamento.
 
 \begin{figure}[h]
 	\centering
-	\label{fig06}
+	\label{fig07}
 		\includegraphics[keepaspectratio=true,scale=0.6]{figuras/5diagramaSequencia.png}
 	\caption{diagrama de sequência da criação do caminho}
 \end{figure}
@@ -192,7 +199,7 @@ Segundo \cite{Thomsen2010} e \cite{Choset2005} a complexidade deste algorítmo �
 
 \begin{figure}[h]
 	\centering
-	\label{fig07}
+	\label{fig08}
 		\includegraphics[keepaspectratio=true,scale=0.6]{figuras/7visibilityGraph.png}
 	\caption{grafos de visibilidade a) tradicional b) com expansão dos obstáculos \cite{Thomsen2010} e \cite{MRIT_SITE}}
 \end{figure}
@@ -209,7 +216,7 @@ Para montar as células, o algoritmo primeiramente precisa receber um conjunto d
 
 \begin{figure}[h]
 	\centering
-	\label{fig08}
+	\label{fig09}
 		\includegraphics[keepaspectratio=true,scale=0.6]{figuras/8voronoi.png}
 	\caption{Diagrama de Voronoi \cite{Siegwart2004}}
 \end{figure}
@@ -218,11 +225,11 @@ Para montar as células, o algoritmo primeiramente precisa receber um conjunto d
 
 A decomposição aproximada, também chamada de Quadtree, divide o mapa em regiões e executa um método recursivo para continuar dividindo cada região em áreas cada vez menores \cite{Thomsen2010}. Essa divisão recursiva pode parar de duas formas: ou quando chegar em um tamanho mínimo ou quando toda sua região estiver livre ou ocupada. Ainda segundo \cite{Thomsen2010} esse método recebe este nome porque uma região é dividida em quatro células menores de mesma forma cada vez que se decompõe.
 
-Assim, O método do Quadtree divide o mapa em áreas de formato pré-determinado, porém com tamanhos diferentes de acordo com o espaçamento entre os obstáculos. Isso pode gerar a perda de caminhos estreitos por serem colocadas na mesma área que uma parte do obstáculo. Isso pode ser resolvido diminuindo a área mínima de cada região, porém acarretará no aumento de memória gasta e tempo de processamento da solução do trajeto. \cite{Siegwart2004} exemplifica este caso na figura abaixo.
+Assim, O método do Quadtree divide o mapa em áreas de formato pré-determinado, porém com tamanhos diferentes de acordo com o espaçamento entre os obstáculos. Isso pode gerar a perda de caminhos estreitos por serem colocadas na mesma área que uma parte do obstáculo. Isso pode ser resolvido diminuindo a área mínima de cada região, porém acarretará no aumento de memória gasta e tempo de processamento da solução do trajeto. \cite{Siegwart2004} exemplifica este caso na figura 10.
 
 \begin{figure}[h]
 	\centering
-	\label{fig09}
+	\label{fig10}
 		\includegraphics[keepaspectratio=true,scale=0.5]{figuras/9quadtree.png}
 	\caption{ a) decomposição celular usando regiões de tamanho fixo b) Quadtree encontrando um caminho estreito entre dois obstáculos \cite{Siegwart2004}}
 \end{figure}
@@ -237,11 +244,11 @@ O algorítmo começa na posição final e o dar uma valor inicial qualquer. Toda
 
 Este método permite chegar ao objetivo a partir de qualquer célula. Células com obstáculos são desconsiderados pelos vizinhos. 
 
-Ao finalizar um grafo é feito ligando o ponto inicial à todas as células vizinhas com menor valor. Essas células por sua vez são ligadas às vizinhas com menor valor e assim por diante até todas as células passarem por essa função. Isso fará com que nem todas as células entrem no grafo, sendo inserido nele apenas os caminhos por onde o valor diminui. A figura 10 exemplifica a montagem do grafo.
+Ao finalizar um grafo é feito ligando o ponto inicial à todas as células vizinhas com menor valor. Essas células por sua vez são ligadas às vizinhas com menor valor e assim por diante até todas as células passarem por essa função. Isso fará com que nem todas as células entrem no grafo, sendo inserido nele apenas os caminhos por onde o valor diminui. A figura 11 exemplifica a montagem do grafo.
 
 \begin{figure}[h]
 	\centering
-	\label{fig10}
+	\label{fig11}
 		\includegraphics[keepaspectratio=true,scale=0.5]{figuras/10wavefront.png}
 	\caption{algorítmo Wavefront, com grafo em azul \cite{MRIT_SITE}}
 \end{figure}
@@ -278,7 +285,7 @@ Existem diversas formas de se estruturar uma arquitetura, os mais comuns são a 
 
 \begin{figure}[h]
 	\centering
-	\label{fig11}
+	\label{fig12}
 		\includegraphics[keepaspectratio=true,scale=0.5]{figuras/arqcamadas.jpg}
 	\caption{exemplo de arquitetura em camadas, \cite{Larman2005}}
 \end{figure}
@@ -317,11 +324,11 @@ O padrão caixa-cinza revela alguns detalhes de seu funcionamento e permite exte
 
 Determinar quais são os \textit{hot-spots} é uma das principais tarefas do desenvolvedor de \textit{frameworks}. Cada \textit{hot-spot} deve possuir uma interface da qual herdará. Essa interface serve para padronizar a comunicação e definir qual deve ser o comportamento daquele módulo. O \textit{framework} pode ou não vir com alguma implementação padrão e básica da interface.
 
-Cada \textit{hot-spot} deve ser bem especificado pelo desenvolvedor do \textit{framework} para que o usuário saiba como construir suas customizações. \cite{Fayad1999} defende que uma profunda análise do domínio e dos \textit{hot-spots} devem ser realizados, realzando e documentando uma análise alto nível dos \textit{hots spots}, uma especificação mais aprofundada dessas tarefas, o desenho alto nível de seus subsistemas e por fim codificar este desenho em uma classe abstrata e generalizações (se houver). Em um \textit{framework} caixa-preta deve haver uma série de implementações da interface já prontas para o usuário escolher qual utilizar enquanto no \textit{framework} caixa-branca o usuário deve desenvolver sua própria classe. Isso pode ser trabalhoso se a documentação da interface estver mal feita ou incompleta. A imagem abaixo ilustra a diferença entre as duas abordagens quanto aos ganchos \textit{hot-spot}.
+Cada \textit{hot-spot} deve ser bem especificado pelo desenvolvedor do \textit{framework} para que o usuário saiba como construir suas customizações. \cite{Fayad1999} defende que uma profunda análise do domínio e dos \textit{hot-spots} devem ser realizados, realzando e documentando uma análise alto nível dos \textit{hots spots}, uma especificação mais aprofundada dessas tarefas, o desenho alto nível de seus subsistemas e por fim codificar este desenho em uma classe abstrata e generalizações (se houver). Em um \textit{framework} caixa-preta deve haver uma série de implementações da interface já prontas para o usuário escolher qual utilizar enquanto no \textit{framework} caixa-branca o usuário deve desenvolver sua própria classe. Isso pode ser trabalhoso se a documentação da interface estver mal feita ou incompleta. A figura 13 ilustra a diferença entre as duas abordagens quanto aos ganchos \textit{hot-spot}.
 
 \begin{figure}[h]
 	\centering
-	\label{fig12}
+	\label{fig13}
 		\includegraphics[keepaspectratio=true,scale=0.3]{figuras/hotspotbox.jpg}
 	\caption{\textit{hot-spot} em um \textit{framework} caixa-preta e caixa-branca. \cite{Fayad1999}}
 \end{figure}
@@ -332,7 +339,7 @@ Um subsistema \textit{hot-spot} pode conter apenas a classe base e suas extensõ
 
 \begin{figure}[h]
 	\centering
-	\label{fig13}
+	\label{fig14}
 		\includegraphics[keepaspectratio=true,scale=0.4]{figuras/subsistemaHotspot.jpg}
 	\caption{Estruturas dos subsistemas \textit{hot-spot}. \cite{Fayad1999}}
 \end{figure}
@@ -341,11 +348,11 @@ Em resumo, um \textit{framework} caixa-branca costuma ser baseado em herança ou
 
 \subsection{Processo de desenvolvimento orientado a hot-spots}
 
-Um bom \textit{framework} nunca é feito de uma vez. A modelagem do domínio, análise dos pontos de variação e seu projeto são atividades iterativas, sendo sempre incrementadas e aperfeiçoadas. Assim, a modelagem de um \textit{framework} é uma tarefa iterativa e incremental, sendo constantemente alterada, melhorada e acrescentada novos \textit{hot-spots}. Os já existentes são avaliados se foram corretamente projetados e se fornecem abertura suficiente para personalização pelo usuário e mantêm o baixo acoplamento e a alta coesão. Todo esse processo gira em torno dos \textit{hot-spots}, permanecendo até que todo o modelo de domínio tenha sido esmiuçado e os \textit{hot-spots} levantados tenham sido analisados, projetados e implementados. A imagem a seguir esboça o fluxo de trabalho do processo orientado aos \textit{hot-spots}.
+Um bom \textit{framework} nunca é feito de uma vez. A modelagem do domínio, análise dos pontos de variação e seu projeto são atividades iterativas, sendo sempre incrementadas e aperfeiçoadas. Assim, a modelagem de um \textit{framework} é uma tarefa iterativa e incremental, sendo constantemente alterada, melhorada e acrescentada novos \textit{hot-spots}. Os já existentes são avaliados se foram corretamente projetados e se fornecem abertura suficiente para personalização pelo usuário e mantêm o baixo acoplamento e a alta coesão. Todo esse processo gira em torno dos \textit{hot-spots}, permanecendo até que todo o modelo de domínio tenha sido esmiuçado e os \textit{hot-spots} levantados tenham sido analisados, projetados e implementados. A figura 15 esboça o fluxo de trabalho do processo orientado aos \textit{hot-spots}.
 
 \begin{figure}[h]
 	\centering
-	\label{fig14}
+	\label{fig15}
 		\includegraphics[keepaspectratio=true,scale=0.4]{figuras/hotspotdd.jpg}
 	\caption{Processo de desenvolvimento orientado a \textit{hot-spot}. \cite{Fayad1999}}
 \end{figure}
@@ -360,7 +367,7 @@ Um \textit{hot-spot card} contém informações sobre a semântica e o desejado 
 
 \begin{figure}[h]
 	\centering
-	\label{fig15}
+	\label{fig16}
 		\includegraphics[keepaspectratio=true,scale=0.4]{figuras/hotspotcard.jpg}
 	\caption{\textit{hot-spot card}. \cite{Fayad1999}}
 \end{figure}
