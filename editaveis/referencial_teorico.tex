@@ -153,7 +153,7 @@ O modelo de malha de ocupação (\textit{occupancy grid}) divide o espaço em um
 	\centering
 	\label{fig06}
 		\includegraphics[keepaspectratio=true,scale=0.6]{figuras/mapas.png}
-	\caption{diferentes tipos de mapeamento: a) mapa real b) mapa geométrico c) grade de ocupação d) topológico}
+	\caption{diferentes tipos de mapeamento: a) mapa real b) mapa geométrico c) grade de ocupação d) topológico \cite{Siegwart2004}}
 \end{figure}
 
 \subsection{Otimização do processo de mapeamento}
@@ -404,10 +404,24 @@ O ROS (Robot Operating System) é um \textit{framework} \textit{open-source} que
 
 \subsection{Tese de Morten Strandberg}
 
-Morten \cite{Strandberg2004} realiza em sua tese de phd um framework que facilita na criação e avaliação de planejadores de caminho. Seu trabalho não se restringe apenas à robótica móvel, mas qualquer aplicação que use de planejadores de caminho, embora seu foco seja na robótica industrial. Ele considera o ambiente onde o robô estará como dinâmico, ou seja, os obstáculos podem se mover.
+Morten \cite{Strandberg2004} realiza em sua tese de phd um \textit{framework} que facilita na criação e avaliação de planejadores de caminho. Seu trabalho não se restringe apenas à robótica móvel, mas qualquer aplicação que use de planejadores de caminho, embora seu foco seja na robótica industrial. Ele considera o ambiente onde o robô estará como dinâmico, ou seja, os obstáculos podem se mover.
 
 \cite{Strandberg2004} divide os conceitos em quatro grupos: representação geométrica dos obstáculos, a detecção de colisão, o planejamento da trajetória e os modelos de movimento do robô. Com isso é perceptível que o trabalho vai além de puramente definir a trajetória, pois lida com o sensoriamento constante e a atuação dos motores para movimentação do robô.
 
-O framework foi construído a partir das técnicas de orientação a objetos e de padrões de projeto, visando a fácil estenção, usabilidade, portabilidade e o baixo acoplamento. Para isso o autor definiu um conjunto de componentes, cada um com uma responsabilidade diferente. Cada componente possui uma hierarquia de classes de baixo acoplamento que realizam as tarefas, baseadas em uma interface comum a todo o componente. Essa interface facilita uma comparação justa entre diferentes implementações de definição de trajetória.
+O \textit{framework} foi construído a partir das técnicas de orientação a objetos e de padrões de projeto, visando a fácil estenção, usabilidade, portabilidade e o baixo acoplamento. Para isso o autor definiu um conjunto de componentes, cada um com uma responsabilidade diferente. Cada componente possui uma hierarquia de classes de baixo acoplamento que realizam as tarefas, baseadas em uma interface comum a todo o componente. Essa interface facilita uma comparação justa entre diferentes implementações de definição de trajetória.
 
 As métricas são feitas a partir de cálculos sobre a posição dos objetos e do ambiente. Quase todas as métricas são feitas a partir de uma equação como a métrica Manhattan ou a de corpo rígido. As métricas e suas variações também formam um módulo do sistema, com sua própria hierarquia de classes e uma classe abstrata mãe que serve de interface para o resto do sistema.
+
+\section{Resumo do Capítulo}
+
+A robótica, em linhas gerais, lida com a construção de máquinas autônomas, capazes de realizar uma tarefa sem intervenção humana. Essa descrição é bastante genérica, mas revela a principal característica dos robôs, autonomia. Os robôs mais comuns são os industriais, presentes nas linhas de montagens da indústria, e os móveis, presentes nos mais diversos nichos de mercado como entretenimento, pesquisa e militar. A principal diferença entre os dois é o robô móvel não ter uma base fixa, podendo se locomover em um ambiente para realizar um trabalho.
+
+Dentre todas as dificuldades da robótica móvel, a navegação é com maior destaque. Englobando todas as dificuldades para a locomoção do robô, essa área pode ser dividida em sensoriamento e mapeamento, cinemática do robô, definição de trajetória, auto-localização, entre outros.
+
+A definição de trajetória pode ser dividida em dois grupos: algoritmos globais e locais. Os globais recebem um mapa de todo o ambiente e, através de algoritmos específicos, definem o melhor caminho para seguirem sem haver choque com os obstáculos. Os locais trabalham com os sesnores, sem conhecer o ambiente além do alcance dos sensores. Ele segue ao objetivo final desviando dos obstáculos conforme os detecta. Ambos os paradigmas podem trabalhar em conjunto, usando algoritmos globais para definir o caminho a longo prazo e os locais para garantir a segurança no trajeto entre cada par de pontos. Algoritmos com Grafo de Visibilidade, Voronoi, Quadtree e Wavefront definem um grafo com os caminhos livres de obstáculos e com um algoritmo que solucione um o melhor caminho do grafo (como Djikstra) é possível definir o percurso a ser seguido como uma lista de pontos até o objetivo final.
+
+A implementação do trabalho inclui a construção de um \textit{framework}, que é um conjunto de classes ou módulos que criam um projeto reutilizável para um específico nicho de software. A construção de um \textit{framework} é fortemente baseada na arquitetura que terá. Desenvolver a arquitetura, assim como o \textit{framework}, é projetar os componentes, dividir as responsabilidades e planejar as interações entre eles a fim de diminuir o acoplamento entre eles e torná-los mais independentes.
+
+O projeto de um \textit{framework} é baseado em padrões de projeto e \textit{hot-spots}. Os padrões de pojeto auxiliam na modularidade e reuso do código, enquanto os \textit{hot-spots} definem as áreas do código abertas para customização pelo usuário. Cada \textit{hot-spot} deve ser bem definido e projetado para que novas funcionalidades possa ser inseridas sem interfirir no fluxo de trabalho comum do sistema. O \textit{framework} ainda precisa definir se será caixa-preta ou caixa-branca e sua escolha interfere na visibilidade das classes e como os \textit{hot-spots} serão implementados pelo usuário final.
+
+Foi ainda abordado um processo de desenvolvimento específico para \textit{frameworks}, orientado a \textit{hot-spots}. Este processo procura desenvolver a partir dos pontos-chave do \textit{framework}, escolhendo um para ser analisado, projetado e implementado a cada iteração. Toda iteração também realiza uma avaliação da arquitetura para garantir que as novas mudanças não estão afetando a arquitetura de forma indesejada.

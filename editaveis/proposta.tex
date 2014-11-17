@@ -175,3 +175,11 @@ O robô é considerado como um ponto (seu centro), o que pode gerar problemas se
 Vale lembrar que esta expansão pode mudar o percurso do robô. Um percurso passando entre dois obstáculos pode ser fechado por este incremento. Isso impede que o robô entre em corredores muito estreito para ele ou entre em regiões côncavas de um obstáculo.
 
 Outra consideração são os obstáculos côncavos. \cite{Siegwart2004} e \cite{Guzman2008} abordam a eliminação de pontos que formem áreas côncavas nos obstáculos. O simulador MRIT citado também segue esta abordagem. Outros autores como \cite{Thomsen2010} e \cite{Choset2005} e  não fazem esta consideração, pois nem sempre o espaço côncavo de um polígono é pequeno a ponto de ser perigoso e por vezes pode ser o único caminho até o objetivo. Considerando que a expansão dos obstáculos já dificulta a chance de choque e que nós que representam um vértice de uma região côncava não serão escolhidos pelos algorítmos e que os espaços côncavos podem ser amplos eles não serão eliminados pelo \textit{framework}.
+
+\section{Resumo do Capítulo}
+
+Será desenvolvido um \textit{framework} de definição de trajetória implementando algoritmos globais. Como não se comunicam diretamete com sensores e atuadores seu desenvolvimento se torna mais indepedente de questões físicas da máquina.
+
+O \textit{framework} receberá um mapa do tipo malha de ocupação com os pontos inicial e final e, de acordo com o algorítmo escolhido, determina o melhor caminho. O usuário poderá escolher tanto o algoritmo global (Grafo de Visibilidade, Voronoi...) quanto o algoritmo de melhor caminho (Djikstra, A*). Estes dois componentes são os \textit{hot-spots} iniciais do sistema, podendo ser herdado e configurado conforme o usuário desejar. A comunicação do usuário com o \textit{framework}, além da escolha dos algoritmos, se dará pelo componente Controller, que abstrairá todo o funcionamento do algoritmo e fornecerá a lista de pontos ao usuário.
+
+O \textit{framework} terá cinco componentes: Graph (responsável pelo grafo), Controller (controlador do sistema), Map (responsável pelo mapa), PathPlanner (algoritmo global) e BestPath (algoritmo de melhor caminho). O desenvolvimento de cada um deles será embasada em boas práticas de programação e preocupado com a clareza e simplicidade do código.
