@@ -1,6 +1,6 @@
 \chapter[Proposta]{Proposta}
 
-Como já dito, a proposta deste trabalho é a construção de um \textit{framework} de definição de trajetória para robôs móveis, mais especificamente, algoritmos globais de definição de trajetória. Um mapa do ambiente é recebido da camada acima e o algoritmo cria um grafo a partir dele, definindo os caminhos livres que podem ser percorridos. Após isso é rodado um algoritmo de melhor caminho (como Djikstra) para definir o caminho a ser percorrido pelo robô. 
+A proposta deste trabalho é a construção de um \textit{framework} de definição de trajetória para robôs móveis, mais especificamente, algoritmos globais de definição de trajetória. Um mapa do ambiente é recebido da camada acima e o algoritmo cria um grafo a partir dele, definindo os caminhos livres que podem ser percorridos. Após isso é rodado um algoritmo de melhor caminho (como Djikstra) para definir o caminho a ser percorrido pelo robô. 
 
 A figura 19 demonstra as tarefas principais do \textit{framework}, bem como suas entradas e saídas. Essas entradas e saídas definem como ele se comunicará com as demais camadas do robô e as dependências dele para cumprir seu funcionamento. Cada tarefa apresentada se tornará um módulo do \textit{framework} e as interações entre eles as estruturas de dados utilizadas para se comunicarem.
  
@@ -20,23 +20,23 @@ A arquitetura geral do robô será considerada como na figura 20 apresentada por
 	\caption{arquitetura a navegação considerada, \cite{Nehmzow2003}}
 \end{figure}
 
-Como a camada acima é responsável pelo mapeamento e entrega o mapa completo, os algoritmos globais e este \textit{framework} não precisam se preocupar com comunicação com os sensores. A camada abaixo recebe a lista de coordenadas para onde deve ir e cuida do controle dos motores para chegar neles considerando os graus de liberdade do robô (que varia de acordo com sua estrutura física). Assim, a camada a ser criada não se comunica nem com os sensores nem com os motores, o que lhe dá maior independência das configurações de robô. Com isso é esperado que o \textit{framework} funcione em variados tipos de robôs, não apenas nos \textit{differential steering} testados.
+A definição de trajetória e o \textit{framework} participam da terceira camada. Como as camadas acima são responsáveis pelo mapeamento e entregam o mapa completo, os algoritmos globais e este \textit{framework} não precisam se preocupar com comunicação com os sensores. As camadas abaixo recebem a lista de coordenadas para onde deve ir e cuidam do controle dos motores para chegar neles considerando os graus de liberdade do robô (que varia de acordo com sua estrutura física). Assim, a camada a ser criada não se comunica nem com os sensores nem com os motores, o que lhe dá maior independência das configurações de robô. Com isso é esperado que o \textit{framework} funcione em variados tipos de robôs, não apenas nos \textit{differential steering} testados.
 
 A seguir é definido como funcionará os detalhes do \textit{framework} levantados no capítulo anterior.
 
 \section{O mapa}
 
-Todo o processo se inicia com o recebimento dele para então operar sobre o mesmo. Dentre os tipos de mapa apresentados no capítulo anterior o mapa esperado pelo \textit{framework} será uma malha de ocupação. Junto com a matriz será recebido os valores para terreno ocupado e livre. A seguir deve ser marcado no mapa quais são os pontos iniciais e finais.
+Todo o processo se inicia com o recebimento do mapa para então operar sobre o mesmo. Dentre os tipos de mapa apresentados no capítulo anterior o mapa esperado pelo \textit{framework} será uma malha de ocupação. Junto com a matriz será recebido os valores para terreno ocupado e livre. A seguir deve ser marcado no mapa quais são os pontos iniciais e finais.
 
 O \textit{framework} usa uma estrutura própria para armazenar estes dados, porém guarda referência aos dados originais da camada de sensoriamento, evitando o gasto excessivo de memória para a mesma informação. As alterações nos dados do mapa deverão ser revertidas ao fim do processamento do \textit{framework}, devolvendo ao mapa seus dados originais.
 
 \section{A arquitetura}
 
-A arquitetura de navegação costuma ser em camadas, como mostrado no capítulo anterior. Este \textit{framework} trabalhará dentro de uma destas camadas apenas e terá uma estrutura baseada em componentes. Uma arquitetura em camadas dentro de outra poderia gerar indireções desnecessárias, além de uma abordagem por componentes suprir melhor as necessidades do \textit{framework}.
+A arquitetura de navegação costuma ser em camadas, como mostrado no capítulo 2. Este \textit{framework} trabalhará dentro da camada de planejamento de trajetória e terá uma estrutura baseada em componentes. Uma arquitetura em camadas dentro de outra poderia gerar indireções desnecessárias, além de uma abordagem por componentes suprir melhor as necessidades do \textit{framework}.
 
 Cada funcionalidade será um componente diferente, projetado para consumir o mínimo de memória e depender o mínimo de outros componentes e de bibliotecas externas (incluindo as próprias do Java). Cada módulo terá a preocupação de ser o mais auto-suficiente possível, tendo apenas as interações necessárias para o seu funcionamento. Cada um dos módulos será constantemente avaliado quando a seu acoplamento, coesão,  simplicidade e facilidade de compreensão. Estas características serão melhor definidas na seção 4.4.
 
-O \textit{framework} segue o padrão caixa-branca, pois é desejável que o mesmo seja transparente e configurável pelo usuário. O usuário do \textit{framework} é livre para usar as implementação já prontas dos algoritmos de definição de trajetória e melhor caminho ou criar as suas próprias a partir das classes abstratas dadas. Além disso o usuário deve conhecer as sub-classes existentes para optar por uma delas ao utilizar o \textit{framework}.
+O \textit{framework} segue o padrão caixa-cinza, pois é desejável que o mesmo seja transparente e configurável pelo usuário. O usuário do \textit{framework} é livre para usar as implementação já prontas dos algoritmos de definição de trajetória e melhor caminho ou criar as suas próprias a partir das classes abstratas dadas. Além disso o fluxo de execução e alguns comportamentos são mantidos estáticos.
 
 O diagrama de componentes da figura 21 mostra os módulos do sistema e suas interações. Nele mostramos quais componentes são conhecidos por quais, mas não quais classes. Levando em conta o princípio de programar para interfaces, as classes conhecidas serão sempre as interfaces e classes abstratas (exceto nos compententes de estrutra de dados). Para simplificar o diagrama, as classes concretas foram retiradas e criado um diagrama para detalhar cada módulo.
 
@@ -133,7 +133,7 @@ Assim como no componente pathPlanner, o princípio de Variações Protegidas é 
 
 Como definido pelo processo de produção de \textit{framework} de \cite{Fayad1999} a análise de \textit{hot-spot} é algo iterativo, levantado ao longo da produção com apoio de um especialista. Porém, já de início foi realizado uma análise sobre todo o projeto e foram levantados os principais \textit{hot-spots} do sistema. Estes \textit{hot-spots} são o componente \textit{pathPlanner} e \textit{bestPath}. O usuário pode incrementar e configurar estes dois módulos, escolhendo entre abordagens e inserindo novas. Suas interfaces servem de gancho para mudanças.
 
-Para dar a variabilidade necessária para a variância destes pontos foi utilizado os padrões de dprojeto descritos no tópico acima. Eles dão a flexibilidade para mudança sem gerar mudanças nos demais módulos, mantendo a coesão alta e o acoplamento entre os módulos baixo.
+Para dar a variabilidade necessária para a variância destes pontos foi utilizado os padrões de projeto descritos no tópico anterior. Eles dão a flexibilidade para mudança sem gerar mudanças nos demais módulos, mantendo a coesão alta e o acoplamento entre os módulos baixo.
 
 \section{Boas práticas de programação}
 
