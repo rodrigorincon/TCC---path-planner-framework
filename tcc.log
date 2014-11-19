@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.21)  18 NOV 2014 15:03
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.21)  18 NOV 2014 17:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1732,7 +1732,7 @@ l.184
        <./figuras/expansao.png>]) (./editaveis/metodologia.tex [62] [63
 
 ]
-<figuras/fluxoatvd.png, id=1031, 930.47626pt x 833.36343pt>
+<figuras/fluxoatvd.png, id=1032, 930.47626pt x 833.36343pt>
 File: figuras/fluxoatvd.png Graphic file (type png)
 
 <use figuras/fluxoatvd.png>
@@ -1782,7 +1782,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 40.
 Here is how much of TeX's memory you used:
  13004 strings out of 493304
  190464 string characters out of 6139870
- 331278 words of memory out of 5000000
+ 331343 words of memory out of 5000000
  15910 multiletter control sequences out of 15000+600000
  69772 words of font info for 50 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -1797,10 +1797,10 @@ ype1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></
 usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/
 public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr
 /share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on tcc.pdf (73 pages, 4028292 bytes).
+Output written on tcc.pdf (73 pages, 4028400 bytes).
 PDF statistics:
- 1532 PDF objects out of 1728 (max. 8388607)
- 1342 compressed objects within 14 object streams
+ 1533 PDF objects out of 1728 (max. 8388607)
+ 1343 compressed objects within 14 object streams
  220 named destinations out of 1000 (max. 500000)
  715 words of extra memory for PDF output out of 10000 (max. 10000000)
 
