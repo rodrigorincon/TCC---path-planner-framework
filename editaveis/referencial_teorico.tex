@@ -33,7 +33,7 @@ Já a robótica móvel, por sua vez, trata de máquinas capazes de se movimentar
 
 Existe um grande campo de pesquisa para cada forma de deslocamento do robô. No caso dos robôs com rodas, o tipo de roda e a estrutura do chassi são consideradas para a mobilidade que a máquina terá. \cite{Siegwart2004} afirma que é possível dar estabilidade ao robô com duas ou três rodas e ao usar quatro ou mais é necessário um sistema de suspensão para permitir que todas as rodas toquem o chão quando o robô estiver em terreno acidentado.
 
-\cite{Secchi2008} lista quatro tipos de roda mais usados: rodas fixas para tração, roda orientável centralizada para direção e tração, roda castor (ou roda louca) para estabilidade e a suéca para mobilidade. Já Rolland (2004) lista outras quatro: a roda padrão (semelhante a orientável centralizada), a castor, a suéca e a esférica, que assim como a suéca permite maior mobilidade. A figura 02 abaixo mostra um esboço de alguns tipos de rodas.
+\cite{Secchi2008} lista quatro tipos de roda mais usados: rodas fixas para tração, roda orientável centralizada para direção e tração, roda castor (ou roda louca) para estabilidade e a suéca para mobilidade. Já Rolland (2004) lista outras quatro: a roda padrão (semelhante a orientável centralizada), a castor, a suéca e a esférica, que assim como a suéca permite maior mobilidade. A Figura 02 abaixo mostra um esboço de alguns tipos de rodas.
 
 \begin{figure}[h]
 	\centering
@@ -46,7 +46,7 @@ A definição das rodas determina a quantidade de liberdade de movimento da estr
 
 \cite{Secchi2008} e \cite{Borenstein1996} também apresentam máquinas do modelo triciclo, que possuem uma roda orientável centralizada afrente e duas convencionais presas ao mesmo eixo atrás, como as rodas de trás de um carro. A roda da frente tem função de direcionar e de tração, enquanto as duas traseiras apenas acompanham o movimento. Outro modelo semelhante é o modelo de quadriciclo, que funciona igual a um carro, com duas rodas de tração-direção na frente ligadas ao mesmo motor e atrás duas rodas de tração também presas ao mesmo eixo. 
 
-Ambos os modelos acima sofrem erros de odometria (estimação da posição do robô) e apresentam problemas de derrapagem em curvas. Essa derrapagem ocorre pelo fato da roda interna à curva fazer um arco menor que a roda externa, obrigando essa a derrapar e desgastar o pneu. Esse problema pode ser consertado com um modelo chamado \textit{Ackerman Steering}. Segundo \cite{Borenstein1996}, \cite{Secchi2008} e \cite{Bagnall2011} o sistema \textit{Ackerman} inclina mais uma roda que a outra para compensar a diferença de espaço percorrido, fazendo com que o eixo de cada roda sempre esteja apontando para o centro da curva, conforme a figura 3 mostra.
+Ambos os modelos acima sofrem erros de odometria (estimação da posição do robô) e apresentam problemas de derrapagem em curvas. Essa derrapagem ocorre pelo fato da roda interna à curva fazer um arco menor que a roda externa, obrigando essa a derrapar e desgastar o pneu. Esse problema pode ser consertado com um modelo chamado \textit{Ackerman Steering}. Segundo \cite{Borenstein1996}, \cite{Secchi2008} e \cite{Bagnall2011} o sistema \textit{Ackerman} inclina mais uma roda que a outra para compensar a diferença de espaço percorrido, fazendo com que o eixo de cada roda sempre esteja apontando para o centro da curva, conforme a Figura 3 mostra.
 
 \begin{figure}[h]
 	\centering
@@ -57,9 +57,9 @@ Ambos os modelos acima sofrem erros de odometria (estimação da posição do ro
 
 Robôs do tipo \textit{differential steering} possuem três rodas: duas fixas para guiar o robô e uma roda castor atrás para dar estabilidade. O grande diferencial desse modelo é que cada roda de direção possui um motor separado. As duas rodas estão alinhadas no mesmo eixo, porém diferente de um carro onde ambas estão ligadas ao mesmo motor, cada uma é independente com seu próprio motor. Isso o permite girar em torno do próprio eixo e não depender de manobras em arco como o modelo de carro \cite{Bagnall2011} \cite{Secchi2008} \cite{Mataric2007}.
 
-\section{Software na robótica}
+\section{Desafios da robótica móvel}
 
-A nível de software a robótica móvel apresenta diversos desafios a serem superados. Dotar uma máquina com a capacidade de locomover-se sozinha esconde diversas dificuldades, que advém do fato de que a navegação deve integrar sensoriamento, atuação, planejamento, arquitetura, hardware, eficiência e computação \cite{Souza2008}. A navegação do robô por um terreno envolve mapeamento da região, controle dos motores, sensoriamento, auto-localização e definição de trajetória. Uma visão geral sobre cada uma é dada a seguir para auxiliar a compreensão do trabalho de navegação como um todo e a importância de cada um.
+Na área de software a robótica móvel apresenta diversos desafios a serem superados. Dotar uma máquina com a capacidade de locomover-se sozinha esconde diversas dificuldades, que advém do fato de que a navegação deve integrar sensoriamento, atuação, planejamento, arquitetura, hardware, eficiência e computação \cite{Souza2008}. A navegação do robô por um terreno envolve mapeamento da região, controle dos motores, sensoriamento, auto-localização e definição de trajetória. Uma visão geral sobre cada uma é dada a seguir para auxiliar a compreensão do trabalho de navegação como um todo e a importância de cada um.
 
 \subsection{Dificuldades da robótica móvel}
 
@@ -97,7 +97,7 @@ Há outros métodos de definição de trajetória. \cite{Guzman2008} comenta rap
 
 \subsection{Visão geral sobre navegação}
 
-\cite{Vieira2005} define uma arquitetura de navegação de robôs móveis, onde cada camada é uma área de pesquisa e juntas realizam a navegação do robô (figura 04). A primeira é a percepção do ambiente pelo robô, através de sensores. Após tratar esses dados e saber o que o cerca, é executada a camada de decisão, onde a máquina avalia a informação e decide que ações tomar. Essa camada é o cérebro do robô e pode possuir algoritmos de inteligência artificial.
+\cite{Vieira2005} define uma arquitetura de navegação de robôs móveis, onde cada camada é uma área de pesquisa e juntas realizam a navegação do robô (Figura 04). A primeira é a percepção do ambiente pelo robô, através de sensores. Após tratar esses dados e saber o que o cerca, é executada a camada de decisão, onde a máquina avalia a informação e decide que ações tomar. Essa camada é o cérebro do robô e pode possuir algoritmos de inteligência artificial.
 
 \begin{figure}[h]
 	\centering
@@ -176,7 +176,7 @@ A decomposição celular é dividida em dois sub-gupos: a exata, aonde cada regi
 
 Como comentado anteriormente, o foco do trabalho será na definição de trajetória usando algoritmos globais. Esse grupo de algoritmos já conhecem o ambiente, tendo um mapa da região e dos obstáculos presentes. A partir deste mapeamento é definido uma trajetória para o robô percorrer sem colidir com nenhum dos obstáculos. Os obstáculos serão considerados estáticos para este trabalho.
 
-Para fazer essa análise, os algoritmos transformam o mapa em um grafo e depois rodam um algoritmo de melhor caminho nele (como por exemplo Djikstra ou A*) para definir a trajetória. Cada algoritmo gera um grafo diferente e, portanto, uma trajetória diferente. Porém após definido o grafo todos funcionam de forma semelhante, rodando o algoritmo de Djikstra ou semelhante para solucioná-lo e criar o percurso \cite{Guzman2008}. A figura 07 mostra o diagrama de sequência que ilustra esse funcionamento, onde a classe PathPlaning representa a classe do sistema projetado que abstrai o funcionamento.
+Para fazer essa análise, os algoritmos transformam o mapa em um grafo e depois rodam um algoritmo de melhor caminho nele (como por exemplo Djikstra ou A*) para definir a trajetória. Cada algoritmo gera um grafo diferente e, portanto, uma trajetória diferente. Porém após definido o grafo todos funcionam de forma semelhante, rodando o algoritmo de Djikstra ou semelhante para solucioná-lo e criar o percurso \cite{Guzman2008}. A Figura 07 mostra o diagrama de sequência que ilustra esse funcionamento, onde a classe PathPlaning representa a classe do sistema projetado que abstrai o funcionamento.
 
 \begin{figure}[h]
 	\centering
@@ -225,7 +225,7 @@ Para montar as células, o algoritmo primeiramente precisa receber um conjunto d
 
 A decomposição aproximada, também chamada de Quadtree, divide o mapa em regiões e executa um método recursivo para continuar dividindo cada região em áreas cada vez menores \cite{Thomsen2010}. Essa divisão recursiva pode parar de duas formas: ou quando chegar em um tamanho mínimo ou quando toda sua região estiver livre ou ocupada. Ainda segundo \cite{Thomsen2010} esse método recebe este nome porque uma região é dividida em quatro células menores de mesma forma cada vez que se decompõe.
 
-Assim, O método do Quadtree divide o mapa em áreas de formato pré-determinado, porém com tamanhos diferentes de acordo com o espaçamento entre os obstáculos. Isso pode gerar a perda de caminhos estreitos por serem colocadas na mesma área que uma parte do obstáculo. Isso pode ser resolvido diminuindo a área mínima de cada região, porém acarretará no aumento de memória gasta e tempo de processamento da solução do trajeto. \cite{Siegwart2004} exemplifica este caso na figura 10.
+Assim, O método do Quadtree divide o mapa em áreas de formato pré-determinado, porém com tamanhos diferentes de acordo com o espaçamento entre os obstáculos. Isso pode gerar a perda de caminhos estreitos por serem colocadas na mesma área que uma parte do obstáculo. Isso pode ser resolvido diminuindo a área mínima de cada região, porém acarretará no aumento de memória gasta e tempo de processamento da solução do trajeto. \cite{Siegwart2004} exemplifica este caso na Figura 10.
 
 \begin{figure}[h]
 	\centering
@@ -244,7 +244,7 @@ O algoritmo começa na posição final e dar uma valor inicial qualquer à célu
 
 Este método permite chegar ao objetivo a partir de qualquer célula. Células com obstáculos são desconsiderados pelos vizinhos. 
 
-Ao finalizar um grafo é feito ligando o ponto inicial à todas as células vizinhas com menor valor. Essas células por sua vez são ligadas às vizinhas com menor valor e assim por diante até todas as células passarem por essa função. Isso fará com que nem todas as células entrem no grafo, sendo inserido nele apenas os caminhos por onde o valor diminui. A figura 11 exemplifica a montagem do grafo.
+Ao finalizar um grafo é feito ligando o ponto inicial à todas as células vizinhas com menor valor. Essas células por sua vez são ligadas às vizinhas com menor valor e assim por diante até todas as células passarem por essa função. Isso fará com que nem todas as células entrem no grafo, sendo inserido nele apenas os caminhos por onde o valor diminui. A Figura 11 exemplifica a montagem do grafo.
 
 \begin{figure}[h]
 	\centering
@@ -324,7 +324,7 @@ O padrão caixa-cinza revela alguns detalhes de seu funcionamento e permite exte
 
 Determinar quais são os \textit{hot-spots} é uma das principais tarefas do desenvolvedor de \textit{frameworks}. Cada \textit{hot-spot} deve possuir uma interface da qual herdará. Essa interface serve para padronizar a comunicação e definir qual deve ser o comportamento daquele módulo. O \textit{framework} pode ou não vir com alguma implementação padrão e básica da interface.
 
-Cada \textit{hot-spot} deve ser bem especificado pelo desenvolvedor do \textit{framework} para que o usuário saiba como construir suas customizações. \cite{Fayad1999} defende que uma profunda análise do domínio e dos \textit{hot-spots} devem ser realizados, realizando e documentando uma análise alto nível dos \textit{hots-spots}, uma especificação mais aprofundada dessas tarefas, o desenho alto nível de seus subsistemas e por fim codificar este desenho em uma classe abstrata e generalizações (se houver). Em um \textit{framework} caixa-preta deve haver uma série de implementações da interface já prontas para o usuário escolher qual utilizar enquanto no \textit{framework} caixa-branca o usuário deve desenvolver sua própria classe. Isso pode ser trabalhoso se a documentação da interface estiver mal feita ou incompleta. A figura 13 ilustra a diferença entre as duas abordagens quanto aos ganchos \textit{hot-spots}.
+Cada \textit{hot-spot} deve ser bem especificado pelo desenvolvedor do \textit{framework} para que o usuário saiba como construir suas customizações. \cite{Fayad1999} defende que uma profunda análise do domínio e dos \textit{hot-spots} devem ser realizados, realizando e documentando uma análise alto nível dos \textit{hots-spots}, uma especificação mais aprofundada dessas tarefas, o desenho alto nível de seus subsistemas e por fim codificar este desenho em uma classe abstrata e generalizações (se houver). Em um \textit{framework} caixa-preta deve haver uma série de implementações da interface já prontas para o usuário escolher qual utilizar enquanto no \textit{framework} caixa-branca o usuário deve desenvolver sua própria classe. Isso pode ser trabalhoso se a documentação da interface estiver mal feita ou incompleta. A Figura 13 ilustra a diferença entre as duas abordagens quanto aos ganchos \textit{hot-spots}.
 
 \begin{figure}[h]
 	\centering
@@ -348,7 +348,7 @@ Em resumo, um \textit{framework} caixa-branca costuma ser baseado em herança ou
 
 \subsection{Processo de desenvolvimento orientado a hot-spots}
 
-Um bom \textit{framework} nunca é feito de uma vez. A modelagem do domínio, análise dos pontos de variação e seu projeto são atividades iterativas, sendo sempre incrementadas e aperfeiçoadas. Assim, a modelagem de um \textit{framework} é uma tarefa iterativa e incremental, sendo constantemente alterada, melhorada e acrescentada novos \textit{hot-spots}. Os já existentes são avaliados se foram corretamente projetados e se fornecem abertura suficiente para personalização pelo usuário e mantêm o baixo acoplamento e a alta coesão. Todo esse processo gira em torno dos \textit{hot-spots}, permanecendo até que todo o modelo de domínio tenha sido esmiuçado e os \textit{hot-spots} levantados tenham sido analisados, projetados e implementados. A figura 15 esboça o fluxo de trabalho do processo orientado aos \textit{hot-spots}.
+Um bom \textit{framework} nunca é feito de uma vez. A modelagem do domínio, análise dos pontos de variação e seu projeto são atividades iterativas, sendo sempre incrementadas e aperfeiçoadas. Assim, a modelagem de um \textit{framework} é uma tarefa iterativa e incremental, sendo constantemente alterada, melhorada e acrescentada novos \textit{hot-spots}. Os já existentes são avaliados se foram corretamente projetados e se fornecem abertura suficiente para personalização pelo usuário e mantêm o baixo acoplamento e a alta coesão. Todo esse processo gira em torno dos \textit{hot-spots}, permanecendo até que todo o modelo de domínio tenha sido esmiuçado e os \textit{hot-spots} levantados tenham sido analisados, projetados e implementados. A Figura 15 esboça o fluxo de trabalho do processo orientado aos \textit{hot-spots}.
 
 \begin{figure}[h]
 	\centering

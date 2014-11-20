@@ -20,11 +20,11 @@
 \contentsline {figure}{\numberline {19}{\ignorespaces estrutura do funcionamento do \textit {framework}}}{51}{figure.4.19}
 \contentsline {figure}{\numberline {20}{\ignorespaces arquitetura a navega\IeC {\c c}\IeC {\~a}o considerada, \cite {Nehmzow2003}}}{52}{figure.4.20}
 \contentsline {figure}{\numberline {21}{\ignorespaces diagrama de pacotes do sistema}}{53}{figure.4.21}
-\contentsline {figure}{\numberline {22}{\ignorespaces componente Controller}}{54}{figure.4.22}
-\contentsline {figure}{\numberline {23}{\ignorespaces diagrama de sequ\IeC {\^e}ncia do componente controller}}{55}{figure.4.23}
+\contentsline {figure}{\numberline {22}{\ignorespaces componente Controller}}{53}{figure.4.22}
+\contentsline {figure}{\numberline {23}{\ignorespaces diagrama de sequ\IeC {\^e}ncia do componente controller}}{54}{figure.4.23}
 \contentsline {figure}{\numberline {24}{\ignorespaces componente Map}}{55}{figure.4.24}
 \contentsline {figure}{\numberline {25}{\ignorespaces componente PathPlanner}}{56}{figure.4.25}
-\contentsline {figure}{\numberline {26}{\ignorespaces componente Graph}}{57}{figure.4.26}
+\contentsline {figure}{\numberline {26}{\ignorespaces componente Graph}}{56}{figure.4.26}
 \contentsline {figure}{\numberline {27}{\ignorespaces componente BestPath}}{57}{figure.4.27}
-\contentsline {figure}{\numberline {28}{\ignorespaces obst\IeC {\'a}culo real em preto e a expans\IeC {\~a}o incrementada em amarelo \cite {MRIT_SITE}}}{61}{figure.4.28}
+\contentsline {figure}{\numberline {28}{\ignorespaces obst\IeC {\'a}culo real em preto e a expans\IeC {\~a}o incrementada em amarelo \cite {MRIT_SITE}}}{58}{figure.4.28}
 \contentsline {figure}{\numberline {29}{\ignorespaces fluxo de atividades propostas}}{64}{figure.5.29}
