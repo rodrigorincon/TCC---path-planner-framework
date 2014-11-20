@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.21)  19 NOV 2014 19:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.21)  20 NOV 2014 12:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1423,9 +1423,6 @@ l.298
 Underfull \vbox (badness 1286) has occurred while \output is active []
 
  [36]
-LaTeX Font Info:    Font shape `OMS/lmr/m/it' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 323.
-
 [37] <figuras/hotspotbox.jpg, id=783, 699.61375pt x 314.17375pt>
 File: figuras/hotspotbox.jpg Graphic file (type jpg)
 
@@ -1754,10 +1751,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 40.
  ) 
 Here is how much of TeX's memory you used:
- 13004 strings out of 493304
- 190464 string characters out of 6139870
- 330520 words of memory out of 5000000
- 15910 multiletter control sequences out of 15000+600000
+ 13002 strings out of 493304
+ 190432 string characters out of 6139870
+ 331502 words of memory out of 5000000
+ 15909 multiletter control sequences out of 15000+600000
  69772 words of font info for 50 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  41i,13n,38p,1557b,644s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1771,7 +1768,7 @@ ype1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></
 usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/
 public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr
 /share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on tcc.pdf (73 pages, 4030002 bytes).
+Output written on tcc.pdf (73 pages, 4029992 bytes).
 PDF statistics:
  1535 PDF objects out of 1728 (max. 8388607)
  1345 compressed objects within 14 object streams
