@@ -15,6 +15,7 @@ Database file #1: abntex2-options.bib
 Database file #2: bibliografia.bib
 Warning--entry type for "Abreu2001" isn't style-file defined
 --line 136 of file bibliografia.bib
+Warning--I didn't find a database entry for "Rolland2004"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -24,7 +25,6 @@ Warning--campo year vazio ou faltando em ECLEMMA_SITE
 Warning--campo year vazio ou faltando em ECLIPSE_SITE
 Warning--campo year vazio ou faltando em IMG_DIFFERENTIAL_STEERING_SITE
 Warning--campo year vazio ou faltando em IMG_ROB_IND_SITE
-Warning--campo year vazio ou faltando em SITE_LEGO
 Warning--campo year vazio ou faltando em LEJOS_SITE
 Warning--campo year vazio ou faltando em MRIT_SITE
 Warning--campo year vazio ou faltando em JUNIT_SITE
@@ -36,45 +36,45 @@ Warning--campo year vazio ou faltando em VORONOI_SITE
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 34 entries,
+You've used 33 entries,
             6711 wiz_defined-function locations,
-            1417 strings with 14368 characters,
-and the built_in function-call counts, 44772 in all, are:
-= -- 5781
+            1414 strings with 14312 characters,
+and the built_in function-call counts, 43575 in all, are:
+= -- 5607
 > -- 530
-< -- 1023
-+ -- 1409
+< -- 996
++ -- 1372
 - -- 161
-* -- 2542
-:= -- 5424
-add.period$ -- 147
-call.type$ -- 34
-change.case$ -- 272
-chr.to.int$ -- 69
-cite$ -- 45
-duplicate$ -- 4077
-empty$ -- 2017
+* -- 2487
+:= -- 5292
+add.period$ -- 144
+call.type$ -- 33
+change.case$ -- 266
+chr.to.int$ -- 68
+cite$ -- 43
+duplicate$ -- 3975
+empty$ -- 1956
 format.name$ -- 762
-if$ -- 9677
+if$ -- 9393
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 595
-newline$ -- 182
+missing$ -- 580
+newline$ -- 176
 num.names$ -- 105
-pop$ -- 753
+pop$ -- 730
 preamble$ -- 1
-purify$ -- 115
+purify$ -- 112
 quote$ -- 0
-skip$ -- 5032
+skip$ -- 4868
 stack$ -- 1
-substring$ -- 1728
-swap$ -- 1457
-text.length$ -- 23
+substring$ -- 1683
+swap$ -- 1424
+text.length$ -- 22
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 104
-warning$ -- 12
-while$ -- 174
+type$ -- 99
+warning$ -- 11
+while$ -- 171
 width$ -- 0
-write$ -- 519
+write$ -- 506
 (There were 13 warnings)

@@ -1,8 +1,8 @@
 \chapter[Proposta]{Proposta}
 
-A proposta deste trabalho é a construção de um \textit{framework} de definição de trajetória para robôs móveis, mais especificamente, algoritmos globais de definição de trajetória. Um mapa do ambiente é recebido da camada de mapeamento e o algoritmo cria um grafo a partir dele, definindo os caminhos livres que podem ser percorridos. Após isso é rodado um algoritmo de melhor caminho (como Djikstra) para definir o caminho a ser percorrido pelo robô. 
+A proposta deste trabalho foi a construção de um \textit{framework} de definição de trajetória para robôs móveis, mais especificamente, algoritmos globais de definição de trajetória. Foi implementado os quatro algoritmos descritos no capítulo 2 (Grafo de Visibilidade, Voronoi, Quadtree e Wavefront). Um mapa do ambiente é recebido da camada de mapeamento e o algoritmo cria um grafo a partir dele, definindo os caminhos livres que podem ser percorridos. Após isso é rodado um algoritmo de melhor caminho (como Djikstra por exemplo) para definir o caminho a ser percorrido pelo robô. 
 
-A Figura 19 demonstra as tarefas principais do \textit{framework}, bem como suas entradas e saídas. Essas entradas e saídas definem como ele se comunicará com as demais camadas do robô e as dependências dele para cumprir seu funcionamento. Cada tarefa apresentada se tornará um módulo do \textit{framework} e as interações entre eles as estruturas de dados utilizadas para se comunicarem.
+A Figura 19 demonstra as tarefas principais do \textit{framework}, bem como suas entradas e saídas. Essas entradas e saídas definem como ele se comunica com as demais camadas do robô e as dependências dele para cumprir seu funcionamento. Cada tarefa apresentada representa um módulo do \textit{framework} e as interações entre eles as estruturas de dados utilizadas para se comunicarem.
  
 \begin{figure}[h]
 	\centering
@@ -11,7 +11,7 @@ A Figura 19 demonstra as tarefas principais do \textit{framework}, bem como suas
 	\caption{estrutura do funcionamento do \textit{framework}}
 \end{figure} 
 
-A arquitetura geral do robô será considerada como na Figura 20 apresentada por \cite{Nehmzow2003}. Todas as abordagens da arquitetura de navegação seguiam uma lógica semelhante e apresentavam pequenas diferenças entre si. Assim sendo, esta estrutura mantêm as características apresentadas no capítulo anterior.
+A arquitetura geral do robô foi considerada como na Figura 20 apresentada por \cite{Nehmzow2003}. Todas as abordagens da arquitetura de navegação seguiam uma lógica semelhante e apresentavam pequenas diferenças entre si. Assim sendo, esta estrutura mantêm as características apresentadas no capítulo 2.
 
 \begin{figure}[h]
 	\centering
@@ -20,15 +20,15 @@ A arquitetura geral do robô será considerada como na Figura 20 apresentada por
 	\caption{arquitetura a navegação considerada, \cite{Nehmzow2003}}
 \end{figure}
 
-A definição de trajetória e o \textit{framework} participam da terceira camada. Como as camadas acima são responsáveis pelo mapeamento e entregam o mapa completo, os algoritmos globais e este \textit{framework} não precisam se preocupar com comunicação com os sensores. As camadas abaixo recebem a lista de coordenadas para onde deve ir e cuidam do controle dos motores para chegar neles considerando os graus de liberdade do robô (que varia de acordo com sua estrutura física). Assim, a camada a ser criada não se comunica nem com os sensores nem com os motores, o que lhe dá maior independência das configurações de robô. Com isso é esperado que o \textit{framework} funcione em variados tipos de robôs, não apenas nos \textit{differential steering} testados.
+A definição de trajetória e o \textit{framework} participam da terceira camada. Como as camadas acima são responsáveis pelo mapeamento e entregam o mapa completo, os algoritmos globais e este \textit{framework} não precisam se preocupar com comunicação com os sensores. As camadas abaixo recebem a lista de coordenadas para onde deve ir e cuidam do controle dos motores para chegar neles considerando os graus de liberdade do robô (que varia de acordo com sua estrutura física). Assim, a camada a ser criada não se comunica nem com os sensores nem com os motores, o que lhe dá maior independência das configurações de robô. Com isso é esperado que o \textit{framework} funcione em variados tipos de robôs, não apenas no modelo \textit{differential steering} testado.
 
-A seguir é definido como funcionará os detalhes do \textit{framework} levantados no capítulo anterior.
+A seguir é definido como funciona os detalhes do \textit{framework} levantados no capítulo 2.
 
 \section{A arquitetura}
 
-A arquitetura de navegação costuma ser em camadas, como mostrado no capítulo 2. Este \textit{framework} trabalhará dentro da camada de planejamento de trajetória e terá uma estrutura baseada em componentes. Uma arquitetura em camadas dentro de outra poderia gerar indireções desnecessárias, além de uma abordagem por componentes suprir melhor as necessidades do \textit{framework}.
+A arquitetura de navegação costuma ser em camadas, como mostrado no capítulo 2. Este \textit{framework} trabalha dentro da camada de planejamento de trajetória e é uma estrutura baseada em componentes. Uma arquitetura em camadas dentro de outra poderia gerar indireções desnecessárias, além de uma abordagem por componentes suprir melhor as necessidades do \textit{framework}.
 
-Cada funcionalidade será efetuada por um componente diferente, projetado para consumir o mínimo de memória e depender o mínimo de outros componentes e de bibliotecas externas (incluindo as próprias do Java). Cada módulo terá a preocupação de ser o mais auto-suficiente possível, tendo apenas as interações necessárias para o seu funcionamento. Cada um dos módulos será constantemente avaliado quando a seu acoplamento, coesão,  simplicidade e facilidade de compreensão. Estas características serão melhor definidas na seção 4.5.
+Cada funcionalidade é efetuada por um componente diferente, projetado para consumir o mínimo de memória e depender o mínimo de outros componentes e de bibliotecas externas (incluindo as próprias do Java). Cada módulo tem a preocupação de ser o mais auto-suficiente possível, tendo apenas as interações necessárias para o seu funcionamento. Cada um dos módulos será constantemente avaliado quando a seu acoplamento, coesão,  simplicidade e facilidade de compreensão. Estas características serão melhor definidas na seção 4.5.
 
 O \textit{framework} segue o padrão caixa-cinza, pois é desejável que o mesmo seja transparente e configurável pelo usuário. O usuário do \textit{framework} é livre para usar as implementações já prontas dos algoritmos de definição de trajetória e melhor caminho ou criar as suas próprias a partir das classes abstratas fornecidas. Além disso o fluxo de execução e alguns comportamentos são mantidos estáticos.
 
@@ -52,7 +52,7 @@ A seguir cada componente é descrito mais detalhadamente e são abordadas suas c
 	\caption{componente Controller}
 \end{figure}
 
-A classe PathPlannerController tem como propósito servir de intermediário entre o usuário do \textit{framework} e as funções do sistema. Ela controla o fluxo de trabalho da aplicação, chamando os métodos das demais classes na ordem e verificando seu correto funcionamento.
+A classe PathPlannerController tem como propósito servir de intermediário entre o usuário do \textit{framework} e as funções implementadas por ele. Ela controla o fluxo de trabalho da aplicação, chamando os métodos das demais classes na ordem e verificando seu correto funcionamento.
 
 O componente segue os princípios Controlador e Inversão de Controle. Em vez do usuário chamar todas as funções do componente e fazer seu controle diretamente toda vez que quiser definir uma trajetória, este componente realiza esta tarefa por ele, diminuindo acoplamento entre o usuário e o subsistema. A Inversão de Controle está presente pelo usuário não ser o responsável por instanciar as classes do outros componentes. Embora o \textit{framework} as use, cabe ao usuáio instanciá-las e definir quais de suas variações será implementada. No construtor da classe é passado os objetos PathPlanner e BestPath, que são armazenados e usados no método \textit{execute} para realizar o cálculo do percurso. Isso permite ao módulo não conhecer as variações de cada interface, desacoplando-o dos demais módulos.
 
@@ -131,9 +131,9 @@ O \textit{framework} usa uma estrutura própria para armazenar estes dados, por�
 
 \section{Os obstáculos}
 
-Os obstáculos serão representados por células de valores diferentes no mapa, marcando-as como ocupadas. Contudo algumas considerações sobre os obstáculos precisam ser feitas independente da forma que são implementados.
+Os obstáculos são representados por células de valores diferentes no mapa, marcando-as como ocupadas. Contudo algumas considerações sobre os obstáculos precisam ser feitas independente da forma que são implementados.
 
-O robô é considerado como um ponto (seu centro), o que pode gerar problemas se ele se aproximar demais dos obstáculos. Um algoritmo considerando o robô um ponto pode fazê-lo passar muito perto do obstáculo achando que nada acontecerá, porém quando executado o algoritmo o choque ocorre. \cite{Guzman2008} diz que os algorítmos Grafo de Visibiidade e Quadtree passam o mais perto possível dos obstáculos, gerando um menor percurso porém mais perigoso. Para evitar que esses algoritmos causem o choque do robô com o obstáculo uma solução dada por \cite{Souza2008}, \cite{Guzman2008}, \cite{Siegwart2004} e \cite{Thomsen2010} é a expansão dos obstáculos. O algoritmo considera os obstáculos maiores do que realmente são, aumentando o obstáculo em, no mínimo, metade da lagura do robô para que o centro passe tangente ao novo vértice sem haver real contato. Para isso será preciso receber no controlador dois parâmetro a mais, o tamanho do robô e quanto mede cada célula do mapa. O controlador então determinará quantas células o robô mede de largura e incrementará a metade mais um em todos os obstáculos.
+O robô é considerado como um ponto (seu centro), o que pode gerar problemas se ele se aproximar demais dos obstáculos. Um algoritmo considerando o robô um ponto pode fazê-lo passar muito perto do obstáculo achando que nada acontecerá, porém quando executado o algoritmo o choque ocorre. \cite{Guzman2008} diz que os algorítmos Grafo de Visibilidade e Quadtree passam o mais perto possível dos obstáculos, gerando um menor percurso porém mais perigoso. Para evitar que esses algoritmos causem o choque do robô com o obstáculo uma solução dada por \cite{Souza2008}, \cite{Guzman2008}, \cite{Siegwart2004} e \cite{Thomsen2010} é a expansão dos obstáculos. O algoritmo considera os obstáculos maiores do que realmente são, aumentando o obstáculo em, no mínimo, metade da lagura do robô para que o centro passe tangente ao novo vértice sem haver real contato. Para isso é preciso receber no controlador dois parâmetro a mais, o tamanho do robô e quanto mede cada célula do mapa. O controlador então determina quantas células o robô mede de largura e incrementa a metade mais um em todos os obstáculos.
 
 \begin{figure}[h]
 	\centering
@@ -178,8 +178,8 @@ Algumas dessas características, seguidas no desenvolvimento deste projeto são:
 
 \section{Resumo do Capítulo}
 
-Será desenvolvido um \textit{framework} de definição de trajetória implementando algoritmos globais. Como não se comunicam diretamete com sensores e atuadores seu desenvolvimento se torna mais indepedente dos aspectos físicos do robô.
+Foi desenvolvido um \textit{framework} de definição de trajetória implementando algoritmos globais. Como não se comunicam diretamete com sensores e atuadores seu desenvolvimento se torna mais indepedente dos aspectos físicos do robô.
 
-O \textit{framework} receberá um mapa do tipo malha de ocupação com os pontos inicial e final e, de acordo com o algorítmo escolhido, determinará o melhor caminho. O usuário poderá escolher tanto o algoritmo global (Grafo de Visibilidade, Voronoi...) quanto o algoritmo de melhor caminho (Djikstra, A*). Estes dois componentes são os \textit{hot-spots} iniciais do sistema, podendo ser herdados e configurados conforme o usuário desejar. A comunicação do usuário com o \textit{framework}, além da escolha dos algoritmos, se dará pelo componente Controller, que abstrairá todo o funcionamento do algoritmo e fornecerá a lista de pontos ao usuário.
+O \textit{framework} recebe um mapa do tipo malha de ocupação com os pontos inicial e final e, de acordo com o algorítmo escolhido, determina o melhor caminho. O usuário pode escolher tanto o algoritmo global (Grafo de Visibilidade, Voronoi...) quanto o algoritmo de melhor caminho (Djikstra, A*). Estes dois componentes são os \textit{hot-spots} iniciais do sistema, podendo ser herdados e configurados conforme o usuário desejar. A comunicação do usuário com o \textit{framework}, além da escolha dos algoritmos, se dará pelo componente Controller, que abstrai todo o funcionamento do algoritmo e fornece a lista de pontos ao usuário.
 
-O \textit{framework} terá cinco componentes: Graph (responsável pelo grafo), Controller (controlador do sistema), Map (responsável pelo mapa), PathPlanner (algoritmo global) e BestPath (algoritmo de melhor caminho). O desenvolvimento de cada um deles será embasado em boas práticas de programação e voltado à clareza e simplicidade do código.
+O \textit{framework} tem cinco componentes: Graph (responsável pelo grafo), Controller (controlador do sistema), Map (responsável pelo mapa), PathPlanner (algoritmo global) e BestPath (algoritmo de melhor caminho). O desenvolvimento de cada um deles é embasado em boas práticas de programação e voltado à clareza e simplicidade do código.

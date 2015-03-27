@@ -1,12 +1,12 @@
 \chapter[Introdução]{Introdução}
 
-O ramo da robótica costuma atrair a atenção de leigos e profissionais, explorando um campo onde a imaginação trabalha ao máximo. A robótica móvel em específico tem levado as máquinas para mais perto da população e trazendo desafios aos desenvolvedores destas máquinas. Para construir uma máquina autônoma há uma série de dificuldades, cada uma fonte de pesquisas e trabalho. Para mover uma máquina entre dois pontos é preciso o controle de motores, mapeamento e sensoriamento da região, estudo da cinemática do robô, planejamento da trajetória e monitoramento do movimento; muito esforço para fazer sua locomoção.
+O ramo da robótica costuma atrair a atenção de leigos e profissionais, explorando um campo onde a imaginação trabalha ao máximo. A robótica móvel em específico tem levado as máquinas para mais perto da população e trazendo desafios aos desenvolvedores destas máquinas. Para construir uma máquina autônoma há uma série de dificuldades, cada uma fonte de pesquisas e trabalho. Para mover uma máquina entre dois pontos é preciso o controle de motores, mapeamento e sensoriamento da região, estudo da cinemática do robô, planejamento da trajetória e monitoramento do movimento.
 
 Produzir um robô exige conhecimento tanto mecânico quanto eletrônico e de software. Kits de robótica entregam a máquina pronta, com manuais de uso e um \textit{firmware} para facilitar a programação. Porém cada kit funciona de forma diferente e costumeiramente seus códigos são complicados de entender, não seguindo as boas práticas de programação.
 
 \section{O Problema}
 
-Atualmente existe pouco conteúdo \textit{open-source} para quem busca desenvolver na área, tendo muitas vezes de implementar tudo desde as funções mais básicas. Parte disso acontece pelas diferenças físicas entre as máquinas e devido à na área pouco se desenvolver pensando em reuso de software e em boas práticas de programação. As soluções existentes funcionam apenas no kit no qual foram desenvolvidas e com interfaces diferentes, muitas vezes impedindo que o desenvolvedor reutilize seu código em outra plataforma.
+Atualmente existe pouco conteúdo \textit{open-source} para quem busca desenvolver na área, tendo muitas vezes de implementar tudo desde as funções mais básicas. Parte disso acontece pelas diferenças físicas entre as máquinas e devido a na área pouco se desenvolver pensando em reuso de software e em boas práticas de programação. As soluções existentes funcionam apenas no kit no qual foram desenvolvidas e com interfaces diferentes, muitas vezes impedindo que o desenvolvedor reutilize seu código em outra plataforma.
 
 \section{Questão de Pesquisa}
 
@@ -20,7 +20,7 @@ O objetivo deste trabalho é ajudar a comunidade de robótica a alcançar maior 
 
 Conforme \cite{Larman2005}, \cite{Goodliffe2007} e \cite{McConnel2004}, alto acoplamento é indesejado, pois torna o código sensível a falhas e de difícil manutenção. Segundo eles, o reuso facilita e agiliza o desenvolvimento, diminuindo o esforço para tarefas repetitivas e/ou que possam ser isoladas.
 
-Ao produzir o \textit{framework} será gerado um módulo independente que desacopla a definição de trajetória do resto do sistema. Um \textit{framework} de código aberto permite ainda o uso de um código comum a toda a comunidade, induzindo o reuso e um padrão de utilização da área contemplada. Tudo isso ainda acaba por facilitar a compreensão de outros códigos. A implementação do \textit{framework} terá a visão de fazê-lo funcionar na maioria das plataformas e deixá-lo extensível para inclusão posterior de novas plataformas e algoritmos. A própria comunidade pode contribuir para sua expansão, tornando-o compatível com mais hardwares e implementando novos algoritmos para traçar rotas.
+Este \textit{framework} é um módulo independente que desacopla a definição de trajetória do resto do sistema. Um \textit{framework} de código aberto permite ainda o uso de um código comum a toda a comunidade, induzindo o reuso e um padrão de utilização da área contemplada. Tudo isso ainda acaba por facilitar a compreensão de outros códigos. A implementação do \textit{framework} terá a visão de fazê-lo funcionar na maioria das plataformas e deixá-lo extensível para inclusão posterior de novas plataformas e algoritmos. A própria comunidade pode contribuir para sua expansão, tornando-o compatível com mais hardwares e implementando novos algoritmos para traçar rotas.
 
 \section{Objetivos}
 
@@ -28,18 +28,18 @@ Os objetivos deste trabalho, tanto de forma geral como mais específicos, são l
 
 \subsection{Objetivo Geral}
 
-Este trabalho de conclusão de curso busca entregar um \textit{framework} manutenível e extensível sobre algoritmos de definição de trajetória para robôs móveis. Serão utilizados algoritmos clássicos para quando o ambiente é previamente conhecido (algoritmos globais). Este \textit{framework} será implementado, provendo uma prova de conceito conduzida através de experimentações em ambiente controlado. A implementação compreenderá demonstrar um robô \textit{differential steering} em funcionamento, usando como base o \textit{framework} proposto.
+Este trabalho de conclusão de curso é desenvolver um \textit{framework} manutenível e extensível sobre algoritmos de definição de trajetória para robôs móveis. Serão utilizados algoritmos clássicos para um ambiente previamente conhecido (algoritmos globais). A implementação compreende em demonstrar um robô \textit{differential steering} em funcionamento utilizando o \textit{framework} proposto.
 
 \subsection{Objetivos Específicos}
 
 Este trabalho tem por objetivos, principalmente:
 \begin{enumerate}
-	\item Investigar abordagens para desenvolvimento de \textit{framework}s;
+	\item Investigar abordagens para desenvolvimento de \textit{frameworks};
 	\item Explorar algoritmos de definição de trajetória considerando a estratégia de algoritmos globais;
-	\item Aplicar boas práticas de modelagem e programação, como alta coesão, baixo acoplamento, funções atômicas, comentários e nomenclatura correta de variáveis;
-	\item Usar padrões de projeto para maior robustez do código, como prover uma interface comum a todos os algoritmos e a fácil troca entre eles, além de maior portabilidade da solução proposta para outros tipos de hardware;
+	\item Aplicar boas práticas de modelagem e programação ao \textit{framework}, como alta coesão, baixo acoplamento, funções atômicas, comentários e nomenclatura correta de variáveis;
+	\item Usar padrões de projeto para maior robustez do código, como prover uma interface comum à todos os algoritmos e a fácil troca entre eles, além de maior portabilidade da solução proposta para outros tipos de hardware;
 	\item Aplicar testes, principalmente unitários, na solução proposta;
-	\item Prover um teste prático do \textit{framework} usando como base o kit educacional da LEGO \cite{SITE_LEGO};
+	\item Prover um teste prático do \textit{framework} usando como base o kit educacional da LEGO;
 \end{enumerate}
 
 \section{Organização do Trabalho}
@@ -47,9 +47,9 @@ Este trabalho tem por objetivos, principalmente:
 O trabalho está dividido em 6 capítulos principais:
 \begin{enumerate}
 	\item Introdução: este capítulo, visando explicar o problema que gerou este trabalho
-	\item Referencial Teórico: explana sobre o estado da arte da robótica e questões mecânicas pertinentes à locomoção do robô, além de uma rápida análise dos módulos de navegação além do abordado neste trabalho
+	\item Referencial Teórico: explana sobre os conceitos importantes da robótica e questões mecânicas pertinentes à locomoção do robô, além de uma rápida análise dos módulos de navegação além do abordado neste trabalho
 	\item Suporte tecnológico: explica sobre as tecnologias utilizadas para o desenvolvimento tanto do \textit{framework} quanto da prova de conceito, listando ferramentas, \textit{plugins} e kits utilizados.	
 	\item Proposta: detalhamento do funcionamento do \textit{framework}: explicação da arquitetura e padrões usados na modelagem, técnicas de programação utilizadas e algoritmos implementados
 	\item Metodologia: análise das dificuldades e riscos do projeto, descrição e fluxo das atividades e cronograma e métodos utilizados.
-	\item Conclusão: apresentação dos resultados esperados e obtidos até então.
+	\item Conclusão: apresentação dos resultados obtidos e propostas de melhorias e estudos futuros.
 \end{enumerate}
