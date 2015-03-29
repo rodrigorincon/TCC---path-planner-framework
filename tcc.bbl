@@ -22,37 +22,10 @@ Dispon{\'\i}vel em: \url{http://paginas.fe.up.pt/~aml/maic\_files/introd.pdf}.}
   for Mobile Robot Positioning}. 1. ed. Michigan, EUA: Universidade de
   Michigan, 1996. 282~p.}
 
-\bibitem[Carmen site do framework]{CARMEN_SITE}
-\abntrefinfo{Carmen\ldots}{CARMEN\ldots}{}
-{CARMEN site do framework.
-Visualizado em 23/10/2014.
-Dispon{\'\i}vel em: \url{http://carmen.sourceforge.net/intro.html}.}
-
 \bibitem[Choset et al. 2005]{Choset2005}
 \abntrefinfo{Choset et al.}{CHOSET et al.}{2005}
 {CHOSET, H. et al. \emph{Principles of Robot Motion. Theory, Algorithms, and
   Implementations}. 1. ed. Massachusetts, EUA: The MIT Press, 2005. 626~p.}
-
-\bibitem[Eclemma, plugin para coberturade código]{ECLEMMA_SITE}
-\abntrefinfo{Eclemma\ldots}{ECLEMMA\ldots}{}
-{ECLEMMA, plugin para coberturade código.
-Visualizado em 01/10/2014.
-Dispon{\'\i}vel em: \url{http://www.eclemma.org/installation.html}.}
-
-\bibitem[Eclipse, ferramenta de desenvolvimento na versão
-  utilizada]{ECLIPSE_SITE}
-\abntrefinfo{Eclipse\ldots}{ECLIPSE\ldots}{}
-{ECLIPSE, ferramenta de desenvolvimento na versão utilizada.
-Visualizado em 01/10/2014.
-Dispon{\'\i}vel em:
-  \url{http://www.eclipse.org/downloads/packages/release/Indigo/SR2}.}
-
-\bibitem[exemplos de estruturas de direção
-  diferencial]{IMG_DIFFERENTIAL_STEERING_SITE}
-\abntrefinfo{exemplos\ldots}{EXEMPLOS\ldots}{}
-{EXEMPLOS de estruturas de direção diferencial.
-Visualizado em 09/10/2014.
-Dispon{\'\i}vel em: \url{http://www.enigmaindustries.com/configurations.htm}.}
 
 \bibitem[Fayad, Johnson e Shmidt 1999]{Fayad1999}
 \abntrefinfo{Fayad, Johnson e Shmidt}{FAYAD; JOHNSON; SHMIDT}{1999}
@@ -83,22 +56,10 @@ Dispon{\'\i}vel em: \url{http://www.enigmaindustries.com/configurations.htm}.}
   Dinamarca, 2010. Visualizado em 23/10/2014.
 Dispon{\'\i}vel em: \url{http://etd.dtu.dk/thesis/258988/ep10\_05.pdf}.}
 
-\bibitem[imagem de braço robótico]{IMG_ROB_IND_SITE}
-\abntrefinfo{imagem\ldots}{IMAGEM\ldots}{}
-{IMAGEM de braço robótico.
-Visualizado em 01/10/2014.
-Dispon{\'\i}vel em: \url{http://sicmscj.com.br/links/roca1024.jpg}.}
-
 \bibitem[Larman 2005]{Larman2005}
 \abntrefinfo{Larman}{LARMAN}{2005}
 {LARMAN, C. \emph{Utilizando UML e Padrões}. 3. ed. Brasil: Bookman, 2005.
   695~p.}
-
-\bibitem[Lejos, plataforma Java para robôs da Lego]{LEJOS_SITE}
-\abntrefinfo{Lejos\ldots}{LEJOS\ldots}{}
-{LEJOS, plataforma Java para robôs da Lego.
-Visualizado em 01/10/2014.
-Dispon{\'\i}vel em: \url{http://www.lejos.org/nxj.php}.}
 
 \bibitem[Mataric 2007]{Mataric2007}
 \abntrefinfo{Mataric}{MATARIC}{2007}
@@ -118,13 +79,6 @@ Dispon{\'\i}vel em: \url{http://www.lejos.org/nxj.php}.}
   Visualizado em 15/09/2014. Dispon{\'\i}vel em:
   \url{http://mtc-m18.sid.inpe.br/col/sid.inpe.br/mtc-m18/2011/10.18.01.32/doc/worcap2011\_submission\_13.pdf?ibiurl.language=en}.}
 
-\bibitem[MRIT, ferramenta de simulação de algoritmos de definição de
-  trajetória]{MRIT_SITE}
-\abntrefinfo{MRIT\ldots}{MRIT\ldots}{}
-{MRIT, ferramenta de simulação de algoritmos de definição de trajetória.
-Visualizado em 01/10/2014.
-Dispon{\'\i}vel em: \url{http://aer.ual.es/mrit/}.}
-
 \bibitem[Nehmzow 2003]{Nehmzow2003}
 \abntrefinfo{Nehmzow}{NEHMZOW}{2003}
 {NEHMZOW, U. \emph{Mobile Robotics, A Pratical Introduction}. 2. ed.
@@ -140,25 +94,6 @@ Dispon{\'\i}vel em: \url{http://aer.ual.es/mrit/}.}
 Dispon{\'\i}vel em:
   \url{http://www.tede.udesc.br/tde\_arquivos/8/TDE-2006-05-19T054914Z-190/Publico/Jonas\%20Pereira.pdf}.}
 
-\bibitem[plugin para ferramenta de teste sunitários]{JUNIT_SITE}
-\abntrefinfo{plugin\ldots}{PLUGIN\ldots}{a}
-{PLUGIN para ferramenta de teste sunitários.
-Visualizado em 01/10/2014.
-Dispon{\'\i}vel em: \url{http://junit.org/}.}
-
-\bibitem[plugin para programação Java para o kit Lego NXT]{PLUGIN_NXT_SITE}
-\abntrefinfo{plugin\ldots}{PLUGIN\ldots}{b}
-{PLUGIN para programação Java para o kit Lego NXT.
-Visualizado em 01/10/2014.
-Dispon{\'\i}vel em:
-  \url{http://lejos.sourceforge.net/tools/eclipse/plugin/nxj}.}
-
-\bibitem[ROS site do framework]{ROS_SITE}
-\abntrefinfo{ROS\ldots}{ROS\ldots}{}
-{ROS site do framework.
-Visualizado em 23/10/2014.
-Dispon{\'\i}vel em: \url{http://wiki.ros.org/ROS}.}
-
 \bibitem[Secchi 2008]{Secchi2008}
 \abntrefinfo{Secchi}{SECCHI}{2008}
 {SECCHI, H.~A. \emph{Uma Introdução a Robôs Móveis}. Argentina, 2008. 91~p.
@@ -170,6 +105,78 @@ Dispon{\'\i}vel em: \url{http://wiki.ros.org/ROS}.}
 {SIEGWART, R.; NOURBAKHSH, I.~R. \emph{Introduction to autonomous mobile
   robots}. 1. ed. Massachusetts, EUA: Massachusetts Institute of Technology,
   2004. 336~p.}
+
+\bibitem[{Site da figura} 2014]{IMG_DIFFERENTIAL_STEERING_SITE}
+\abntrefinfo{{Site da figura}}{{Site da figura}}{2014}
+{{Site da figura}. \emph{exemplos de estruturas de direção diferencial}.
+  2014.
+Visualizado em 09/10/2014.
+Dispon{\'\i}vel em: \url{http://www.enigmaindustries.com/configurations.htm}.}
+
+\bibitem[{Site da imagem} 2014]{IMG_ROB_IND_SITE}
+\abntrefinfo{{Site da imagem}}{{Site da imagem}}{2014}
+{{Site da imagem}. \emph{imagem de braço robótico}. 2014.
+Visualizado em 01/10/2014.
+Dispon{\'\i}vel em: \url{http://sicmscj.com.br/links/roca1024.jpg}.}
+
+\bibitem[{Site do Carmen} 2014]{CARMEN_SITE}
+\abntrefinfo{{Site do Carmen}}{{Site do Carmen}}{2014}
+{{Site do Carmen}. \emph{Carmen site do framework}. 2014.
+Visualizado em 23/10/2014.
+Dispon{\'\i}vel em: \url{http://carmen.sourceforge.net/intro.html}.}
+
+\bibitem[{Site do Eclemma} 2014]{ECLEMMA_SITE}
+\abntrefinfo{{Site do Eclemma}}{{Site do Eclemma}}{2014}
+{{Site do Eclemma}. \emph{Eclemma, plugin para coberturade código}. 2014.
+Visualizado em 01/10/2014.
+Dispon{\'\i}vel em: \url{http://www.eclemma.org/installation.html}.}
+
+\bibitem[{Site do Eclipse} 2014]{ECLIPSE_SITE}
+\abntrefinfo{{Site do Eclipse}}{{Site do Eclipse}}{2014}
+{{Site do Eclipse}. \emph{Eclipse, ferramenta de desenvolvimento na versão
+  utilizada}. 2014.
+Visualizado em 01/10/2014.
+Dispon{\'\i}vel em:
+  \url{http://www.eclipse.org/downloads/packages/release/Indigo/SR2}.}
+
+\bibitem[{Site do JUnit} 2014]{JUNIT_SITE}
+\abntrefinfo{{Site do JUnit}}{{Site do JUnit}}{2014}
+{{Site do JUnit}. \emph{plugin para ferramenta de teste sunitários}. 2014.
+Visualizado em 01/10/2014.
+Dispon{\'\i}vel em: \url{http://junit.org/}.}
+
+\bibitem[{Site do Lejos} 2014]{LEJOS_SITE}
+\abntrefinfo{{Site do Lejos}}{{Site do Lejos}}{2014}
+{{Site do Lejos}. \emph{Lejos, plataforma Java para robôs da Lego}. 2014.
+Visualizado em 01/10/2014.
+Dispon{\'\i}vel em: \url{http://www.lejos.org/nxj.php}.}
+
+\bibitem[{Site do MRIT} 2014]{MRIT_SITE}
+\abntrefinfo{{Site do MRIT}}{{Site do MRIT}}{2014}
+{{Site do MRIT}. \emph{MRIT, ferramenta de simulação de algoritmos de
+  definição de trajetória}. 2014.
+Visualizado em 01/10/2014.
+Dispon{\'\i}vel em: \url{http://aer.ual.es/mrit/}.}
+
+\bibitem[{Site do plugin NXT} 2014]{PLUGIN_NXT_SITE}
+\abntrefinfo{{Site do plugin NXT}}{{Site do plugin NXT}}{2014}
+{{Site do plugin NXT}. \emph{plugin para programação Java para o kit Lego
+  NXT}. 2014.
+Visualizado em 01/10/2014.
+Dispon{\'\i}vel em:
+  \url{http://lejos.sourceforge.net/tools/eclipse/plugin/nxj}.}
+
+\bibitem[{Site do ROS} 2014]{ROS_SITE}
+\abntrefinfo{{Site do ROS}}{{Site do ROS}}{2014}
+{{Site do ROS}. \emph{Site do framework ROS}. 2014.
+Visualizado em 23/10/2014.
+Dispon{\'\i}vel em: \url{http://wiki.ros.org/ROS}.}
+
+\bibitem[{Site do Voronoi} 2014]{VORONOI_SITE}
+\abntrefinfo{{Site do Voronoi}}{{Site do Voronoi}}{2014}
+{{Site do Voronoi}. \emph{Voronoi site}. 2014.
+Visualizado em 29/10/2014.
+Dispon{\'\i}vel em: \url{http://www.Voronoi.com}.}
 
 \bibitem[Souza 2008]{Souza2008}
 \abntrefinfo{Souza}{SOUZA}{2008}
@@ -203,11 +210,5 @@ Dispon{\'\i}vel em:
   Norte, Natal, Brasil, 2005. Visualizado em 11/10/2014.
 Dispon{\'\i}vel em:
   \url{ftp://ftp.ufrn.br/pub/biblioteca/ext/bdtd/FredericoCV.pdf}.}
-
-\bibitem[Voronoi site]{VORONOI_SITE}
-\abntrefinfo{Voronoi\ldots}{VORONOI\ldots}{}
-{VORONOI site.
-Visualizado em 29/10/2014.
-Dispon{\'\i}vel em: \url{http://www.Voronoi.com}.}
 
 \end{thebibliography}

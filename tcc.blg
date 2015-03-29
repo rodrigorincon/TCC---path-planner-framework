@@ -20,17 +20,6 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Warning--campo year vazio ou faltando em CARMEN_SITE
-Warning--campo year vazio ou faltando em ECLEMMA_SITE
-Warning--campo year vazio ou faltando em ECLIPSE_SITE
-Warning--campo year vazio ou faltando em IMG_DIFFERENTIAL_STEERING_SITE
-Warning--campo year vazio ou faltando em IMG_ROB_IND_SITE
-Warning--campo year vazio ou faltando em LEJOS_SITE
-Warning--campo year vazio ou faltando em MRIT_SITE
-Warning--campo year vazio ou faltando em JUNIT_SITE
-Warning--campo year vazio ou faltando em PLUGIN_NXT_SITE
-Warning--campo year vazio ou faltando em ROS_SITE
-Warning--campo year vazio ou faltando em VORONOI_SITE
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-alf.bst versão v-1.9.2           |
 | Em caso de dúvidas ou problemas com este estilo procure |
@@ -38,43 +27,43 @@ Warning--campo year vazio ou faltando em VORONOI_SITE
 +---------------------------------------------------------+
 You've used 33 entries,
             6711 wiz_defined-function locations,
-            1414 strings with 14312 characters,
-and the built_in function-call counts, 43575 in all, are:
-= -- 5607
-> -- 530
+            1426 strings with 14492 characters,
+and the built_in function-call counts, 41687 in all, are:
+= -- 4864
+> -- 695
 < -- 996
-+ -- 1372
-- -- 161
-* -- 2487
-:= -- 5292
-add.period$ -- 144
++ -- 1270
+- -- 216
+* -- 2529
+:= -- 5286
+add.period$ -- 166
 call.type$ -- 33
-change.case$ -- 266
-chr.to.int$ -- 68
-cite$ -- 43
-duplicate$ -- 3975
-empty$ -- 1956
-format.name$ -- 762
-if$ -- 9393
-int.to.chr$ -- 1
+change.case$ -- 277
+chr.to.int$ -- 69
+cite$ -- 32
+duplicate$ -- 4041
+empty$ -- 1923
+format.name$ -- 1015
+if$ -- 8501
+int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 580
+missing$ -- 602
 newline$ -- 176
-num.names$ -- 105
-pop$ -- 730
+num.names$ -- 160
+pop$ -- 719
 preamble$ -- 1
 purify$ -- 112
 quote$ -- 0
-skip$ -- 4868
+skip$ -- 4092
 stack$ -- 1
-substring$ -- 1683
-swap$ -- 1424
+substring$ -- 1648
+swap$ -- 1479
 text.length$ -- 22
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 99
-warning$ -- 11
-while$ -- 171
+type$ -- 19
+warning$ -- 0
+while$ -- 215
 width$ -- 0
-write$ -- 506
-(There were 13 warnings)
+write$ -- 528
+(There were 2 warnings)
