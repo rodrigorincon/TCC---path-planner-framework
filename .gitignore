@@ -1,0 +1,7 @@
+.metadata/
+codigo/.classpath
+codigo/.metadata/
+codigo/.project
+codigo/.settings/
+codigo/bin/
+codigo/*.log
