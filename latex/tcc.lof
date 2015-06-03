@@ -31,19 +31,9 @@
 \contentsline {figure}{\numberline {30}{\ignorespaces componente BestPath}}{65}{figure.5.30}
 \contentsline {figure}{\numberline {31}{\ignorespaces C\IeC {\'o}digo do \textit {framework} sendo executado na vers\IeC {\~a}o prot\IeC {\'o}tipo}}{66}{figure.5.31}
 \contentsline {figure}{\numberline {32}{\ignorespaces obst\IeC {\'a}culo real em preto e a expans\IeC {\~a}o incrementada em amarelo \cite {MRIT_SITE}}}{68}{figure.5.32}
-\contentsline {figure}{\numberline {33}{\ignorespaces estrutura do funcionamento do \textit {framework}}}{73}{figure.6.33}
-\contentsline {figure}{\numberline {34}{\ignorespaces arquitetura a navega\IeC {\c c}\IeC {\~a}o considerada, \cite {Nehmzow2003}}}{74}{figure.6.34}
-\contentsline {figure}{\numberline {35}{\ignorespaces diagrama de pacotes do sistema}}{75}{figure.6.35}
-\contentsline {figure}{\numberline {36}{\ignorespaces componente Controller}}{75}{figure.6.36}
-\contentsline {figure}{\numberline {37}{\ignorespaces diagrama de sequ\IeC {\^e}ncia do componente controller}}{77}{figure.6.37}
-\contentsline {figure}{\numberline {38}{\ignorespaces componente Map}}{77}{figure.6.38}
-\contentsline {figure}{\numberline {39}{\ignorespaces componente PathPlanner}}{78}{figure.6.39}
-\contentsline {figure}{\numberline {40}{\ignorespaces componente Graph}}{79}{figure.6.40}
-\contentsline {figure}{\numberline {41}{\ignorespaces componente BestPath}}{79}{figure.6.41}
-\contentsline {figure}{\numberline {42}{\ignorespaces obst\IeC {\'a}culo real em preto e a expans\IeC {\~a}o incrementada em amarelo \cite {MRIT_SITE}}}{81}{figure.6.42}
-\contentsline {figure}{\numberline {43}{\ignorespaces mapa exemplo do \textit {hot-spot card} PathPlanner}}{93}{figure.anexochapback.1.43}
-\contentsline {figure}{\numberline {44}{\ignorespaces resultado do exemplo 1 do \textit {hot-spot card} PathPlanner}}{94}{figure.anexochapback.1.44}
-\contentsline {figure}{\numberline {45}{\ignorespaces mapa exemplo 2 do \textit {hot-spot card} PathPlanner}}{94}{figure.anexochapback.1.45}
-\contentsline {figure}{\numberline {46}{\ignorespaces resultado do exemplo 2 do \textit {hot-spot card} PathPlanner}}{94}{figure.anexochapback.1.46}
-\contentsline {figure}{\numberline {47}{\ignorespaces grafo exemplo do \textit {hot-spot card} BestPath}}{95}{figure.anexochapback.1.47}
-\contentsline {figure}{\numberline {48}{\ignorespaces grafo do exemplo 2 do \textit {hot-spot card} BestPath}}{95}{figure.anexochapback.1.48}
+\contentsline {figure}{\numberline {33}{\ignorespaces mapa exemplo do \textit {hot-spot card} PathPlanner}}{83}{figure.anexochapback.1.33}
+\contentsline {figure}{\numberline {34}{\ignorespaces resultado do exemplo 1 do \textit {hot-spot card} PathPlanner}}{84}{figure.anexochapback.1.34}
+\contentsline {figure}{\numberline {35}{\ignorespaces mapa exemplo 2 do \textit {hot-spot card} PathPlanner}}{84}{figure.anexochapback.1.35}
+\contentsline {figure}{\numberline {36}{\ignorespaces resultado do exemplo 2 do \textit {hot-spot card} PathPlanner}}{84}{figure.anexochapback.1.36}
+\contentsline {figure}{\numberline {37}{\ignorespaces grafo exemplo do \textit {hot-spot card} BestPath}}{85}{figure.anexochapback.1.37}
+\contentsline {figure}{\numberline {38}{\ignorespaces grafo do exemplo 2 do \textit {hot-spot card} BestPath}}{85}{figure.anexochapback.1.38}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.9)  3 JUN 2015 03:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.9)  3 JUN 2015 04:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -932,36 +932,6 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 16.
 Writing index file tcc.idx 
 (./tcc.aux
 
-LaTeX Warning: Label `fig19' multiply defined.
-
-
-LaTeX Warning: Label `fig20' multiply defined.
-
-
-LaTeX Warning: Label `fig21' multiply defined.
-
-
-LaTeX Warning: Label `fig22' multiply defined.
-
-
-LaTeX Warning: Label `fig23' multiply defined.
-
-
-LaTeX Warning: Label `fig24' multiply defined.
-
-
-LaTeX Warning: Label `fig25' multiply defined.
-
-
-LaTeX Warning: Label `fig26' multiply defined.
-
-
-LaTeX Warning: Label `fig27' multiply defined.
-
-
-LaTeX Warning: Label `fig28' multiply defined.
-
-
 LaTeX Warning: Label `figXX' multiply defined.
 
 
@@ -1192,13 +1162,15 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
 Underfull \vbox (badness 1325) has occurred while \output is active []
 
  [11]
-[12]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 101.
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 105.
+Underfull \vbox (badness 2961) has occurred while \output is active []
 
-)) (./editaveis/introducao.tex [13] [14
+ [12]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 90.
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 94.
+))
+(./editaveis/introducao.tex [13] [14
 
 ]
 Underfull \vbox (badness 1881) has occurred while \output is active []
@@ -1207,7 +1179,7 @@ Underfull \vbox (badness 1881) has occurred while \output is active []
 [16]) (./editaveis/referencial_teorico.tex [17] [18
 
 ] [19]
-<figuras/1bracorobotico.jpg, id=507, 370.0224pt x 277.5168pt>
+<figuras/1bracorobotico.jpg, id=458, 370.0224pt x 277.5168pt>
 File: figuras/1bracorobotico.jpg Graphic file (type jpg)
 
 <use figuras/1bracorobotico.jpg>
@@ -1220,7 +1192,7 @@ Package pdftex.def Info: figuras/1bracorobotico.jpg used on input line 26.
                                                   \fi \fi 
 l.37 
       <./figuras/1bracorobotico.jpg>]
-<figuras/1rodas.png, id=527, 264.23718pt x 156.585pt>
+<figuras/1rodas.png, id=479, 264.23718pt x 156.585pt>
 File: figuras/1rodas.png Graphic file (type png)
  <use figuras/1rodas.png>
 Package pdftex.def Info: figuras/1rodas.png used on input line 41.
@@ -1233,7 +1205,7 @@ Package pdftex.def Info: figuras/1rodas.png used on input line 41.
                                                   \fi \fi 
 l.50 
       <./figuras/1rodas.png>]
-<figuras/2ackerman.png, id=554, 241.65282pt x 167.12437pt>
+<figuras/2ackerman.png, id=506, 241.65282pt x 167.12437pt>
 File: figuras/2ackerman.png Graphic file (type png)
 
 <use figuras/2ackerman.png>
@@ -1252,7 +1224,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24]
-<figuras/arqRoboMoveis0.png, id=641, 313.9228pt x 155.07938pt>
+<figuras/arqRoboMoveis0.png, id=592, 313.9228pt x 155.07938pt>
 File: figuras/arqRoboMoveis0.png Graphic file (type png)
 
 <use figuras/arqRoboMoveis0.png>
@@ -1272,7 +1244,7 @@ Underfull \vbox (badness 1484) has occurred while \output is active []
                                                   \fi \fi 
 l.126 
        <./figuras/arqRoboMoveis0.png>]
-<figuras/6arquiteturaSPA.png, id=666, 325.215pt x 154.32657pt>
+<figuras/6arquiteturaSPA.png, id=618, 325.215pt x 154.32657pt>
 File: figuras/6arquiteturaSPA.png Graphic file (type png)
 
 <use figuras/6arquiteturaSPA.png>
@@ -1285,7 +1257,7 @@ Package pdftex.def Info: figuras/6arquiteturaSPA.png used on input line 140.
                                                   \fi \fi 
 l.151 
        <./figuras/6arquiteturaSPA.png>]
-<figuras/mapas.png, id=688, 398.23781pt x 379.4175pt>
+<figuras/mapas.png, id=640, 398.23781pt x 379.4175pt>
 File: figuras/mapas.png Graphic file (type png)
  <use figuras/mapas.png>
 Package pdftex.def Info: figuras/mapas.png used on input line 159.
@@ -1301,7 +1273,7 @@ e.2.6}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.182 
        <./figuras/mapas.png>]
-<figuras/5diagramaSequencia.png, id=716, 687.31781pt x 523.9575pt>
+<figuras/5diagramaSequencia.png, id=668, 687.31781pt x 523.9575pt>
 File: figuras/5diagramaSequencia.png Graphic file (type png)
 
 <use figuras/5diagramaSequencia.png>
@@ -1315,7 +1287,7 @@ Package pdftex.def Info: figuras/5diagramaSequencia.png used on input line 188.
                                                   \fi \fi 
 l.195 
        <./figuras/5diagramaSequencia.png>]
-<figuras/7visibilityGraph.png, id=747, 787.44188pt x 258.9675pt>
+<figuras/7visibilityGraph.png, id=698, 787.44188pt x 258.9675pt>
 File: figuras/7visibilityGraph.png Graphic file (type png)
 
 <use figuras/7visibilityGraph.png>
@@ -1335,7 +1307,7 @@ s�o dos obs-t�-cu-los
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[31] <figuras/8voronoi.png, id=773, 447.92343pt x 310.91156pt>
+[31] <figuras/8voronoi.png, id=725, 447.92343pt x 310.91156pt>
 File: figuras/8voronoi.png Graphic file (type png)
 
 <use figuras/8voronoi.png>
@@ -1355,7 +1327,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
                                                   \fi \fi 
 l.233 
        <./figuras/7visibilityGraph.png>]
-<figuras/9quadtree.png, id=790, 928.21782pt x 330.48468pt>
+<figuras/9quadtree.png, id=742, 928.21782pt x 330.48468pt>
 File: figuras/9quadtree.png Graphic file (type png)
 
 <use figuras/9quadtree.png>
@@ -1376,7 +1348,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
                                                   \fi \fi 
 l.250 
        <./figuras/8voronoi.png>]
-<figuras/10wavefront.png, id=800, 340.27126pt x 236.38312pt>
+<figuras/10wavefront.png, id=752, 340.27126pt x 236.38312pt>
 File: figuras/10wavefront.png Graphic file (type png)
 
 <use figuras/10wavefront.png>
@@ -1408,7 +1380,7 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
                                                   \fi \fi 
 l.277 
        <./figuras/10wavefront.png>] [36]
-<figuras/arqcamadas.jpg, id=836, 241.91432pt x 254.0861pt>
+<figuras/arqcamadas.jpg, id=788, 241.91432pt x 254.0861pt>
 File: figuras/arqcamadas.jpg Graphic file (type jpg)
 
 <use figuras/arqcamadas.jpg>
@@ -1424,7 +1396,7 @@ l.302
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 323.
  [39]
-<figuras/hotspotbox.jpg, id=907, 699.61375pt x 314.17375pt>
+<figuras/hotspotbox.jpg, id=859, 699.61375pt x 314.17375pt>
 File: figuras/hotspotbox.jpg Graphic file (type jpg)
 
 <use figuras/hotspotbox.jpg>
@@ -1437,7 +1409,7 @@ Package pdftex.def Info: figuras/hotspotbox.jpg used on input line 336.
                                                   \fi \fi 
 l.343 
        <./figuras/hotspotbox.jpg>]
-<figuras/subsistemaHotspot.jpg, id=919, 906.38625pt x 339.2675pt>
+<figuras/subsistemaHotspot.jpg, id=871, 906.38625pt x 339.2675pt>
 File: figuras/subsistemaHotspot.jpg Graphic file (type jpg)
 
 <use figuras/subsistemaHotspot.jpg>
@@ -1453,7 +1425,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
                                                   \fi \fi 
 l.356 
        <./figuras/subsistemaHotspot.jpg>]
-<figuras/hotspotdd.jpg, id=929, 550.055pt x 626.34pt>
+<figuras/hotspotdd.jpg, id=881, 550.055pt x 626.34pt>
 File: figuras/hotspotdd.jpg Graphic file (type jpg)
 
 <use figuras/hotspotdd.jpg>
@@ -1466,7 +1438,7 @@ Package pdftex.def Info: figuras/hotspotdd.jpg used on input line 360.
                                                   \fi \fi 
 l.365 
        <./figuras/hotspotdd.jpg>]
-<figuras/hotspotcard.jpg, id=943, 274.02374pt x 216.81pt>
+<figuras/hotspotcard.jpg, id=895, 274.02374pt x 216.81pt>
 File: figuras/hotspotcard.jpg Graphic file (type jpg)
 
 <use figuras/hotspotcard.jpg>
@@ -1490,14 +1462,14 @@ l.396 \subsection
 (./editaveis/suporte_tecnologico.tex [47] [48
 
 ] [49]
-<figuras/5nxtBrick.png, id=1013, 877.2775pt x 780.9175pt>
+<figuras/5nxtBrick.png, id=965, 877.2775pt x 780.9175pt>
 File: figuras/5nxtBrick.png Graphic file (type png)
 
 <use figuras/5nxtBrick.png>
 Package pdftex.def Info: figuras/5nxtBrick.png used on input line 26.
 (pdftex.def)             Requested size: 175.4524pt x 156.18073pt.
 
-<figuras/3differentialSteering.png, id=1016, 493.0922pt x 141.52875pt>
+<figuras/3differentialSteering.png, id=968, 493.0922pt x 141.52875pt>
 File: figuras/3differentialSteering.png Graphic file (type png)
 
 <use figuras/3differentialSteering.png>
@@ -1529,7 +1501,7 @@ l.1 \chapter
             [Metodologia]{Metodologia} <./figuras/3differentialSteering.png>]
 [52
 
-] [53] <figuras/fluxoatvd.png, id=1052, 766.36313pt x 714.41907pt>
+] [53] <figuras/fluxoatvd.png, id=1004, 766.36313pt x 714.41907pt>
 File: figuras/fluxoatvd.png Graphic file (type png)
 
 <use figuras/fluxoatvd.png>
@@ -1551,7 +1523,7 @@ e.4.19}) has been already used, duplicate ignored
 l.50   \item I
               mplementar algoritmo Wavefront; <./figuras/fluxoatvd.png>])
 (./editaveis/proposta.tex [56]
-<figuras/framework.png, id=1067, 397.485pt x 214.8828pt>
+<figuras/framework.png, id=1018, 397.485pt x 214.8828pt>
 File: figuras/framework.png Graphic file (type png)
 
 <use figuras/framework.png>
@@ -1569,7 +1541,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.20})
                                                   \fi \fi 
 l.17 
       <./figuras/framework.png>]
-<figuras/arqusada.jpg, id=1075, 380.42125pt x 151.56625pt>
+<figuras/arqusada.jpg, id=1026, 380.42125pt x 151.56625pt>
 File: figuras/arqusada.jpg Graphic file (type jpg)
 
 <use figuras/arqusada.jpg>
@@ -1582,14 +1554,14 @@ Package pdftex.def Info: figuras/arqusada.jpg used on input line 21.
                                                   \fi \fi 
 l.34 
       <./figuras/arqusada.jpg>]
-<figuras/componentes.png, id=1084, 996.72375pt x 514.92375pt>
+<figuras/componentes.png, id=1035, 996.72375pt x 514.92375pt>
 File: figuras/componentes.png Graphic file (type png)
 
 <use figuras/componentes.png>
 Package pdftex.def Info: figuras/componentes.png used on input line 42.
 (pdftex.def)             Requested size: 398.68243pt x 205.96585pt.
 
-<figuras/embedded.png, id=1085, 453.94594pt x 371.13657pt>
+<figuras/embedded.png, id=1036, 453.94594pt x 371.13657pt>
 File: figuras/embedded.png Graphic file (type png)
 
 <use figuras/embedded.png>
@@ -1606,7 +1578,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
                                                   \fi \fi 
 l.60 
       <./figuras/componentes.png>]
-<figuras/tcp.png, id=1092, 292.84406pt x 194.97844pt>
+<figuras/tcp.png, id=1043, 292.84406pt x 194.97844pt>
 File: figuras/tcp.png Graphic file (type png)
  <use figuras/tcp.png>
 Package pdftex.def Info: figuras/tcp.png used on input line 68.
@@ -1625,7 +1597,7 @@ entifier (name{figure.5.24}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.74 \subsection
                 {Controller} <./figuras/embedded.png> <./figuras/tcp.png>]
-<figuras/pkgcontroller.png, id=1099, 855.195pt x 369.63094pt>
+<figuras/pkgcontroller.png, id=1050, 855.195pt x 369.63094pt>
 File: figuras/pkgcontroller.png Graphic file (type png)
 
 <use figuras/pkgcontroller.png>
@@ -1644,14 +1616,14 @@ Overfull \hbox (58.12097pt too wide) in paragraph at lines 79--80
 l.91 O
        diagrama de sequência apresentado na seção 2.4 mostra de forma bas...
  <./figuras/pkgcontroller.png>]
-<figuras/executeController.png, id=1105, 1075.76906pt x 720.44156pt>
+<figuras/executeController.png, id=1057, 1075.76906pt x 720.44156pt>
 File: figuras/executeController.png Graphic file (type png)
 
 <use figuras/executeController.png>
 Package pdftex.def Info: figuras/executeController.png used on input line 96.
 (pdftex.def)             Requested size: 430.3pt x 288.17151pt.
 
-<figuras/pkgmap.png, id=1106, 618.81187pt x 419.31656pt>
+<figuras/pkgmap.png, id=1058, 618.81187pt x 419.31656pt>
 File: figuras/pkgmap.png Graphic file (type png)
 
 <use figuras/pkgmap.png>
@@ -1668,7 +1640,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
                                                   \fi \fi 
 l.114 
        <./figuras/executeController.png>]
-<figuras/pkgpathplanner.png, id=1112, 706.13812pt x 499.11469pt>
+<figuras/pkgpathplanner.png, id=1064, 706.13812pt x 499.11469pt>
 File: figuras/pkgpathplanner.png Graphic file (type png)
 
 <use figuras/pkgpathplanner.png>
@@ -1687,14 +1659,14 @@ l.125
                                                   \fi \fi 
 l.125 
        <./figuras/pkgmap.png> <./figuras/pkgpathplanner.png>]
-<figuras/pkggraph.png, id=1121, 593.21625pt x 438.8897pt>
+<figuras/pkggraph.png, id=1073, 593.21625pt x 438.8897pt>
 File: figuras/pkggraph.png Graphic file (type png)
 
 <use figuras/pkggraph.png>
 Package pdftex.def Info: figuras/pkggraph.png used on input line 133.
 (pdftex.def)             Requested size: 296.60739pt x 219.4443pt.
 
-<figuras/pkgbestPath.png, id=1122, 662.475pt x 498.36188pt>
+<figuras/pkgbestPath.png, id=1074, 662.475pt x 498.36188pt>
 File: figuras/pkgbestPath.png Graphic file (type png)
 
 <use figuras/pkgbestPath.png>
@@ -1717,7 +1689,7 @@ l.151
                                                   \fi \fi 
 l.161 
        <./figuras/pkgbestPath.png>]
-<figuras/codigoprototipo.PNG, id=1134, 556.32843pt x 223.58531pt>
+<figuras/codigoprototipo.PNG, id=1086, 556.32843pt x 223.58531pt>
 File: figuras/codigoprototipo.PNG Graphic file (type png)
 
 <use figuras/codigoprototipo.PNG>
@@ -1735,7 +1707,7 @@ Overfull \hbox (8.51302pt too wide) in paragraph at lines 207--208
 res di-fe-ren-tes no mapa, marcando-
  []
 
-<figuras/expansao.png, id=1157, 462.97969pt x 315.42844pt>
+<figuras/expansao.png, id=1109, 462.97969pt x 315.42844pt>
 File: figuras/expansao.png Graphic file (type png)
 
 <use figuras/expansao.png>
@@ -1748,186 +1720,39 @@ Package pdftex.def Info: figuras/expansao.png used on input line 214.
                                                   \fi \fi 
 l.220 O
        utra consideração são os obstáculos côncavos. \cite{Siegwart2004...
- <./figuras/expansao.png>] [69] [70]) (./editaveis/resultados.tex [71] [72
+ <./figuras/expansao.png>] [69] [70] [71]) (./editaveis/resultados.tex [72])
+(./editaveis/conclusao.tex [73
 
-]
-File: figuras/framework.png Graphic file (type png)
+] [74
 
-<use figuras/framework.png>
-Package pdftex.def Info: figuras/framework.png used on input line 10.
-(pdftex.def)             Requested size: 437.23485pt x 236.3718pt.
-File: figuras/arqusada.jpg Graphic file (type jpg)
- <use figuras/arqusada.jpg>
-Package pdftex.def Info: figuras/arqusada.jpg used on input line 19.
-(pdftex.def)             Requested size: 380.4203pt x 151.56587pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[73pdfTeX warning (ext4): destination with the same identifier (name{figure.6.3
-3}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.24 
-     ] [74pdfTeX warning (ext4): destination with the same identifier (name{fig
-ure.6.34}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.35 O
-       diagrama de componentes da Figura 21 mostra os módulos do sistema e ...
-]
-File: figuras/componentes.png Graphic file (type png)
- <use figuras/componentes.png>
-Package pdftex.def Info: figuras/componentes.png used on input line 40.
-(pdftex.def)             Requested size: 398.68243pt x 205.96585pt.
-File: figuras/pkgcontroller.png Graphic file (type png)
- <use figuras/pkgcontroller.png>
-Package pdftex.def Info: figuras/pkgcontroller.png used on input line 51.
-(pdftex.def)             Requested size: 427.59647pt x 184.815pt.
- [75pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
-35}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.56 
-     pdfTeX warning (ext4): destination with the same identifier (name{figure.6
-.36}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.56 
-     ]
-File: figuras/executeController.png Graphic file (type png)
- <use figuras/executeController.png>
-Package pdftex.def Info: figuras/executeController.png used on input line 68.
-(pdftex.def)             Requested size: 430.3pt x 288.17151pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: figuras/pkgmap.png Graphic file (type png)
-<use figuras/pkgmap.png>
-Package pdftex.def Info: figuras/pkgmap.png used on input line 77.
-(pdftex.def)             Requested size: 309.40518pt x 209.65776pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: figuras/pkgpathplanner.png Graphic file (type png)
-<use figuras/pkgpathplanner.png>
-Package pdftex.def Info: figuras/pkgpathplanner.png used on input line 90.
-(pdftex.def)             Requested size: 353.06819pt x 249.55672pt.
-
-Underfull \vbox (badness 8113) has occurred while \output is active []
-
- [76]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[77pdfTeX warning (ext4): destination with the same identifier (name{figure.6.3
-7}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.97 
-     pdfTeX warning (ext4): destination with the same identifier (name{figure.6
-.38}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.97 
-     ]
-File: figuras/pkggraph.png Graphic file (type png)
- <use figuras/pkggraph.png>
-Package pdftex.def Info: figuras/pkggraph.png used on input line 103.
-(pdftex.def)             Requested size: 296.60739pt x 219.4443pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: figuras/pkgbestPath.png Graphic file (type png)
-<use figuras/pkgbestPath.png>
-Package pdftex.def Info: figuras/pkgbestPath.png used on input line 116.
-(pdftex.def)             Requested size: 331.2367pt x 249.18033pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[78pdfTeX warning (ext4): destination with the same identifier (name{figure.6.3
-9}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.122 N
-       ovamente, a classe abstrata BestPath define as características comun...
-]
-Underfull \vbox (badness 3724) has occurred while \output is active []
-
- [79pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
-40}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.126 \section
-              {O mapa}pdfTeX warning (ext4): destination with the same identifi
-er (name{figure.6.41}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.126 \section
-              {O mapa}]
-Overfull \hbox (8.51302pt too wide) in paragraph at lines 134--135
-[]\T1/lmr/m/n/12 Os obs-t�-cu-los s�o re-pre-sen-ta-dos por c�-lu-las de va-lo-
-res di-fe-ren-tes no mapa, marcando-
- []
-
-File: figuras/expansao.png Graphic file (type png)
-<use figuras/expansao.png>
-Package pdftex.def Info: figuras/expansao.png used on input line 141.
-(pdftex.def)             Requested size: 231.48927pt x 157.71382pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[80] [81pdfTeX warning (ext4): destination with the same identifier (name{figur
-e.6.42}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.158 
-      ] [82] [83]) (./editaveis/conclusao.tex [84]) (./tcc.bbl (./tcc.brf)
+]) (./tcc.bbl (./tcc.brf)
 \tf@brf=\write5
 \openout5 = `tcc.brf'.
 
-
-[85
-
-] [86
+ [75] [76
 
 ]
 bibitemlist
-[87] [88]) (./editaveis/anexos.tex [89] [90
+[77] [78]) (./editaveis/anexos.tex [79] [80
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 4.
 
-[91
+[81
 
-] [92]
+] [82]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <24.88> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 5.
- <figuras/mapahotspot1.PNG, id=1522, 498.36188pt x 166.37157pt>
+ <figuras/mapahotspot1.PNG, id=1370, 498.36188pt x 166.37157pt>
 File: figuras/mapahotspot1.PNG Graphic file (type png)
 
 <use figuras/mapahotspot1.PNG>
 Package pdftex.def Info: figuras/mapahotspot1.PNG used on input line 30.
 (pdftex.def)             Requested size: 348.85094pt x 116.45929pt.
 
-<figuras/grafohotspotcard1.PNG, id=1523, 298.11375pt x 249.93375pt>
+<figuras/grafohotspotcard1.PNG, id=1371, 298.11375pt x 249.93375pt>
 File: figuras/grafohotspotcard1.PNG Graphic file (type png)
 
 <use figuras/grafohotspotcard1.PNG>
@@ -1937,7 +1762,7 @@ Package pdftex.def Info: figuras/grafohotspotcard1.PNG used on input line 39.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figuras/mapahotspot2.PNG, id=1524, 496.85625pt x 166.37157pt>
+<figuras/mapahotspot2.PNG, id=1372, 496.85625pt x 166.37157pt>
 File: figuras/mapahotspot2.PNG Graphic file (type png)
 
 <use figuras/mapahotspot2.PNG>
@@ -1947,7 +1772,7 @@ Package pdftex.def Info: figuras/mapahotspot2.PNG used on input line 50.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figuras/grafohotspotcard2.PNG, id=1525, 276.28218pt x 206.27063pt>
+<figuras/grafohotspotcard2.PNG, id=1373, 276.28218pt x 206.27063pt>
 File: figuras/grafohotspotcard2.PNG Graphic file (type png)
 
 <use figuras/grafohotspotcard2.PNG>
@@ -1960,10 +1785,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Underfull \vbox (badness 1028) has occurred while \output is active []
 
- [93
+ [83
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.anexoc
-hapback.1.43}) has been already used, duplicate ignored
+hapback.1.33}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1972,22 +1797,22 @@ l.67 ...tbf{Graus de flexibilidade especificados:}
 >]
 Underfull \vbox (badness 2689) has occurred while \output is active []
 
- [94pdfTeX warning (ext4): destination with the same identifier (name{figure.an
-exochapback.1.44}) has been already used, duplicate ignored
+ [84pdfTeX warning (ext4): destination with the same identifier (name{figure.an
+exochapback.1.34}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.75 D
       efinição do menor caminho entre um nó e outro em um grafo, retornan...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.anexoc
-hapback.1.45}) has been already used, duplicate ignored
+hapback.1.35}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.75 D
       efinição do menor caminho entre um nó e outro em um grafo, retornan...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.anexoc
-hapback.1.46}) has been already used, duplicate ignored
+hapback.1.36}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -2007,24 +1832,30 @@ Package pdftex.def Info: figuras/grafohotspotcard2.PNG used on input line 97.
 
 Underfull \vbox (badness 7522) has occurred while \output is active []
 
- [95pdfTeX warning (ext4): destination with the same identifier (name{figure.an
-exochapback.1.47}) has been already used, duplicate ignored
+ [85pdfTeX warning (ext4): destination with the same identifier (name{figure.an
+exochapback.1.37}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.107 \chapter
-              {Segundo Anexo}pdfTeX warning (ext4): destination with the same i
-dentifier (name{figure.anexochapback.1.48}) has been already used, duplicate ig
+              {Código fonte}pdfTeX warning (ext4): destination with the same i
+dentifier (name{figure.anexochapback.1.38}) has been already used, duplicate ig
 nored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.107 \chapter
-              {Segundo Anexo}] [96])
+              {Código fonte}] [86]
+Overfull \hbox (96.31091pt too wide) in paragraph at lines 109--110
+[]\T1/lmr/m/n/12 O c�-digo fonte se en-con-tra dis-po-n�-vel no se-guinte en-de
+-re�o: https://github.com/rodrigorincon/TCC---
+ []
+
+)
 No file tcc.ind.
 
 AED: lastpage setting LastPage
-[97
+[87
 
 ]
 \tf@lof=\write6
@@ -2039,7 +1870,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 43.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 43.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 43.
 Package rerunfilecheck Info: File `tcc.brf' has not changed.
-(rerunfilecheck)             Checksum: 42206C8BA3B5C7DB1D1C6D35C18D19EB;11400.
+(rerunfilecheck)             Checksum: EF4B6810B3783ACE343B35AD2B650881;10338.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2047,10 +1878,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 43.
  ) 
 Here is how much of TeX's memory you used:
- 13177 strings out of 493304
- 193042 string characters out of 6139872
- 337261 words of memory out of 5000000
- 15986 multiletter control sequences out of 15000+600000
+ 13135 strings out of 493304
+ 192650 string characters out of 6139872
+ 334847 words of memory out of 5000000
+ 15975 multiletter control sequences out of 15000+600000
  87394 words of font info for 58 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  41i,13n,38p,1561b,646s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2066,10 +1897,10 @@ public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr
 /share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/p
 ublic/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso17.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on tcc.pdf (99 pages, 4383577 bytes).
+Output written on tcc.pdf (89 pages, 4356952 bytes).
 PDF statistics:
- 1958 PDF objects out of 2073 (max. 8388607)
- 1712 compressed objects within 18 object streams
- 293 named destinations out of 1000 (max. 500000)
- 974 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1766 PDF objects out of 2073 (max. 8388607)
+ 1536 compressed objects within 16 object streams
+ 262 named destinations out of 1000 (max. 500000)
+ 886 words of extra memory for PDF output out of 10000 (max. 10000000)
 

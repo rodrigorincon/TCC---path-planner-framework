@@ -78,36 +78,25 @@
 \contentsline {section}{\numberline {5.7}Resumo do Cap\IeC {\'\i }tulo}{71}{section.5.7}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Resultados obtidos}}{73}{chapter.6}
-\contentsline {section}{\numberline {6.1}A arquitetura}{74}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Controller}{75}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Map}{76}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Path Planner}{77}{subsection.6.1.3}
-\contentsline {subsection}{\numberline {6.1.4}Graph}{78}{subsection.6.1.4}
-\contentsline {subsection}{\numberline {6.1.5}Best Path}{78}{subsection.6.1.5}
-\contentsline {section}{\numberline {6.2}O mapa}{80}{section.6.2}
-\contentsline {section}{\numberline {6.3}Os obst\IeC {\'a}culos}{80}{section.6.3}
-\contentsline {section}{\numberline {6.4}Hot-spots do framework}{81}{section.6.4}
-\contentsline {section}{\numberline {6.5}Boas pr\IeC {\'a}ticas de programa\IeC {\c c}\IeC {\~a}o}{81}{section.6.5}
-\contentsline {section}{\numberline {6.6}Resumo do Cap\IeC {\'\i }tulo}{84}{section.6.6}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Conclus\IeC {\~a}o}}{85}{chapter.7}
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Conclus\IeC {\~a}o}}{75}{chapter.7}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{87}{section*.7}
+\contentsline {chapter}{Refer\^encias}{77}{section*.7}
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Anexos}}{91}{section*.8}
+\contentsline {part}{\uppercase {Anexos}}{81}{section*.8}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {\textit {Host-spot Cards}}}{93}{appendix.anexochapback.1}
-\contentsline {section}{\numberline {A.1}PathPlanner}{93}{section.anexochapback.1.1}
-\contentsline {section}{\numberline {A.2}BestPath}{94}{section.anexochapback.1.2}
-\contentsline {section}{\numberline {A.3}Map}{96}{section.anexochapback.1.3}
-\contentsline {section}{\numberline {A.4}EmbeddedCommunicator}{96}{section.anexochapback.1.4}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {\textit {Host-spot Cards}}}{83}{appendix.anexochapback.1}
+\contentsline {section}{\numberline {A.1}PathPlanner}{83}{section.anexochapback.1.1}
+\contentsline {section}{\numberline {A.2}BestPath}{84}{section.anexochapback.1.2}
+\contentsline {section}{\numberline {A.3}Map}{86}{section.anexochapback.1.3}
+\contentsline {section}{\numberline {A.4}EmbeddedCommunicator}{86}{section.anexochapback.1.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Segundo Anexo}}{97}{appendix.anexochapback.2}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {C\IeC {\'o}digo fonte}}{87}{appendix.anexochapback.2}
