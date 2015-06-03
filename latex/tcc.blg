@@ -15,7 +15,6 @@ Database file #1: abntex2-options.bib
 Database file #2: bibliografia.bib
 Warning--entry type for "Abreu2001" isn't style-file defined
 --line 136 of file bibliografia.bib
-Warning--I didn't find a database entry for "Rolland2004"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -27,7 +26,7 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
 You've used 33 entries,
             6711 wiz_defined-function locations,
-            1426 strings with 14492 characters,
+            1424 strings with 14519 characters,
 and the built_in function-call counts, 41687 in all, are:
 = -- 4864
 > -- 695
@@ -66,4 +65,4 @@ warning$ -- 0
 while$ -- 215
 width$ -- 0
 write$ -- 528
-(There were 2 warnings)
+(There was 1 warning)

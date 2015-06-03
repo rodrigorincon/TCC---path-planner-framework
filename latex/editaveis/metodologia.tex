@@ -6,19 +6,21 @@ O tipo de pesquisa (em relação aos objetivos) foi majoritariamente exploratór
 
 \section{Processo de produção}
 
-Com isso, a metodologia abordada neste trabalho envolve pesquisa sistemática sobre o tema, a fim de levantar materiais de estudo ligados ao tema e deles tirar o modo de desenvolver o \textit{framework} e seus algoritmos, além de buscar métricas para comparar o funcionamento do sistema. Com base nestes estudos, foi feito então uma prova de conceito, desenvolvendo a arquitetura do sistema e implementado os algoritmos Quadtree e Djikstra para validar a proposta levantada. Após os experimentos a proposta foi refinada de acordo com os resultados obtidos.
+Com isso, a metodologia abordada neste trabalho envolve pesquisa sistemática sobre o tema, a fim de levantar materiais de estudo ligados ao tema e deles tirar o modo de desenvolver o \textit{framework} e seus algoritmos, além de buscar métricas para comparar o funcionamento do sistema. 
+
+Com base nestes estudos, foi feito então uma prova de conceito, desenvolvendo a arquitetura do sistema e implementado os algoritmos Quadtree e Djikstra para validar a proposta levantada. Nesta prova de conceito foi definido os módulos do \textit{framework}, as interfaces públicas para comunicação e implementado 1 algoritmo para testar a arquitetura modelada. Assim, ao fim da prova d econceito já era possível passar por todo o fluxo de atividades do \textit{framework} e chegar na resposta correta para o conjunto de entradas dado. A partir dos resultados obtidos a proposta foi refinada.
 
 A partir deste refinamento foi dado início a produção do \textit{framework} por completo seguindo o processo orientado a \textit{hot-spot} apresentado por \cite{Fayad1999} em combinação com os princípios ágeis, como refatoração, testes automatizados, detalhamento das atividades apenas ao implementá-la, etc. A abordagem foi \textit{top-down}, focando em cada iteração (ou \textit{sprint}) em uma funcionalidade e no módulo e classes correspondentes a mesma. 
 
-A cada \textit{sprint} foi concluída uma tarefa que agreguasse valor ao produto, podendo ser essa tarefa um algoritmo, um módulo de estrutura de dados (como o Graph ou Map), uma interface e as interações de um componente completa e testada ou um teste da implementação no robô em ambiente controlado. Todo início de ciclo era escolhida uma tarefa a ser realizada, revisada e refinada sua análise, levantado \textit{hot-spots} e desenvolvida e revista sua comunicação com os demais módulos. Foi dedicado um tempo para a reavaliação dos \textit{hot-spots} já desenvolvidos também e validação do produto entregue.
+A cada \textit{sprint} foi concluída uma tarefa que agreguasse valor ao produto ou ao trabalho de conclusão de curso, podendo ser essa tarefa um algoritmo, um módulo de estrutura de dados (como o Graph ou Map), uma interface e as interações de um componente completa e testada ou um teste da implementação no robô em ambiente controlado. Todo início de ciclo era escolhida uma tarefa a ser realizada, revisada e refinada sua análise, levantado \textit{hot-spots} e desenvolvida e revista sua comunicação com os demais módulos. Foi dedicado um tempo para a reavaliação dos \textit{hot-spots} já desenvolvidos também e validação do produto entregue.
 
 \section{Atividades e fluxo de atividades}
 
-Quase todas as atividades foram detalhadas na Figura 15. As inserções foram baseadas no processo do Scrum e nas atividades já relizadas ao longo deste trabalho. O diagrama de atividades completo é apresentado na figura 29.
+Quase todas as atividades foram detalhadas na Figura 15. As inserções foram baseadas no processo do Scrum e nas atividades já relizadas ao longo deste trabalho. O diagrama de atividades completo é apresentado na figura 19.
 
 \begin{figure}[h]
 	\centering
-	\label{fig29}
+	\label{fig19}
 		\includegraphics[keepaspectratio=true,scale=0.68]{figuras/fluxoatvd.png}
 	\caption{fluxo de atividades propostas}
 \end{figure}
@@ -35,6 +37,27 @@ Cada \textit{sprint} possuiu as seguintes atividades que foram realizadas:
   \item Fazer uma revisão de todo o sistema para ver se está evoluindo para o fim esperado e se há alguma falha arquitetural e,
   \item Verificar se ainda há trabalho a ser feito e, caso haja, levantar mais tarefas, testes e pesquisas para alcançar seu fim.
 \end{itemize} 
+
+As tarefas realizadas nas \textit{sprints} e que compuseram a construção deste trabalho foram as seguintes:
+\begin{itemize}
+  \item Revisar a arquitetura e a implementação do algoritmo Quadtree;
+  \item Revisar trabalho escrito;
+  \item Implementar o algoritmo de menor caminho A* (A Estrela);
+  \item Analisar outros algoritmos de menor caminho;
+  \item Realizar teste do \textit{framework} no robô;
+  \item Testar memória e processamento do \textit{framework} no robô;
+  \item Criar ambientes de testes com base da ferramenta de simulação MRIT;
+  \item Implementar algoritmo Wavefront;
+  \item Implementar algoritmo Voronoi;
+  \item Implementar algoritmo Grafo de Visibilidade;
+  \item Desenvolver serviço web para comunicar com o robô;
+  \item Desenvolver módulo embarcado no robô que se comunique com o serviço web;
+  \item Avaliar possibilidade do mapa ser um novo \textit{hot-spot};
+  \item Otimizar implementação do algoritmo e,
+  \item Escrever trabalho escrito.
+\end{itemize}
+
+Vale ressaltar que algumas destas tarefas foram executadas mais de uma vez, sendo realizada de forma iterativa e incremental. Em geral, cada iteração levou pouco menos de uma semana, embora não tenham sido constantes ao longo do semestre.
 
 \section{Resumo do Capítulo}
 

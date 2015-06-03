@@ -1,3 +1,4 @@
+
 \chapter[Introdução]{Introdução}
 
 O ramo da robótica costuma atrair a atenção de leigos e profissionais, explorando um campo onde a imaginação trabalha ao máximo. A robótica móvel em específico tem levado as máquinas para mais perto da população e trazendo desafios aos desenvolvedores destas máquinas. Para construir uma máquina autônoma há uma série de dificuldades, cada uma fonte de pesquisas e trabalho. Para mover uma máquina entre dois pontos é preciso o controle de motores, mapeamento e sensoriamento da região, estudo da cinemática do robô, planejamento da trajetória e monitoramento do movimento.
@@ -20,7 +21,7 @@ O objetivo deste trabalho é ajudar a comunidade de robótica a alcançar maior 
 
 Conforme \cite{Larman2005}, \cite{Goodliffe2007} e \cite{McConnel2004}, alto acoplamento é indesejado, pois torna o código sensível a falhas e de difícil manutenção. Segundo eles, o reuso facilita e agiliza o desenvolvimento, diminuindo o esforço para tarefas repetitivas e/ou que possam ser isoladas.
 
-Este \textit{framework} é um módulo independente que desacopla a definição de trajetória do resto do sistema. Um \textit{framework} de código aberto permite ainda o uso de um código comum a toda a comunidade, induzindo o reuso e um padrão de utilização da área contemplada. Tudo isso ainda acaba por facilitar a compreensão de outros códigos. A implementação do \textit{framework} terá a visão de fazê-lo funcionar na maioria das plataformas e deixá-lo extensível para inclusão posterior de novas plataformas e algoritmos. A própria comunidade pode contribuir para sua expansão, tornando-o compatível com mais hardwares e implementando novos algoritmos para traçar rotas.
+O Traveller Framework é um módulo independente que desacopla a definição de trajetória do resto do sistema. Um \textit{framework} de código aberto permite ainda o uso de um código comum a toda a comunidade, induzindo o reuso e um padrão de utilização da área contemplada. Tudo isso ainda acaba por facilitar a compreensão de outros códigos. A implementação do Traveller \textit{framework} terá a visão de fazê-lo funcionar na maioria das plataformas e deixá-lo extensível para inclusão posterior de novas plataformas e algoritmos. A própria comunidade pode contribuir para sua expansão, tornando-o compatível com mais hardwares e implementando novos algoritmos para traçar rotas.
 
 \section{Objetivos}
 
@@ -28,7 +29,7 @@ Os objetivos deste trabalho, tanto de forma geral como mais específicos, são l
 
 \subsection{Objetivo Geral}
 
-Este trabalho de conclusão de curso é desenvolver um \textit{framework} manutenível e extensível sobre algoritmos de definição de trajetória para robôs móveis. Serão utilizados algoritmos clássicos para um ambiente previamente conhecido (algoritmos globais). A implementação compreende em demonstrar um robô \textit{differential steering} em funcionamento utilizando o \textit{framework} proposto.
+Este trabalho de conclusão de curso visa desenvolver um \textit{framework} manutenível e extensível sobre algoritmos de definição de trajetória para robôs móveis. Serão utilizados algoritmos clássicos para um ambiente previamente conhecido (algoritmos globais). A implementação compreende em demonstrar um robô \textit{differential steering} em funcionamento utilizando o \textit{framework} proposto.
 
 \subsection{Objetivos Específicos}
 
@@ -44,12 +45,13 @@ Este trabalho tem por objetivos, principalmente:
 
 \section{Organização do Trabalho}
 
-O trabalho está dividido em 6 capítulos principais:
+O trabalho está dividido em 7 capítulos principais:
 \begin{enumerate}
 	\item Introdução: este capítulo, visando explicar o problema que gerou este trabalho
 	\item Referencial Teórico: explana sobre os conceitos importantes da robótica e questões mecânicas pertinentes à locomoção do robô, além de uma rápida análise dos módulos de navegação além do abordado neste trabalho
 	\item Suporte tecnológico: explica sobre as tecnologias utilizadas para o desenvolvimento tanto do \textit{framework} quanto da prova de conceito, listando ferramentas, \textit{plugins} e kits utilizados.	
-	\item Proposta: detalhamento do funcionamento do \textit{framework}: explicação da arquitetura e padrões usados na modelagem, técnicas de programação utilizadas e algoritmos implementados
-	\item Metodologia: análise das dificuldades e riscos do projeto, descrição e fluxo das atividades e cronograma e métodos utilizados.
-	\item Conclusão: apresentação dos resultados obtidos e propostas de melhorias e estudos futuros.
+	\item Metodologia: análise das dificuldades e riscos do projeto, descrição e fluxo das atividades, cronograma e métodos utilizados.
+	\item O Traveller Framework: detalhamento do funcionamento do \textit{framework}: explicação da arquitetura e padrões usados na modelagem, técnicas de programação utilizadas e algoritmos implementados
+	\item Resultados obtidos: apresentação dos testes e análises feitas, além das escolhas realizadas a partir destes dados.	
+	\item Conclusão: apresentação dos resultados finais, propostas de melhorias e estudos futuros.
 \end{enumerate}

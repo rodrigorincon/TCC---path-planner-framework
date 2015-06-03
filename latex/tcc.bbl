@@ -56,6 +56,20 @@ Dispon{\'\i}vel em: \url{http://paginas.fe.up.pt/~aml/maic\_files/introd.pdf}.}
   Dinamarca, 2010. Visualizado em 23/10/2014.
 Dispon{\'\i}vel em: \url{http://etd.dtu.dk/thesis/258988/ep10\_05.pdf}.}
 
+\bibitem[{http://sicmscj.com.br/links} 2014]{IMG_ROB_IND_SITE}
+\abntrefinfo{{http://sicmscj.com.br/links}}{{http://sicmscj.com.br/links}}{2014}
+{{http://sicmscj.com.br/links}. \emph{imagem de braço robótico}. 2014.
+Visualizado em 01/10/2014.
+Dispon{\'\i}vel em: \url{http://sicmscj.com.br/links/roca1024.jpg}.}
+
+\bibitem[{http://www.enigmaindustries.com/configurations.htm}
+  2014]{IMG_DIFFERENTIAL_STEERING_SITE}
+\abntrefinfo{{http://www.enigmaindustries.com/configurations.htm}}{{http://www.enigmaindustries.com/configurations.htm}}{2014}
+{{http://www.enigmaindustries.com/configurations.htm}. \emph{exemplos de
+  estruturas de direção diferencial}. 2014.
+Visualizado em 09/10/2014.
+Dispon{\'\i}vel em: \url{http://www.enigmaindustries.com/configurations.htm}.}
+
 \bibitem[Larman 2005]{Larman2005}
 \abntrefinfo{Larman}{LARMAN}{2005}
 {LARMAN, C. \emph{Utilizando UML e Padrões}. 3. ed. Brasil: Bookman, 2005.
@@ -105,19 +119,6 @@ Dispon{\'\i}vel em:
 {SIEGWART, R.; NOURBAKHSH, I.~R. \emph{Introduction to autonomous mobile
   robots}. 1. ed. Massachusetts, EUA: Massachusetts Institute of Technology,
   2004. 336~p.}
-
-\bibitem[{Site da figura} 2014]{IMG_DIFFERENTIAL_STEERING_SITE}
-\abntrefinfo{{Site da figura}}{{Site da figura}}{2014}
-{{Site da figura}. \emph{exemplos de estruturas de direção diferencial}.
-  2014.
-Visualizado em 09/10/2014.
-Dispon{\'\i}vel em: \url{http://www.enigmaindustries.com/configurations.htm}.}
-
-\bibitem[{Site da imagem} 2014]{IMG_ROB_IND_SITE}
-\abntrefinfo{{Site da imagem}}{{Site da imagem}}{2014}
-{{Site da imagem}. \emph{imagem de braço robótico}. 2014.
-Visualizado em 01/10/2014.
-Dispon{\'\i}vel em: \url{http://sicmscj.com.br/links/roca1024.jpg}.}
 
 \bibitem[{Site do Carmen} 2014]{CARMEN_SITE}
 \abntrefinfo{{Site do Carmen}}{{Site do Carmen}}{2014}
