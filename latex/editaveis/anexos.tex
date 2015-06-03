@@ -12,7 +12,7 @@ Aqui será apresentado os \textit{hot-spot cards} de cada \textit{hot-spot}, con
 
 {\large \textbf{Graus de flexibilidade especificados:}}
 
-\textbf{adaptação sem reinício:} não
+\textbf{adaptação sem reinício:} sim
 
 \textbf{adaptação pelo usuário final:} não
 
@@ -24,7 +24,7 @@ Definição da trajetória em um mapa já conhecido a partir de um algoritmo est
 
 Recebe-se o seguinte mapa, aonde a célula preta significa ocupado, branca significa livre e os pontos iniciais e finais marcados.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\label{figXX}
 		\includegraphics[keepaspectratio=true,scale=0.7]{figuras/mapahotspot1.PNG}
@@ -33,7 +33,7 @@ Recebe-se o seguinte mapa, aonde a célula preta significa ocupado, branca signi
 
 Para o algorítimo Quadtree gerará o grafo:
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\label{figXX1}
 		\includegraphics[keepaspectratio=true,scale=0.7]{figuras/grafohotspotcard1.PNG}
@@ -44,7 +44,7 @@ Para o algorítimo Quadtree gerará o grafo:
 
 Recebe-se o seguinte mapa, aonde a célula preta significa ocupado, branca significa livre e os pontos iniciais e finais marcados.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\label{figXX2}
 		\includegraphics[keepaspectratio=true,scale=0.7]{figuras/mapahotspot2.PNG}
@@ -53,7 +53,7 @@ Recebe-se o seguinte mapa, aonde a célula preta significa ocupado, branca signi
 
 Para o algorítimo Grafo de Visibilidade gerará o grafo:
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\label{figXX3}
 		\includegraphics[keepaspectratio=true,scale=0.7]{figuras/grafohotspotcard2.PNG}
@@ -66,7 +66,7 @@ Para o algorítimo Grafo de Visibilidade gerará o grafo:
 
 {\large \textbf{Graus de flexibilidade especificados:}}
 
-\textbf{adaptação sem reinício:} não
+\textbf{adaptação sem reinício:} sim
 
 \textbf{adaptação pelo usuário final:} não
 
@@ -78,7 +78,7 @@ Definição do menor caminho entre um nó e outro em um grafo, retornando a list
 
 Recebe-se o grafo abaixo, aonde o inicial é “6,1” e o final é “6,5”.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\label{figXX}
 		\includegraphics[keepaspectratio=true,scale=0.7]{figuras/grafohotspotcard1.PNG}
@@ -91,7 +91,7 @@ Para o algorítimo Djikstra será gerado o grafo: 6,1 -> 7,2 -> 7,3 -> 6,4 -> 6,
 
 Recebe-se o grafo abaixo, aonde o inicial é “6,1” e o final é “6,5”.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\label{figXX3}
 		\includegraphics[keepaspectratio=true,scale=0.7]{figuras/grafohotspotcard2.PNG}
@@ -102,7 +102,99 @@ Para o algorítimo A* será gerado o grafo: 6,1 -> 7,1 -> 7,4 -> 6,6.
 
 \section{Map}
 
+{\large \textbf{Nome do hot-spot:}} Modelagem do mapa
+
+{\large \textbf{Graus de flexibilidade especificados:}}
+
+\textbf{adaptação sem reinício:} sim
+
+\textbf{adaptação pelo usuário final:} não
+
+{\large \textbf{Descrição geral}}
+
+Transformação de um modelo de mapa qualquer em uma matriz de inteiros.
+
+{\large \textbf{Exemplo 1}}
+
+Recebe-se a seguinte matriz booleana como mapa inicial:
+
+\begin{table}[H]
+\centering
+\caption{Tabela de entrada do exemplo 1 do \textit{hot-spot card} Map}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+False & False & False & False & False & False & True & True \\
+False & False & False & False & False & False & False & True \\
+False & False & False & False & False & False & False & False \\
+False & False & False & False & False & False & True & False \\
+False & False & False & False & False & True & True & False \\
+False & True & True & True & False & False & False & False \\
+False & True & True & True & False & False & False & False \\
+False & False & False & False & False & False & False & False
+\end{tabular}
+\end{table}
+
+A matriz de inteiros resultantes será
+
+\begin{table}[H]
+\centering
+\caption{Tabela de saída do exemplo 1 do \textit{hot-spot card} Map}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & 0 & 1 & 1 & 0 \\
+0 & 1 & 1 & 1 & 0 & 0 & 0 & 0 \\
+0 & 1 & 1 & 1 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0
+\end{tabular}
+\end{table}
+
+aonde 0 é livre e 1 é ocupado.
+
+{\large \textbf{Exemplo 2}}
+
+Para o seguinte mapa topológico recebido
+
+\begin{figure}[H]
+	\centering
+	\label{figXX3}
+		\includegraphics[keepaspectratio=true,scale=0.7]{figuras/grafohotspotcard2.PNG}
+	\caption{grafo do exemplo 2 do \textit{hot-spot card} Map}
+\end{figure}
+
+A matriz de inteiros resultante será:
+
+\begin{table}[H]
+\centering
+\caption{Tabela de saída do exemplo 2 do \textit{hot-spot card} Map}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+1 & 0 & 0 & 0 & 0 & 1 & 1 & 0 \\
+1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+1 & 0 & 1 & 1 & 1 & 1 & 0 & 0 \\
+1 & 0 & 1 & 1 & 1 & 1 & 0 & 0 \\
+1 & 0 & 1 & 1 & 1 & 0 & 0 & 1 \\
+1 & 0 & 0 & 0 & 0 & 0 & 1 & 1 \\
+\end{tabular}
+\end{table}
+
+aonde 0 é livre e 1 é ocupado.
+
 \section{EmbeddedCommunicator}
+
+{\large \textbf{Nome do hot-spot:}} Embedded Communication
+
+{\large \textbf{Graus de flexibilidade especificados:}}
+
+\textbf{adaptação sem reinício:} não
+
+\textbf{adaptação pelo usuário final:} não
+
+{\large \textbf{Descrição geral}}
+
+Implementa a comunicação via TCP em hardwares diferentes, utilizando as bibliotecas disponíveis para cada kit.
 
 \chapter{Código fonte}
 
