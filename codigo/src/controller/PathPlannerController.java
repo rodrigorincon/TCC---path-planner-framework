@@ -28,16 +28,19 @@ public class PathPlannerController {
 		algorithm.setMap(this.map);
 	}
 	
-	public Path execute(int robotWidth, int cellWidth){
+	public void expandObstacles(boolean expansion){
+		map.setObstaclesExpanded(expansion);
+	}
+	
+	public Path execute(float robotWidth, float cellWidth){
 		map.expandObstacles(robotWidth, cellWidth);
 		Graph graph_of_free_space = algorithm.resolution();
 		graph_solucionator.setGraph(graph_of_free_space);
 		int[] initial_point = map.getInitialPoint();
 		int[] goal_point = map.getGoalPoint();
 		map.cleanUp();
-		Path path = graph_solucionator.definePath( initial_point[Constants.LINE]+","+initial_point[Constants.COLUMN], 
+		return graph_solucionator.definePath( initial_point[Constants.LINE]+","+initial_point[Constants.COLUMN], 
 			goal_point[Constants.LINE]+","+goal_point[Constants.COLUMN]);
-		return path;
 	}
 		
 }

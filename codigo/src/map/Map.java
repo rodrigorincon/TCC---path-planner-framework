@@ -9,6 +9,7 @@ public class Map {
 	private final int OCCUPIED = 1;
 	private int[] initial_point;
 	private int[] goal_point;
+	private boolean obstacles_expanded = false;
 	
 	public Map(boolean[][] map_data, boolean free_value){
 		 this.data = new int[map_data.length][map_data[0].length];
@@ -31,12 +32,47 @@ public class Map {
 		goal_point[Constants.COLUMN] = final_x;
 	}
 	
-	public void expandObstacles(int robotWidth, int cellWidth){
-		//TODO
+	public void expandObstacles(float robotWidth, float cellWidth){
+		int size_robot_per_cells = (int) Math.ceil(robotWidth/(cellWidth*2) );
+		if(obstacles_expanded){
+			final int TO_BE_EXPANDED = -1;
+			//mark the cells to be expanded
+			for(int line=0; line<data.length; line++){
+				for(int col=0; col<data[0].length; col++){
+					if(data[line][col] == OCCUPIED){
+						//verify the neighbors
+						for(int neighbor_line=line-size_robot_per_cells; neighbor_line<=line+size_robot_per_cells; neighbor_line++){
+							for(int neighbor_col=col-size_robot_per_cells; neighbor_col<=col+size_robot_per_cells; neighbor_col++){
+								if(neighbor_line>=0 && neighbor_col>=0 && neighbor_line<data.length && neighbor_col<data[0].length){
+									if(data[neighbor_line][neighbor_col] == FREE)
+										data[neighbor_line][neighbor_col] = TO_BE_EXPANDED;
+								}
+							}
+						}
+					}
+				}
+			}
+			//expand the cells marked
+			for(int line=0; line<data.length; line++){
+				for(int col=0; col<data[0].length; col++){
+					if(data[line][col] == TO_BE_EXPANDED)
+						data[line][col] = OCCUPIED;
+				}
+			}
+		}
 	}
-	
+		
+	public boolean isObstaclesExpanded(){
+		return this.obstacles_expanded;
+	}
+	public void setObstaclesExpanded(boolean expansion){
+		this.obstacles_expanded = expansion;
+	}
+		
 	public void cleanUp(){
-		//TODO
+		initial_point = null;
+		goal_point = null;
+		data = null;
 	}
 	
 	public int getNumLines(){
@@ -54,6 +90,9 @@ public class Map {
 	
 	public int getPosition(int line, int column){
 		return data[line][column];
+	}
+	public int getPosition(int[] cell){
+		return data[cell[Constants.LINE]][cell[Constants.COLUMN]];
 	}
 
 	public int getFREE() {

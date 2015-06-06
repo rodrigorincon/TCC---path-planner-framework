@@ -1,4 +1,4 @@
-package teste;
+package testeUnitario;
 
 import static org.junit.Assert.*;
 import graph.Graph;

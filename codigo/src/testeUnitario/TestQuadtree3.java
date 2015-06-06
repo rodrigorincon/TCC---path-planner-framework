@@ -1,4 +1,4 @@
-package teste;
+package testeUnitario;
 
 import static org.junit.Assert.*;
 
@@ -53,18 +53,18 @@ public class TestQuadtree3 {
 		djikstra.setGraph(graph);
 		List<Point> list = djikstra.definePath("3,0", "2,6").getRoute();
 		assertEquals(list.size(), 6);
-		assertEquals(list.get(0).getX(),0);
-		assertEquals(list.get(0).getY(),3);
-		assertEquals(list.get(1).getX(),0);
-		assertEquals(list.get(1).getY(),2);
-		assertEquals(list.get(2).getX(),2);
-		assertEquals(list.get(2).getY(),1);
-		assertEquals(list.get(3).getX(),5);
-		assertEquals(list.get(3).getY(),0);
-		assertEquals(list.get(4).getX(),7);
-		assertEquals(list.get(4).getY(),1);
-		assertEquals(list.get(5).getX(),6);
-		assertEquals(list.get(5).getY(),2);
+		assertEquals((int)list.get(0).getX(),0);
+		assertEquals((int)list.get(0).getY(),3);
+		assertEquals((int)list.get(1).getX(),0);
+		assertEquals((int)list.get(1).getY(),2);
+		assertEquals((int)list.get(2).getX(),2);
+		assertEquals((int)list.get(2).getY(),1);
+		assertEquals((int)list.get(3).getX(),5);
+		assertEquals((int)list.get(3).getY(),0);
+		assertEquals((int)list.get(4).getX(),7);
+		assertEquals((int)list.get(4).getY(),1);
+		assertEquals((int)list.get(5).getX(),6);
+		assertEquals((int)list.get(5).getY(),2);
 	}
 
 	@Test

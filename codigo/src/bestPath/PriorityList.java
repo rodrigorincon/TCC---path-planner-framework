@@ -9,8 +9,7 @@ public class PriorityList {
 		head = null;
 	}
 	
-	public void addNode(Node node, PriorityNode father, int size_path){
-		PriorityNode prior_node = new PriorityNode(node, father, size_path);
+	public void addNode(PriorityNode prior_node, PriorityNode father){
 		//if the queue is empty
 		if(head==null)
 			head = prior_node;
@@ -30,6 +29,11 @@ public class PriorityList {
 			//if the current value is bigger then all the other values, insert in the end
 			prev.setNext(prior_node);
 		}
+	}
+	
+	public void addNode(Node node, PriorityNode father, float size_path){
+		PriorityNode prior_node = new PriorityNode(node, father, size_path);
+		addNode(prior_node, father);
 	}
 	
 	public PriorityNode popNode(){

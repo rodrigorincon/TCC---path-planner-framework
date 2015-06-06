@@ -10,11 +10,6 @@ public abstract class PathPlanner {
 	
 	public abstract Graph resolution();
 	
-	public Graph defineEdges(){
-		//TODO
-		return null;
-	}
-	
 	public void setMap(Map map){
 		this.map = map;
 	}

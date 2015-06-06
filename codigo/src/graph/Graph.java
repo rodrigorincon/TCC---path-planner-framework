@@ -67,7 +67,7 @@ public class Graph {
 			removeNode(exclude);
 	}
 	
-	public Edge addEdge(Node node1, Node node2, int dist){
+	public Edge addEdge(Node node1, Node node2, float dist){
 		return node1.addEdge(node2, dist);
 	}
 	
