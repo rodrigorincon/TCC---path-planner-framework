@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.9)  3 JUN 2015 14:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.9)  5 JUN 2015 01:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -881,7 +881,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.27 \begin{figure}
-                   [h]
+                   [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -894,12 +894,12 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.27 \begin{figure}[
-                    h]
+                    H]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no [ in font nullfont!
-Missing character: There is no h in font nullfont!
+Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
 l.30 		\includegraphics
@@ -1098,7 +1098,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.36 \begin{figure}
-                   [h]
+                   [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1111,12 +1111,12 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.36 \begin{figure}[
-                    h]
+                    H]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no [ in font nullfont!
-Missing character: There is no h in font nullfont!
+Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
 l.39 		\includegraphics
@@ -1433,7 +1433,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.47 \begin{figure}
-                   [h]
+                   [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1446,12 +1446,12 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.47 \begin{figure}[
-                    h]
+                    H]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no [ in font nullfont!
-Missing character: There is no h in font nullfont!
+Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
 l.50 		\includegraphics
@@ -1662,7 +1662,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.56 \begin{figure}
-                   [h]
+                   [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1675,12 +1675,12 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.56 \begin{figure}[
-                    h]
+                    H]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no [ in font nullfont!
-Missing character: There is no h in font nullfont!
+Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
 l.59 		\includegraphics
@@ -2451,7 +2451,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.81 \begin{figure}
-                   [h]
+                   [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -2464,12 +2464,12 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.81 \begin{figure}[
-                    h]
+                    H]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no [ in font nullfont!
-Missing character: There is no h in font nullfont!
+Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
 l.84 		\includegraphics
@@ -2814,7 +2814,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.94 \begin{figure}
-                   [h]
+                   [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -2827,12 +2827,12 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.94 \begin{figure}[
-                    h]
+                    H]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no [ in font nullfont!
-Missing character: There is no h in font nullfont!
+Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
 l.97 		\includegraphics
@@ -3522,7 +3522,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.121 \begin{table}
-                   [h]
+                   [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -3535,12 +3535,12 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.121 \begin{table}[
-                    h]
+                    H]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no [ in font nullfont!
-Missing character: There is no h in font nullfont!
+Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
 
 ! LaTeX Error: \caption outside float.
@@ -3987,7 +3987,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.138 \begin{table}
-                   [h]
+                   [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -4000,12 +4000,12 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.138 \begin{table}[
-                    h]
+                    H]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no [ in font nullfont!
-Missing character: There is no h in font nullfont!
+Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
 
 ! LaTeX Error: \caption outside float.
@@ -4279,7 +4279,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.159 \begin{figure}
-                    [h]
+                    [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -4292,12 +4292,12 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.159 \begin{figure}[
-                     h]
+                     H]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no [ in font nullfont!
-Missing character: There is no h in font nullfont!
+Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
 l.162 		\includegraphics
@@ -4492,7 +4492,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.168 \begin{table}
-                   [h]
+                   [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -4505,12 +4505,12 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.168 \begin{table}[
-                    h]
+                    H]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no [ in font nullfont!
-Missing character: There is no h in font nullfont!
+Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
 
 ! LaTeX Error: \caption outside float.
