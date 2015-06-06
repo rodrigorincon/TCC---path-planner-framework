@@ -5,3 +5,12 @@ codigo/.project
 codigo/.settings/
 codigo/bin/
 codigo/*.log
+testeNormal/
+codigo/nbproject/
+codigo/build.xml
+codigo/manifest.mf
+codigo/*.nxd
+codigo/*.nxj
+codigo/build/
+codigo/avaliacaoPerformance/
+/codigo/JavaApplication4/nbproject/private/

@@ -2,6 +2,8 @@ package graph;
 
 import java.util.ArrayList;
 
+import util.Constants;
+
 public class Node {
 
 	ArrayList<Edge> neighbors;
@@ -46,7 +48,7 @@ public class Node {
 		return neighbors.get(position);
 	}
 		
-	public Edge addEdge(Node node, int dist){
+	public Edge addEdge(Node node, float dist){
 		Edge new_edge = null;
 		if(!edgeAlreadyExists(node)){
 			new_edge = new Edge(node, dist);
@@ -85,6 +87,12 @@ public class Node {
 		coordinates[0] = info.substring(0, comma_pos);
 		coordinates[1] = info.substring(comma_pos+1);
 		return coordinates;
+	}
+	
+	public int[] getIntCoordinates(){
+		String[] coord_cell = getCoordinates();
+		int[] values_cell = {Integer.parseInt(coord_cell[Constants.LINE]),Integer.parseInt(coord_cell[Constants.COLUMN])};
+		return values_cell;
 	}
 	
 	public void print(){

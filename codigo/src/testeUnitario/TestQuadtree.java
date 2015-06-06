@@ -1,4 +1,4 @@
-package teste;
+package testeUnitario;
 
 import static org.junit.Assert.*;
 
@@ -12,11 +12,13 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import bestPath.AStar;
 import bestPath.BestPath;
 import bestPath.Djikstra;
 
 import pathPlanner.PathPlanner;
 import pathPlanner.Quadtree;
+import util.Path;
 import util.Point;
 
 public class TestQuadtree {
@@ -56,17 +58,37 @@ public class TestQuadtree {
 		BestPath djikstra = new Djikstra();
 		djikstra.setGraph(graph);
 		List<Point> list = djikstra.definePath("6,1", "6,5").getRoute();
-		assertEquals(list.size(), 5);
-		assertEquals(list.get(0).getX(),1);
-		assertEquals(list.get(0).getY(),6);
-		assertEquals(list.get(1).getX(),2);
-		assertEquals(list.get(1).getY(),7);
-		assertEquals(list.get(2).getX(),3);
-		assertEquals(list.get(2).getY(),7);
-		assertEquals(list.get(3).getX(),5);
-		assertEquals(list.get(3).getY(),7);
-		assertEquals(list.get(4).getX(),5);
-		assertEquals(list.get(4).getY(),6);
+		assertEquals(list.size(), 5);		
+		assertEquals((int)list.get(0).getX(),1);
+		assertEquals((int)list.get(0).getY(),6);
+		assertEquals((int)list.get(1).getX(),2);
+		assertEquals((int)list.get(1).getY(),7);
+		assertEquals((int)list.get(2).getX(),3);
+		assertEquals((int)list.get(2).getY(),7);
+		assertEquals((int)list.get(3).getX(),5);
+		assertEquals((int)list.get(3).getY(),7);
+		assertEquals((int)list.get(4).getX(),5);
+		assertEquals((int)list.get(4).getY(),6);
+	}
+	
+	@Test
+	public void testeAStar(){
+		BestPath astar = new AStar();
+		astar.setGraph(graph);
+		Path path = astar.definePath("6,1", "6,5");
+		assertEquals((int)path.getSize(), 5);
+		List<Point> list = path.getRoute();
+		assertEquals(list.size(), 5);		
+		assertEquals((int)list.get(0).getX(),1);
+		assertEquals((int)list.get(0).getY(),6);
+		assertEquals((int)list.get(1).getX(),2);
+		assertEquals((int)list.get(1).getY(),7);
+		assertEquals((int)list.get(2).getX(),3);
+		assertEquals((int)list.get(2).getY(),7);
+		assertEquals((int)list.get(3).getX(),5);
+		assertEquals((int)list.get(3).getY(),7);
+		assertEquals((int)list.get(4).getX(),5);
+		assertEquals((int)list.get(4).getY(),6);
 	}
 	
 	@Test

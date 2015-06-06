@@ -1,24 +1,23 @@
 package util;
 
 import util.Point;
-
-import java.util.LinkedList;
+import java.util.List;
 
 public class Path {
 
-	private LinkedList<Point> route;
-	private int size;
+	private List<Point> route;
+	private float size;
 	
-	public Path(LinkedList<Point> percurso, int tamanho_percurso) {
+	public Path(List<Point> percurso, float tamanho_percurso) {
 		this.route = percurso;
 		this.size = tamanho_percurso;
 	}
 
-	public LinkedList<Point> getRoute() {
+	public List<Point> getRoute() {
 		return route;
 	}
 	/** returns the size of the shortest path (size of the path, not the number of nodes!!) */
-	public int getSize() {
+	public float getSize() {
 		return size;
 	}
 	
@@ -30,6 +29,5 @@ public class Path {
 			route.add(i, p_end);
 			route.add(size_route-1-i, p_init);
 		}
-	}
-	
+	}	
 }

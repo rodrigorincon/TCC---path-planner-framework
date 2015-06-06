@@ -1,6 +1,6 @@
 package pathPlanner;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 import util.Constants;
@@ -12,14 +12,14 @@ public class Quadtree extends PathPlanner{
 	private int minimumSize;
 	private List<Square> squares;
 	
-	public Quadtree(int carWidth, int cellWidth){
+	public Quadtree(float carWidth, float cellWidth){
 		minimumSize = Math.round(carWidth/cellWidth);
-		squares = new LinkedList<Square>();
+		squares = new ArrayList<Square>();
 	}
 	
 	@Override
 	public Graph resolution() {
-		verifySquare(0,0,map.getNumLines(),map.getNumColumns());
+		verifyAndAddSquare(verifySquare(0,0,map.getNumLines(),map.getNumColumns()));
 		graph_returned = new Graph();
 		addInitialPoint();
 		addFinalPoint();
@@ -33,7 +33,9 @@ public class Quadtree extends PathPlanner{
 		Square new_square = null;
 		if(linesSquare < minimumSize || columnsSquare < minimumSize)
 			return null;
-		if(linesSquare > minimumSize && columnsSquare > minimumSize){
+		if( (linesSquare/2 < minimumSize || columnsSquare/2 < minimumSize) && isAllFree(init_line, init_column, linesSquare, columnsSquare) )
+			new_square = new Square(init_line, init_column, linesSquare, columnsSquare);
+		else if(linesSquare > minimumSize && columnsSquare > minimumSize){
 			Square top_left = verifySquare(init_line, init_column, linesSquare/2, columnsSquare/2);
 			Square top_right = verifySquare(init_line, init_column+columnsSquare/2, linesSquare/2, columnsSquare-columnsSquare/2);
 			Square down_left = verifySquare(init_line+linesSquare/2, init_column, linesSquare-linesSquare/2, columnsSquare/2);
@@ -122,13 +124,10 @@ public class Quadtree extends PathPlanner{
 	}
 	
 	private int calculateDistance(Node current, Node neighbor){
-		String[] temp_current_coordinates = current.getCoordinates();
-		String[] temp_neighbor_coordinates = neighbor.getCoordinates();		
-		
-		int current_coordinate_x = Integer.parseInt(temp_current_coordinates[Constants.COLUMN]);
-		int current_coordinate_y = Integer.parseInt(temp_current_coordinates[Constants.LINE]);
-		int neighbor_coordinate_x = Integer.parseInt(temp_neighbor_coordinates[Constants.COLUMN]);
-		int neighbor_coordinate_y = Integer.parseInt(temp_neighbor_coordinates[Constants.LINE]);
+		int current_coordinate_x = current.getIntCoordinates()[Constants.COLUMN];
+		int current_coordinate_y = current.getIntCoordinates()[Constants.LINE];
+		int neighbor_coordinate_x = neighbor.getIntCoordinates()[Constants.COLUMN];
+		int neighbor_coordinate_y = neighbor.getIntCoordinates()[Constants.LINE];
 		
 		int diff_x = Math.abs(current_coordinate_x-neighbor_coordinate_x);
 		int diff_y = Math.abs(current_coordinate_y-neighbor_coordinate_y);

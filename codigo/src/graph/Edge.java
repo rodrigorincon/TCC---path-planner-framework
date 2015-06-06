@@ -2,17 +2,17 @@ package graph;
 
 public class Edge {
 
-	int distance;
+	float distance;
 	Node destiny;
 	
-	public Edge(Node destiny, int distance){
+	public Edge(Node destiny, float distance){
 		this.distance = distance;
 		this.destiny = destiny;
 	}
 	public Node getDestiny(){
 		return this.destiny;
 	}
-	public int getDistance(){
+	public float getDistance(){
 		return this.distance;
 	}
 	

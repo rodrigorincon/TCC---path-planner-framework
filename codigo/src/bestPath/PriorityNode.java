@@ -3,12 +3,12 @@ package bestPath;
 import graph.Node;
 
 public class PriorityNode {
-	private Node node;
-	private int size_path;
-	private PriorityNode prev;
-	private PriorityNode next;
+	protected Node node;
+	private float size_path;
+	protected PriorityNode prev;
+	protected PriorityNode next;
 	
-	public PriorityNode(Node node, PriorityNode prev, int size_path){
+	public PriorityNode(Node node, PriorityNode prev, float size_path){
 		this.node = node;
 		this.prev = prev;
 		if(prev!=null)
@@ -18,10 +18,10 @@ public class PriorityNode {
 		this.next = null;
 	}
 		
-	public int getSizePath(){
+	public float getSizePath(){
 		return size_path;
 	}
-	public void setSizePath(int size_path){
+	public void setSizePath(float size_path){
 		this.size_path = size_path;
 	}
 	public Node getNode(){
