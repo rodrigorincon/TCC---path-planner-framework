@@ -68,34 +68,37 @@
 \contentsline {subsection}{\numberline {5.1.7}Best Path}{64}{subsection.5.1.7}
 \contentsline {section}{\numberline {5.2}O prot\IeC {\'o}tipo}{65}{section.5.2}
 \contentsline {section}{\numberline {5.3}A vers\IeC {\~a}o final}{66}{section.5.3}
-\contentsline {section}{\numberline {5.4}Hot-spots do framework}{66}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}PathPlanner}{67}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}BestPath}{67}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}EmbeddedCommunicator}{67}{subsection.5.4.3}
-\contentsline {subsection}{\numberline {5.4.4}O mapa}{67}{subsection.5.4.4}
-\contentsline {section}{\numberline {5.5}Os obst\IeC {\'a}culos}{68}{section.5.5}
-\contentsline {section}{\numberline {5.6}Boas pr\IeC {\'a}ticas de programa\IeC {\c c}\IeC {\~a}o}{69}{section.5.6}
-\contentsline {section}{\numberline {5.7}Resumo do Cap\IeC {\'\i }tulo}{71}{section.5.7}
+\contentsline {section}{\numberline {5.4}Hot-spots do framework}{68}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}PathPlanner}{68}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}BestPath}{68}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}EmbeddedCommunicator}{68}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.4}Hot-spot descartados: O mapa}{69}{subsection.5.4.4}
+\contentsline {section}{\numberline {5.5}Os obst\IeC {\'a}culos}{69}{section.5.5}
+\contentsline {section}{\numberline {5.6}Boas pr\IeC {\'a}ticas de programa\IeC {\c c}\IeC {\~a}o}{70}{section.5.6}
+\contentsline {section}{\numberline {5.7}Resumo do Cap\IeC {\'\i }tulo}{73}{section.5.7}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Resultados obtidos}}{73}{chapter.6}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Resultados obtidos}}{75}{chapter.6}
+\contentsline {section}{\numberline {6.1}Experimentos iniciais}{75}{section.6.1}
+\contentsline {section}{\numberline {6.2}Testes de desempenho}{75}{section.6.2}
+\contentsline {section}{\numberline {6.3}Testes unit\IeC {\'a}rios e de sistema}{75}{section.6.3}
+\contentsline {section}{\numberline {6.4}Testes com o rob\IeC {\^o}}{75}{section.6.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Conclus\IeC {\~a}o}}{75}{chapter.7}
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Conclus\IeC {\~a}o}}{77}{chapter.7}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{77}{section*.7}
+\contentsline {chapter}{Refer\^encias}{79}{section*.7}
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Anexos}}{81}{section*.8}
+\contentsline {part}{\uppercase {Anexos}}{83}{section*.8}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {\textit {Host-spot Cards}}}{83}{appendix.anexochapback.1}
-\contentsline {section}{\numberline {A.1}PathPlanner}{83}{section.anexochapback.1.1}
-\contentsline {section}{\numberline {A.2}BestPath}{85}{section.anexochapback.1.2}
-\contentsline {section}{\numberline {A.3}Map}{86}{section.anexochapback.1.3}
-\contentsline {section}{\numberline {A.4}EmbeddedCommunicator}{88}{section.anexochapback.1.4}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {\textit {Host-spot Cards}}}{85}{appendix.anexochapback.1}
+\contentsline {section}{\numberline {A.1}PathPlanner}{85}{section.anexochapback.1.1}
+\contentsline {section}{\numberline {A.2}BestPath}{87}{section.anexochapback.1.2}
+\contentsline {section}{\numberline {A.3}EmbeddedCommunicator}{88}{section.anexochapback.1.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
