@@ -1,23 +1,23 @@
 \select@language {brazil}
-\contentsline {figure}{\numberline {1}{\ignorespaces bra\IeC {\c c}o rob\IeC {\'o}tico usado na rob\IeC {\'o}tica industrial \cite {IMG_ROB_IND_SITE}}}{20}{figure.2.1}
+\contentsline {figure}{\numberline {1}{\ignorespaces Bra\IeC {\c c}o rob\IeC {\'o}tico usado na rob\IeC {\'o}tica industrial \cite {IMG_ROB_IND_SITE}}}{20}{figure.2.1}
 \contentsline {figure}{\numberline {2}{\ignorespaces a) roda padr\IeC {\~a}o, b) roda castor, c) roda su\IeC {\'e}ca, d) roda esf\IeC {\'e}rica \cite {Siegwart2004}}}{21}{figure.2.2}
 \contentsline {figure}{\numberline {3}{\ignorespaces Ackerman Steering \cite {Secchi2008}}}{22}{figure.2.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces camadas de execu\IeC {\c c}\IeC {\~a}o na navega\IeC {\c c}\IeC {\~a}o do rob\IeC {\^o} \cite {Vieira2005}}}{26}{figure.2.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces arquitetura SPA \cite {Mataric2007}}}{27}{figure.2.5}
+\contentsline {figure}{\numberline {4}{\ignorespaces Camadas de execu\IeC {\c c}\IeC {\~a}o na navega\IeC {\c c}\IeC {\~a}o do rob\IeC {\^o} \cite {Vieira2005}}}{26}{figure.2.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Arquitetura SPA \cite {Mataric2007}}}{27}{figure.2.5}
 \contentsline {figure}{\numberline {6}{\ignorespaces diferentes tipos de mapeamento: a) mapa real b) mapa geom\IeC {\'e}trico c) grade de ocupa\IeC {\c c}\IeC {\~a}o d) topol\IeC {\'o}gico \cite {Siegwart2004}}}{29}{figure.2.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces diagrama de sequ\IeC {\^e}ncia da cria\IeC {\c c}\IeC {\~a}o do caminho}}{30}{figure.2.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces grafos de visibilidade a) tradicional b) com expans\IeC {\~a}o dos obst\IeC {\'a}culos \cite {Thomsen2010} e \cite {MRIT_SITE}}}{32}{figure.2.8}
+\contentsline {figure}{\numberline {7}{\ignorespaces Diagrama de sequ\IeC {\^e}ncia da cria\IeC {\c c}\IeC {\~a}o do caminho}}{30}{figure.2.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Grafos de visibilidade a) tradicional b) com expans\IeC {\~a}o dos obst\IeC {\'a}culos \cite {Thomsen2010} e \cite {MRIT_SITE}}}{32}{figure.2.8}
 \contentsline {figure}{\numberline {9}{\ignorespaces Diagrama de Voronoi \cite {Siegwart2004}}}{33}{figure.2.9}
 \contentsline {figure}{\numberline {10}{\ignorespaces a) decomposi\IeC {\c c}\IeC {\~a}o celular usando regi\IeC {\~o}es de tamanho fixo b) Quadtree encontrando um caminho estreito entre dois obst\IeC {\'a}culos \cite {Siegwart2004}}}{34}{figure.2.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces algoritmo \textit {Wavefront}, com grafo em azul \cite {MRIT_SITE}}}{35}{figure.2.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces exemplo de arquitetura em camadas, \cite {Larman2005}}}{37}{figure.2.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces \textit {hot-spot} em um \textit {framework} caixa-preta e caixa-branca. \cite {Fayad1999}}}{40}{figure.2.13}
+\contentsline {figure}{\numberline {11}{\ignorespaces Algoritmo \textit {Wavefront}, com grafo em azul \cite {MRIT_SITE}}}{35}{figure.2.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Exemplo de arquitetura em camadas, \cite {Larman2005}}}{37}{figure.2.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces \textit {Hot-spot} em um \textit {framework} caixa-preta e caixa-branca. \cite {Fayad1999}}}{41}{figure.2.13}
 \contentsline {figure}{\numberline {14}{\ignorespaces Estruturas dos subsistemas \textit {hot-spot}. \cite {Fayad1999}}}{41}{figure.2.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces Processo de desenvolvimento orientado a \textit {hot-spot}. \cite {Fayad1999}}}{42}{figure.2.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces \textit {hot-spot card}. \cite {Fayad1999}}}{44}{figure.2.16}
-\contentsline {figure}{\numberline {17}{\ignorespaces foto do rob\IeC {\^o} utilizado}}{50}{figure.3.17}
-\contentsline {figure}{\numberline {18}{\ignorespaces exemplos de estruturas \textit {differential steering} \cite {IMG_DIFFERENTIAL_STEERING_SITE}}}{51}{figure.3.18}
-\contentsline {figure}{\numberline {19}{\ignorespaces fluxo de atividades propostas}}{55}{figure.4.19}
+\contentsline {figure}{\numberline {15}{\ignorespaces Processo de desenvolvimento orientado a \textit {hot-spot}. \cite {Fayad1999}}}{43}{figure.2.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces \textit {Hot-spot card}. \cite {Fayad1999}}}{44}{figure.2.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces Foto do rob\IeC {\^o} utilizado}}{50}{figure.3.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces Exemplos de estruturas \textit {differential steering} \cite {IMG_DIFFERENTIAL_STEERING_SITE}}}{51}{figure.3.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces Fluxo de atividades propostas}}{55}{figure.4.19}
 \contentsline {figure}{\numberline {20}{\ignorespaces estrutura do funcionamento do \textit {framework}}}{57}{figure.5.20}
 \contentsline {figure}{\numberline {21}{\ignorespaces arquitetura a navega\IeC {\c c}\IeC {\~a}o considerada, \cite {Nehmzow2003}}}{58}{figure.5.21}
 \contentsline {figure}{\numberline {22}{\ignorespaces diagrama de pacotes do sistema}}{59}{figure.5.22}
@@ -32,9 +32,12 @@
 \contentsline {figure}{\numberline {31}{\ignorespaces C\IeC {\'o}digo do \textit {framework} sendo executado na vers\IeC {\~a}o prot\IeC {\'o}tipo}}{66}{figure.5.31}
 \contentsline {figure}{\numberline {32}{\ignorespaces C\IeC {\'o}digo do \textit {framework} sendo executado na vers\IeC {\~a}o final}}{67}{figure.5.32}
 \contentsline {figure}{\numberline {33}{\ignorespaces obst\IeC {\'a}culo real em preto e a expans\IeC {\~a}o incrementada em amarelo \cite {MRIT_SITE}}}{70}{figure.5.33}
-\contentsline {figure}{\numberline {34}{\ignorespaces mapa exemplo do \textit {hot-spot card} PathPlanner}}{85}{figure.anexochapback.1.34}
-\contentsline {figure}{\numberline {35}{\ignorespaces resultado do exemplo 1 do \textit {hot-spot card} PathPlanner}}{86}{figure.anexochapback.1.35}
-\contentsline {figure}{\numberline {36}{\ignorespaces mapa exemplo 2 do \textit {hot-spot card} PathPlanner}}{86}{figure.anexochapback.1.36}
-\contentsline {figure}{\numberline {37}{\ignorespaces resultado do exemplo 2 do \textit {hot-spot card} PathPlanner}}{86}{figure.anexochapback.1.37}
-\contentsline {figure}{\numberline {38}{\ignorespaces grafo exemplo do \textit {hot-spot card} BestPath}}{87}{figure.anexochapback.1.38}
-\contentsline {figure}{\numberline {39}{\ignorespaces grafo do exemplo 2 do \textit {hot-spot card} BestPath}}{88}{figure.anexochapback.1.39}
+\contentsline {figure}{\numberline {34}{\ignorespaces teste inicial do \textit {framework}}}{76}{figure.6.34}
+\contentsline {figure}{\numberline {35}{\ignorespaces teste de stress, tempo de execu\IeC {\c c}\IeC {\~a}o}}{77}{figure.6.35}
+\contentsline {figure}{\numberline {36}{\ignorespaces teste de stress, m\IeC {\'e}todos que mais foram utilizados}}{77}{figure.6.36}
+\contentsline {figure}{\numberline {37}{\ignorespaces mapa exemplo do \textit {hot-spot card} PathPlanner}}{89}{figure.anexochapback.1.37}
+\contentsline {figure}{\numberline {38}{\ignorespaces resultado do exemplo 1 do \textit {hot-spot card} PathPlanner}}{90}{figure.anexochapback.1.38}
+\contentsline {figure}{\numberline {39}{\ignorespaces mapa exemplo 2 do \textit {hot-spot card} PathPlanner}}{90}{figure.anexochapback.1.39}
+\contentsline {figure}{\numberline {40}{\ignorespaces resultado do exemplo 2 do \textit {hot-spot card} PathPlanner}}{90}{figure.anexochapback.1.40}
+\contentsline {figure}{\numberline {41}{\ignorespaces grafo exemplo do \textit {hot-spot card} BestPath}}{91}{figure.anexochapback.1.41}
+\contentsline {figure}{\numberline {42}{\ignorespaces grafo do exemplo 2 do \textit {hot-spot card} BestPath}}{92}{figure.anexochapback.1.42}
