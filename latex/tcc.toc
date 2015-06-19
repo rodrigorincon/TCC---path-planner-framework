@@ -58,53 +58,52 @@
 \contentsline {section}{\numberline {4.3}Resumo do Cap\IeC {\'\i }tulo}{56}{section.4.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {O Traveller Framework}}{57}{chapter.5}
-\contentsline {section}{\numberline {5.1}A arquitetura}{58}{section.5.1}
+\contentsline {section}{\numberline {5.1}A Arquitetura}{58}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}EmbeddedCommunicator}{59}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}TCPCommunicator}{60}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.2}RobotCommunicator}{60}{subsection.5.1.2}
 \contentsline {subsection}{\numberline {5.1.3}Controller}{61}{subsection.5.1.3}
 \contentsline {subsection}{\numberline {5.1.4}Map}{62}{subsection.5.1.4}
 \contentsline {subsection}{\numberline {5.1.5}Path Planner}{63}{subsection.5.1.5}
 \contentsline {subsection}{\numberline {5.1.6}Graph}{64}{subsection.5.1.6}
 \contentsline {subsection}{\numberline {5.1.7}Best Path}{64}{subsection.5.1.7}
-\contentsline {section}{\numberline {5.2}O prot\IeC {\'o}tipo}{65}{section.5.2}
-\contentsline {section}{\numberline {5.3}A vers\IeC {\~a}o final}{66}{section.5.3}
-\contentsline {section}{\numberline {5.4}Hot-spots do framework}{68}{section.5.4}
+\contentsline {section}{\numberline {5.2}O Prot\IeC {\'o}tipo}{65}{section.5.2}
+\contentsline {section}{\numberline {5.3}A Vers\IeC {\~a}o Final}{66}{section.5.3}
+\contentsline {section}{\numberline {5.4}\textit {Hot-spots} do \textit {Framework}}{68}{section.5.4}
 \contentsline {subsection}{\numberline {5.4.1}PathPlanner}{68}{subsection.5.4.1}
 \contentsline {subsection}{\numberline {5.4.2}BestPath}{68}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}EmbeddedCommunicator}{68}{subsection.5.4.3}
-\contentsline {subsection}{\numberline {5.4.4}Hot-spot descartados: O mapa}{69}{subsection.5.4.4}
-\contentsline {section}{\numberline {5.5}Os obst\IeC {\'a}culos}{69}{section.5.5}
-\contentsline {section}{\numberline {5.6}Boas pr\IeC {\'a}ticas de programa\IeC {\c c}\IeC {\~a}o}{71}{section.5.6}
+\contentsline {subsection}{\numberline {5.4.3}EmbeddedCommunicator}{69}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.4}\textit {Hot-spot} Descartados: O Mapa}{69}{subsection.5.4.4}
+\contentsline {section}{\numberline {5.5}Os Obst\IeC {\'a}culos}{69}{section.5.5}
+\contentsline {section}{\numberline {5.6}Boas Pr\IeC {\'a}ticas de Programa\IeC {\c c}\IeC {\~a}o}{71}{section.5.6}
 \contentsline {section}{\numberline {5.7}Resumo do Cap\IeC {\'\i }tulo}{73}{section.5.7}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Resultados obtidos}}{75}{chapter.6}
-\contentsline {section}{\numberline {6.1}Experimentos iniciais}{75}{section.6.1}
+\contentsline {section}{\numberline {6.1}Testes iniciais}{75}{section.6.1}
 \contentsline {section}{\numberline {6.2}Testes de desempenho}{75}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Testes de stress - simula\IeC {\c c}\IeC {\~a}o}{76}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Testes de stress no rob\IeC {\^o}}{78}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.1}Testes de Stress - Simula\IeC {\c c}\IeC {\~a}o}{76}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Testes de Stress no Rob\IeC {\^o}}{78}{subsection.6.2.2}
 \contentsline {subsection}{\numberline {6.2.3}Decis\IeC {\~o}es tomadas}{78}{subsection.6.2.3}
 \contentsline {section}{\numberline {6.3}Testes unit\IeC {\'a}rios e de sistema}{79}{section.6.3}
 \contentsline {subsection}{\numberline {6.3.1}Testes unit\IeC {\'a}rios e cobertura de c\IeC {\'o}digo}{79}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Testes de sistema e compara\IeC {\c c}\IeC {\~o}es com o simulador MRIT}{80}{subsection.6.3.2}
-\contentsline {section}{\numberline {6.4}Testes finais com o rob\IeC {\^o}}{80}{section.6.4}
+\contentsline {subsection}{\numberline {6.3.2}Testes de Sistema e Compara\IeC {\c c}\IeC {\~o}es Com o Simulador MRIT}{80}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.4}Testes Finais Com o Rob\IeC {\^o}}{80}{section.6.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Conclus\IeC {\~a}o}}{81}{chapter.7}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \contentsline {chapter}{Refer\^encias}{83}{section*.7}
-\cftinsert {AAA}
-\renewcommand *{\cftappendixname }{ANEXO \space }
+\renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Anexos}}{87}{section*.8}
+\contentsline {part}{\uppercase {Ap\^endices}}{87}{section*.8}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {\textit {Host-spot Cards}}}{89}{appendix.anexochapback.1}
-\contentsline {section}{\numberline {A.1}PathPlanner}{89}{section.anexochapback.1.1}
-\contentsline {section}{\numberline {A.2}BestPath}{91}{section.anexochapback.1.2}
-\contentsline {section}{\numberline {A.3}EmbeddedCommunicator}{92}{section.anexochapback.1.3}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {\textit {Host-spot Cards}}}{89}{appendix.A}
+\contentsline {section}{\numberline {A.1}PathPlanner}{89}{section.A.1}
+\contentsline {section}{\numberline {A.2}BestPath}{91}{section.A.2}
+\contentsline {section}{\numberline {A.3}EmbeddedCommunicator}{92}{section.A.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {C\IeC {\'o}digo fonte}}{93}{appendix.anexochapback.2}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {C\IeC {\'o}digo fonte}}{93}{appendix.B}
