@@ -13,44 +13,44 @@
 \contentsline {section}{\numberline {1.5}Organiza\IeC {\c c}\IeC {\~a}o do Trabalho}{17}{section.1.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Referencial Te\IeC {\'o}rico}}{19}{chapter.2}
-\contentsline {section}{\numberline {2.1}A base da rob\IeC {\'o}tica}{19}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Defini\IeC {\c c}\IeC {\~a}o de rob\IeC {\'o}tica}{19}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Rob\IeC {\^o}s industriais e m\IeC {\'o}veis}{19}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Estruturas f\IeC {\'\i }sicas de rob\IeC {\^o}s com rodas}{20}{subsection.2.1.3}
-\contentsline {section}{\numberline {2.2}Desafios da rob\IeC {\'o}tica m\IeC {\'o}vel}{22}{section.2.2}
+\contentsline {section}{\numberline {2.1}A Base da Rob\IeC {\'o}tica}{19}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Defini\IeC {\c c}\IeC {\~a}o de Rob\IeC {\'o}tica}{19}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Rob\IeC {\^o}s Industriais e M\IeC {\'o}veis}{19}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Estruturas F\IeC {\'\i }sicas de Rob\IeC {\^o}s Com Rodas}{20}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Desafios da Rob\IeC {\'o}tica M\IeC {\'o}vel}{22}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Modelos de movimenta\IeC {\c c}\IeC {\~a}o}{22}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Defini\IeC {\c c}\IeC {\~a}o da posi\IeC {\c c}\IeC {\~a}o}{23}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}Defini\IeC {\c c}\IeC {\~a}o da Posi\IeC {\c c}\IeC {\~a}o}{23}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Mapeamento}{23}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}Paradigmas de defini\IeC {\c c}\IeC {\~a}o de trajet\IeC {\'o}ria}{24}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}Vis\IeC {\~a}o geral sobre navega\IeC {\c c}\IeC {\~a}o}{25}{subsection.2.2.5}
-\contentsline {section}{\numberline {2.3}Mapeamento e modelagem dos obst\IeC {\'a}culos}{27}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Tipos de mapas}{28}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Otimiza\IeC {\c c}\IeC {\~a}o do processo de mapeamento}{28}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Definindo percursos em um mapa}{29}{subsection.2.3.3}
-\contentsline {section}{\numberline {2.4}algoritmos globais de defini\IeC {\c c}\IeC {\~a}o de trajet\IeC {\'o}ria}{30}{section.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Vis\IeC {\~a}o Geral Sobre Navega\IeC {\c c}\IeC {\~a}o}{25}{subsection.2.2.5}
+\contentsline {section}{\numberline {2.3}Mapeamento e Modelagem dos Obst\IeC {\'a}culos}{27}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Tipos de Mapas}{28}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Otimiza\IeC {\c c}\IeC {\~a}o do Processo de Mapeamento}{28}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Definindo Percursos Em Um Mapa}{29}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Algoritmos Globais de Defini\IeC {\c c}\IeC {\~a}o de Trajet\IeC {\'o}ria}{30}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Grafos de Visibilidade}{31}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Voronoi}{31}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.2}Voronoi}{32}{subsection.2.4.2}
 \contentsline {subsection}{\numberline {2.4.3}Quadtree}{33}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}Wavefront}{33}{subsection.2.4.4}
+\contentsline {subsection}{\numberline {2.4.4}Wavefront}{34}{subsection.2.4.4}
 \contentsline {section}{\numberline {2.5}Frameworks e padr\IeC {\~o}es de projeto}{34}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Arquitetura e componentes}{36}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Padr\IeC {\~o}es de projeto}{38}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}Caixa-preta e Caixa-branca}{39}{subsection.2.5.3}
-\contentsline {subsection}{\numberline {2.5.4}\textit {Hot-spot} e \textit {Frozen-spot}}{39}{subsection.2.5.4}
-\contentsline {subsection}{\numberline {2.5.5}Processo de desenvolvimento orientado a hot-spots}{42}{subsection.2.5.5}
-\contentsline {subsection}{\numberline {2.5.6}Abordagem de projetos}{44}{subsection.2.5.6}
-\contentsline {section}{\numberline {2.6}Trabalhos relacionados}{44}{section.2.6}
+\contentsline {subsection}{\numberline {2.5.1}Arquitetura e Componentes}{36}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Padr\IeC {\~o}es de Projeto}{38}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}\textit {Framework} Caixa-preta, Caixa-branca e Caixa-cinza}{39}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.4}\textit {Hot-spot} e \textit {Frozen-spot}}{40}{subsection.2.5.4}
+\contentsline {subsection}{\numberline {2.5.5}Processo de Desenvolvimento Orientado a \textit {Hot-Spots}}{42}{subsection.2.5.5}
+\contentsline {subsection}{\numberline {2.5.6}Abordagem de Projetos}{44}{subsection.2.5.6}
+\contentsline {section}{\numberline {2.6}Trabalhos Relacionados}{45}{section.2.6}
 \contentsline {subsection}{\numberline {2.6.1}Carmen}{45}{subsection.2.6.1}
 \contentsline {subsection}{\numberline {2.6.2}ROS}{45}{subsection.2.6.2}
-\contentsline {subsection}{\numberline {2.6.3}Tese de Morten Strandberg}{45}{subsection.2.6.3}
+\contentsline {subsection}{\numberline {2.6.3}Tese de Morten Strandberg}{46}{subsection.2.6.3}
 \contentsline {section}{\numberline {2.7}Resumo do Cap\IeC {\'\i }tulo}{46}{section.2.7}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Suporte Tecnol\IeC {\'o}gico}}{49}{chapter.3}
 \contentsline {section}{\numberline {3.1}Linguagem de programa\IeC {\c c}\IeC {\~a}o}{49}{section.3.1}
 \contentsline {section}{\numberline {3.2}Ferramentas e plugins}{49}{section.3.2}
-\contentsline {section}{\numberline {3.3}Lego NXT}{49}{section.3.3}
+\contentsline {section}{\numberline {3.3}Lego NXT}{50}{section.3.3}
 \contentsline {section}{\numberline {3.4}Differential Steering}{50}{section.3.4}
-\contentsline {section}{\numberline {3.5}Resumo do Cap\IeC {\'\i }tulo}{50}{section.3.5}
+\contentsline {section}{\numberline {3.5}Resumo do Cap\IeC {\'\i }tulo}{51}{section.3.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Metodologia}}{53}{chapter.4}
 \contentsline {section}{\numberline {4.1}Processo de produ\IeC {\c c}\IeC {\~a}o}{53}{section.4.1}
@@ -58,48 +58,57 @@
 \contentsline {section}{\numberline {4.3}Resumo do Cap\IeC {\'\i }tulo}{56}{section.4.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {O Traveller Framework}}{57}{chapter.5}
-\contentsline {section}{\numberline {5.1}A arquitetura}{58}{section.5.1}
+\contentsline {section}{\numberline {5.1}A Arquitetura}{58}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}EmbeddedCommunicator}{59}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}TCPCommunicator}{60}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Controller}{61}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}Map}{62}{subsection.5.1.4}
-\contentsline {subsection}{\numberline {5.1.5}Path Planner}{63}{subsection.5.1.5}
-\contentsline {subsection}{\numberline {5.1.6}Graph}{64}{subsection.5.1.6}
-\contentsline {subsection}{\numberline {5.1.7}Best Path}{64}{subsection.5.1.7}
-\contentsline {section}{\numberline {5.2}O prot\IeC {\'o}tipo}{65}{section.5.2}
-\contentsline {section}{\numberline {5.3}A vers\IeC {\~a}o final}{66}{section.5.3}
-\contentsline {section}{\numberline {5.4}Hot-spots do framework}{68}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}PathPlanner}{68}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}BestPath}{68}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}EmbeddedCommunicator}{68}{subsection.5.4.3}
-\contentsline {subsection}{\numberline {5.4.4}Hot-spot descartados: O mapa}{69}{subsection.5.4.4}
-\contentsline {section}{\numberline {5.5}Os obst\IeC {\'a}culos}{69}{section.5.5}
-\contentsline {section}{\numberline {5.6}Boas pr\IeC {\'a}ticas de programa\IeC {\c c}\IeC {\~a}o}{70}{section.5.6}
-\contentsline {section}{\numberline {5.7}Resumo do Cap\IeC {\'\i }tulo}{73}{section.5.7}
+\contentsline {subsection}{\numberline {5.1.2}RobotCommunicator}{61}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Main}{61}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Controller}{61}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}Map}{63}{subsection.5.1.5}
+\contentsline {subsection}{\numberline {5.1.6}Path Planner}{64}{subsection.5.1.6}
+\contentsline {subsection}{\numberline {5.1.7}Graph}{64}{subsection.5.1.7}
+\contentsline {subsection}{\numberline {5.1.8}Best Path}{65}{subsection.5.1.8}
+\contentsline {section}{\numberline {5.2}O Prot\IeC {\'o}tipo}{66}{section.5.2}
+\contentsline {section}{\numberline {5.3}A Vers\IeC {\~a}o Final}{67}{section.5.3}
+\contentsline {section}{\numberline {5.4}\textit {Hot-spots} do \textit {Framework}}{69}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}PathPlanner}{70}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}BestPath}{70}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}EmbeddedCommunicator}{70}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.4}\textit {Hot-spot} Descartados: O Mapa}{70}{subsection.5.4.4}
+\contentsline {section}{\numberline {5.5}Os Obst\IeC {\'a}culos}{71}{section.5.5}
+\contentsline {section}{\numberline {5.6}Boas Pr\IeC {\'a}ticas de Programa\IeC {\c c}\IeC {\~a}o}{72}{section.5.6}
+\contentsline {section}{\numberline {5.7}Resumo do Cap\IeC {\'\i }tulo}{75}{section.5.7}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Resultados obtidos}}{75}{chapter.6}
-\contentsline {section}{\numberline {6.1}Experimentos iniciais}{75}{section.6.1}
-\contentsline {section}{\numberline {6.2}Testes de desempenho}{75}{section.6.2}
-\contentsline {section}{\numberline {6.3}Testes unit\IeC {\'a}rios e de sistema}{75}{section.6.3}
-\contentsline {section}{\numberline {6.4}Testes com o rob\IeC {\^o}}{75}{section.6.4}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Resultados obtidos}}{77}{chapter.6}
+\contentsline {section}{\numberline {6.1}Testes iniciais}{77}{section.6.1}
+\contentsline {section}{\numberline {6.2}Testes de desempenho}{77}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Testes de Stress - Simula\IeC {\c c}\IeC {\~a}o}{78}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Testes de Stress no Rob\IeC {\^o}}{80}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Decis\IeC {\~o}es tomadas}{80}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Testes unit\IeC {\'a}rios e de Integra\IeC {\c c}\IeC {\~a}o}{81}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Testes unit\IeC {\'a}rios e cobertura de c\IeC {\'o}digo}{81}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Testes de Integra\IeC {\c c}\IeC {\~a}o: Compara\IeC {\c c}\IeC {\~o}es Com o Simulador MRIT}{83}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Testes de Integra\IeC {\c c}\IeC {\~a}o: Desempenho}{89}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Testes Finais Com o Rob\IeC {\^o}}{92}{section.6.4}
+\contentsline {section}{\numberline {6.5}Observa\IeC {\c c}\IeC {\~o}es Sobre o Funcionamento dos Algoritmos}{93}{section.6.5}
+\contentsline {section}{\numberline {6.6}Resumo do Cap\IeC {\'\i }tulo}{94}{section.6.6}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Conclus\IeC {\~a}o}}{77}{chapter.7}
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Conclus\IeC {\~a}o}}{95}{chapter.7}
+\contentsline {section}{\numberline {7.1}Sugest\IeC {\~a}o de Trabalhos Futuros}{95}{section.7.1}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{79}{section*.7}
-\cftinsert {AAA}
-\renewcommand *{\cftappendixname }{ANEXO \space }
+\contentsline {chapter}{Refer\^encias}{97}{section*.7}
+\renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Anexos}}{83}{section*.8}
+\contentsline {part}{\uppercase {Ap\^endices}}{101}{section*.8}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {\textit {Host-spot Cards}}}{85}{appendix.anexochapback.1}
-\contentsline {section}{\numberline {A.1}PathPlanner}{85}{section.anexochapback.1.1}
-\contentsline {section}{\numberline {A.2}BestPath}{87}{section.anexochapback.1.2}
-\contentsline {section}{\numberline {A.3}EmbeddedCommunicator}{88}{section.anexochapback.1.3}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {\textit {Host-spot Cards}}}{103}{appendix.A}
+\contentsline {section}{\numberline {A.1}PathPlanner}{103}{section.A.1}
+\contentsline {section}{\numberline {A.2}BestPath}{105}{section.A.2}
+\contentsline {section}{\numberline {A.3}EmbeddedCommunicator}{106}{section.A.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {C\IeC {\'o}digo fonte}}{89}{appendix.anexochapback.2}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {C\IeC {\'o}digo fonte}}{107}{appendix.B}
