@@ -22,22 +22,36 @@
 \contentsline {figure}{\numberline {21}{\ignorespaces Arquitetura de navega\IeC {\c c}\IeC {\~a}o considerada, \cite {Nehmzow2003}}}{58}{figure.5.21}
 \contentsline {figure}{\numberline {22}{\ignorespaces Diagrama de pacotes do sistema}}{59}{figure.5.22}
 \contentsline {figure}{\numberline {23}{\ignorespaces Componente embarcado no rob\IeC {\^o}}}{60}{figure.5.23}
-\contentsline {figure}{\numberline {24}{\ignorespaces Componente que se comunica com o rob\IeC {\^o}}}{60}{figure.5.24}
-\contentsline {figure}{\numberline {25}{\ignorespaces Componente Controller}}{61}{figure.5.25}
-\contentsline {figure}{\numberline {26}{\ignorespaces Diagrama de sequ\IeC {\^e}ncia do componente controller}}{62}{figure.5.26}
+\contentsline {figure}{\numberline {24}{\ignorespaces Componente que se comunica com o rob\IeC {\^o}}}{61}{figure.5.24}
+\contentsline {figure}{\numberline {25}{\ignorespaces Componente Controller}}{62}{figure.5.25}
+\contentsline {figure}{\numberline {26}{\ignorespaces Diagrama de sequ\IeC {\^e}ncia do componente controller}}{63}{figure.5.26}
 \contentsline {figure}{\numberline {27}{\ignorespaces Componente Map}}{63}{figure.5.27}
-\contentsline {figure}{\numberline {28}{\ignorespaces Componente PathPlanner}}{63}{figure.5.28}
-\contentsline {figure}{\numberline {29}{\ignorespaces Componente Graph}}{64}{figure.5.29}
+\contentsline {figure}{\numberline {28}{\ignorespaces Componente PathPlanner}}{64}{figure.5.28}
+\contentsline {figure}{\numberline {29}{\ignorespaces Componente Graph}}{65}{figure.5.29}
 \contentsline {figure}{\numberline {30}{\ignorespaces Componente BestPath}}{65}{figure.5.30}
 \contentsline {figure}{\numberline {31}{\ignorespaces C\IeC {\'o}digo do \textit {framework} sendo executado na vers\IeC {\~a}o prot\IeC {\'o}tipo}}{66}{figure.5.31}
-\contentsline {figure}{\numberline {32}{\ignorespaces C\IeC {\'o}digo do \textit {framework} sendo executado na vers\IeC {\~a}o final}}{67}{figure.5.32}
-\contentsline {figure}{\numberline {33}{\ignorespaces Obst\IeC {\'a}culo real em preto e a expans\IeC {\~a}o incrementada em amarelo \cite {MRIT_SITE}}}{70}{figure.5.33}
-\contentsline {figure}{\numberline {34}{\ignorespaces Teste inicial do \textit {framework}}}{76}{figure.6.34}
-\contentsline {figure}{\numberline {35}{\ignorespaces teste de stress, tempo de execu\IeC {\c c}\IeC {\~a}o}}{77}{figure.6.35}
-\contentsline {figure}{\numberline {36}{\ignorespaces teste de stress, m\IeC {\'e}todos que mais foram utilizados}}{77}{figure.6.36}
-\contentsline {figure}{\numberline {37}{\ignorespaces mapa exemplo do \textit {hot-spot card} PathPlanner}}{89}{figure.A.37}
-\contentsline {figure}{\numberline {38}{\ignorespaces resultado do exemplo 1 do \textit {hot-spot card} PathPlanner}}{90}{figure.A.38}
-\contentsline {figure}{\numberline {39}{\ignorespaces mapa exemplo 2 do \textit {hot-spot card} PathPlanner}}{90}{figure.A.39}
-\contentsline {figure}{\numberline {40}{\ignorespaces resultado do exemplo 2 do \textit {hot-spot card} PathPlanner}}{90}{figure.A.40}
-\contentsline {figure}{\numberline {41}{\ignorespaces grafo exemplo do \textit {hot-spot card} BestPath}}{91}{figure.A.41}
-\contentsline {figure}{\numberline {42}{\ignorespaces grafo do exemplo 2 do \textit {hot-spot card} BestPath}}{92}{figure.A.42}
+\contentsline {figure}{\numberline {32}{\ignorespaces C\IeC {\'o}digo do \textit {framework} sendo executado na vers\IeC {\~a}o final}}{68}{figure.5.32}
+\contentsline {figure}{\numberline {33}{\ignorespaces Ordem em que os dados devem ser enviados}}{69}{figure.5.33}
+\contentsline {figure}{\numberline {34}{\ignorespaces Obst\IeC {\'a}culo real em preto e a expans\IeC {\~a}o incrementada em amarelo \cite {MRIT_SITE}}}{72}{figure.5.34}
+\contentsline {figure}{\numberline {35}{\ignorespaces Teste inicial do \textit {framework}}}{78}{figure.6.35}
+\contentsline {figure}{\numberline {36}{\ignorespaces teste de stress, tempo de execu\IeC {\c c}\IeC {\~a}o}}{79}{figure.6.36}
+\contentsline {figure}{\numberline {37}{\ignorespaces teste de stress, m\IeC {\'e}todos que mais foram utilizados}}{79}{figure.6.37}
+\contentsline {figure}{\numberline {38}{\ignorespaces Cobertura de c\IeC {\'o}digo do \textit {framework}}}{82}{figure.6.38}
+\contentsline {figure}{\numberline {39}{\ignorespaces Trajet\IeC {\'o}rias para o mapa 1 (MRIT em vermelho e Traveller em azul) a) Quadtree, b) Grafo de Visibilidade, c) Voronoi, d) Wavefront}}{84}{figure.6.39}
+\contentsline {figure}{\numberline {40}{\ignorespaces Trajet\IeC {\'o}rias para o mapa 2 (MRIT em vermelho e Traveller em azul) a) Quadtree, b) Grafo de Visibilidade, c) Voronoi, d) Wavefront}}{84}{figure.6.40}
+\contentsline {figure}{\numberline {41}{\ignorespaces Trajet\IeC {\'o}rias para o mapa 3 (MRIT em vermelho e Traveller em azul) a) Quadtree, b) Grafo de Visibilidade, c) Voronoi, d) Wavefront}}{85}{figure.6.41}
+\contentsline {figure}{\numberline {42}{\ignorespaces Trajet\IeC {\'o}rias para o mapa 4 (MRIT em vermelho e Traveller em azul) a) Quadtree, b) Grafo de Visibilidade, c) Voronoi, d) Wavefront}}{85}{figure.6.42}
+\contentsline {figure}{\numberline {43}{\ignorespaces Trajet\IeC {\'o}rias para o mapa 5 (MRIT em vermelho e Traveller em azul) a) Quadtree, b) Grafo de Visibilidade, c) Voronoi, d) Wavefront}}{86}{figure.6.43}
+\contentsline {figure}{\numberline {44}{\ignorespaces Trajet\IeC {\'o}rias para o mapa 6 (MRIT em vermelho e Traveller em azul) a) Quadtree, b) Grafo de Visibilidade, c) Voronoi, d) Wavefront}}{86}{figure.6.44}
+\contentsline {figure}{\numberline {45}{\ignorespaces tempo de processamento do mapa 1 com LinkedList}}{89}{figure.6.45}
+\contentsline {figure}{\numberline {46}{\ignorespaces tempo de processamento do mapa 1 com ArrayList}}{90}{figure.6.46}
+\contentsline {figure}{\numberline {47}{\ignorespaces tempo de processamento do mapa 3 com Quadtree}}{90}{figure.6.47}
+\contentsline {figure}{\numberline {48}{\ignorespaces tempo de processamento do mapa 3 com Grafo de Visibilidade}}{91}{figure.6.48}
+\contentsline {figure}{\numberline {49}{\ignorespaces tempo de processamento do mapa 3 com Voronoi}}{91}{figure.6.49}
+\contentsline {figure}{\numberline {50}{\ignorespaces tempo de processamento do mapa 3 com Wavefront}}{92}{figure.6.50}
+\contentsline {figure}{\numberline {51}{\ignorespaces mapa exemplo do \textit {hot-spot card} PathPlanner}}{103}{figure.A.51}
+\contentsline {figure}{\numberline {52}{\ignorespaces resultado do exemplo 1 do \textit {hot-spot card} PathPlanner}}{104}{figure.A.52}
+\contentsline {figure}{\numberline {53}{\ignorespaces mapa exemplo 2 do \textit {hot-spot card} PathPlanner}}{104}{figure.A.53}
+\contentsline {figure}{\numberline {54}{\ignorespaces resultado do exemplo 2 do \textit {hot-spot card} PathPlanner}}{104}{figure.A.54}
+\contentsline {figure}{\numberline {55}{\ignorespaces grafo exemplo do \textit {hot-spot card} BestPath}}{105}{figure.A.55}
+\contentsline {figure}{\numberline {56}{\ignorespaces grafo do exemplo 2 do \textit {hot-spot card} BestPath}}{106}{figure.A.56}

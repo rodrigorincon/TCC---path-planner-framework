@@ -4,7 +4,7 @@ A proposta deste trabalho foi a construção de um \textit{framework} de defini�
 
 O núcleo do \textit{framework} roda em um computador fora do robô, como em um servidor local, e se comunica com o robô via comunicação \textit{bluetooth}. A escolha de desenvolver a solução fora da máquina será explicada no capítulo 6. No robô, uma classe encapsula a comunicação com o servidor e realiza a troca de mensagens. O servidor recebe os dados de entrada e opera os algoritmos para devolver ao robô a lista de pontos a serem percorridos.
 
-A Figura 20 demonstra as tarefas principais do \textit{framework}, bem como suas entradas e saídas. Essas entradas e saídas definem como o \textit{framework} se comunica com as demais camadas do robô bem como as dependências desse framework para cumprir seu funcionamento. Cada tarefa apresentada representa um módulo do \textit{framework}, e as interações entre eles representa as estruturas de dados utilizadas para se comunicarem. Estes dados são recebidos pela classe embarcada no robô. Essa classe se comunica com o servidor. Os dados ainda são repassados para esse servidor sem alterações. Todo o processamento é então feito fora do robô, retornando uma resposta à classe embarcada. Por fim, essa classe responde ao sistema do robô.
+A Figura 20 demonstra as tarefas principais do \textit{framework}, bem como suas entradas e saídas. Essas entradas e saídas definem como o \textit{framework} se comunica com as demais camadas do robô bem como as dependências desse framework para cumprir seu funcionamento. Cada tarefa apresentada representa um dos módulos principais do \textit{framework}, e as interações entre eles representa as estruturas de dados utilizadas para se comunicarem. Estes dados são recebidos pela classe embarcada no robô. Essa classe se comunica com o servidor. Os dados ainda são repassados para esse servidor sem alterações. Todo o processamento é então feito fora do robô, retornando uma resposta à classe embarcada. Por fim, essa classe responde ao sistema do robô.
  
 \begin{figure}[h]
 	\centering
@@ -34,12 +34,12 @@ Cada funcionalidade é efetuada por um componente diferente, projetado para cons
 
 O \textit{framework} segue o padrão caixa-cinza, pois é desejável que o mesmo seja transparente e configurável pelo usuário. O usuário do \textit{framework} é livre para usar as implementações já prontas dos algoritmos de definição de trajetória e melhor caminho ou criar as suas próprias a partir das classes abstratas fornecidas. Além disso, o fluxo de execução e alguns comportamentos são mantidos estáticos.
 
-O diagrama de componentes da Figura 22 mostra os módulos do \textit{framework} e suas interações. São apresentados os componentes conhecidos pelos outros componentes, mas não quais classes. Levando em conta o princípio de programar para interfaces, as classes conhecidas serão sempre as interfaces e classes abstratas (exceto nos compententes de estrutra de dados). Para simplificar o diagrama, as classes concretas foram retiradas, bem como foram criados diagramas específicos para detalhar cada módulo.
+O diagrama de componentes da Figura 22 mostra os módulos do \textit{framework} e suas interações. São apresentadas as interfaces e as classes conhecidas pelos outros componentes. Levando em conta o princípio de programar para interfaces, as classes conhecidas serão sempre as interfaces e classes abstratas (exceto nos componentes de estrutra de dados e que determinam o fluxo de dados). Para simplificar o diagrama, as classes concretas foram retiradas, bem como foram criados diagramas específicos para detalhar cada módulo.
 
 \begin{figure}[h]
 	\centering
 	\label{fig22}
-		\includegraphics[keepaspectratio=true,scale=0.4]{figuras/componentes.png}
+		\includegraphics[keepaspectratio=true,scale=0.5]{figuras/componentes.png}
 	\caption{Diagrama de pacotes do sistema}
 \end{figure}
 
@@ -50,13 +50,15 @@ Nas seções subsequentes, cada componente é descrito detalhadamente.
 \begin{figure}[h]
 	\centering
 	\label{fig23}
-		\includegraphics[keepaspectratio=true,scale=0.6]{figuras/embedded.png}
+		\includegraphics[keepaspectratio=true,scale=0.5]{figuras/embedded.png}
 	\caption{Componente embarcado no robô}
 \end{figure}
 
 Este componente é o único que será executado dentro do robô e sua função é se comunicar com o servidor que esteja rodando o \textit{framework}, realizando as trocas de mensagens. Como cada kit possui uma programação, cada um pode realizar a comunicação externa de forma diferente. As classes e argumentos entre cada robô podem mudar, por isso é definida uma interface genérica de comunicação e uma classe concreta para o Lego NXT. A Figura 23 mostra a estrutura do pacote.
 
-Na classe abstrata são implementados os métodos que recebem os dados do robô e que devolvem a lista para o mesmo, além de organizar as trocas de mensagens para o correto envio de informações. Essa classe abstrata define o padrão de troca de informações através do padrão de projeto Template, estabelecendo a ordem em que as mensagens devem ser enviadas, porém não define como o método \textit{send} e \textit{receive} funcionam. Esses métodos são definidos pela classe filha, que deve ser construída pelo usuário de acordo com as bibliotecas do kit que utiliza.
+O módulo possui dois pacotes: \textit{communication}, que realiza a comunicação e possui a classe abstrata e suas implementações; e \textit{util}, que possui classes utilitárias para a mesma. Na classe abstrata são implementados os métodos que recebem os dados do robô e que devolvem a lista para o mesmo, além de organizar as trocas de mensagens para o correto envio de informações. Essa classe abstrata define o padrão de troca de informações através do padrão de projeto Template, estabelecendo a ordem em que as mensagens devem ser enviadas, porém não define como os métodos \textit{send} e \textit{receive} funcionam. Esses métodos são definidos pela classe filha, que deve ser construída pelo usuário de acordo com as bibliotecas do kit que utiliza.
+
+No pacote \textit{util} é definido uma classe de exceção que é a única retornada pela classe abstrata e suas implementações, abstraindo os erros possíveis para uma única classe. O pacote possui também a classe retornada pela comunicação, a classe \textit{Path}. A classe \textit{Path} possui o tamanho total do percurso entre o ponto inicial e final pelo percurso retornado e a lista de pontos (coordenadas em x e y) que o robô deverá seguir.
 
 As únicas restrições feitas pela interface são: (i) que a comunicação seja \textit{bluetooth} para que o servidor consiga receber os dados, e (ii) que possam ser enviados \textit{strings} e \textit{arrays} de inteiros e booleanos pelo kit.
 
@@ -69,7 +71,13 @@ As únicas restrições feitas pela interface são: (i) que a comunicação seja
 	\caption{Componente que se comunica com o robô}
 \end{figure}
 
-Este módulo apenas recebe os dados do robô e os repassa para o módulo controlador, que é o responsável pelo processamento desses dados. Esse módulo apenas separa o funcionamento de ambos, controlador e parte web. Assim, qualquer alteração na forma de comunicação ou na ordem da troca de informação não impactará no \textit{framework}. Este módulo também reorganiza os dados do mapa em uma nova matriz de booleanos para então repassá-los ao controlador. A Figura 24 mostra as principais funções do módulo.
+Este módulo apenas recebe os dados do robô e os repassa adiante. Esse módulo possui apenas funções de iniciar e concluir a comunicação e de leitura e escrita pelo\textit{bluetooth}. Assim, toda comunicação e tratamento do \textit{bluetooth} fica encapsulado dentro dele e qualquer alteração na forma de comunicação não impactará no \textit{framework}. Este módulo também reorganiza os dados do mapa em uma nova matriz de booleanos para então repassá-los ao controlador. A Figura 24 mostra as principais funções do módulo.
+
+\subsection{Main}
+
+Este módulo tem como finalidade iniciar o sistema e fazer o intermédio entre o controlador e servidor. O módulo possui a função \textit{main} que inicia o sistema e permanece em \textit{loop} infinito, sempre a espera de uma nova conexão. Ele instancia a classe RobotCommunication e, ao iniciar uma conexão, chama os métodos de leitura na ordem para guardar as informações recebidas. Desse modo, é nesta classe que fica definido a ordem de leitura dos dados. Ao término, ele também repassa ao RobotCommunication o objeto \textit{Path} que será enviado ao robô.
+
+Com estes deveres, é perceptível que este módulo segue o princípio GRASP de indireção, servindo de intermediário entre o leitor do \textit{bluetooth} e o \textit{framework} em si. Com isso, o RobotCommunication apenas se preocupa em fazer a comunicação com o robô, o \textit{Main} fica responsável por instanciá-lo e definir a ordem de leitura dos dados e repassá-los ao controlador, que executará a lógica do sistema.
 
 \subsection{Controller}
 
@@ -80,7 +88,7 @@ Este módulo apenas recebe os dados do robô e os repassa para o módulo control
 	\caption{Componente Controller}
 \end{figure}
 
-Uma vez recebidos os dados do robô pela camada RobotCommunicator, a classe PathPlannerController tem como propósito executar o \textit{framework} em si. Essa classe controla o fluxo de trabalho da aplicação, chamando os métodos das demais classes na ordem, e verificando seu correto funcionamento.
+Uma vez recebidos os dados do robô, a classe PathPlannerController tem como propósito executar o \textit{framework} em si. Essa classe controla o fluxo de trabalho da aplicação, chamando os métodos das demais classes na ordem, e verificando seu correto funcionamento.
 
 O componente segue os princípios Controlador e Inversão de Controle. Em vez do usuário chamar todas as funções do componente e fazer seu controle diretamente toda vez que quiser definir uma trajetória, este componente realiza esta tarefa pelo usuário, diminuindo acoplamento entre o usuário e o subsistema. A Inversão de Controle está presente pelo usuário ser o responsável por definir quais as classes dos outros componentes. Embora o \textit{framework} as instancie, cabe ao usuário escolher quais de suas variações serão implementadas. No construtor da classe, são passados os objetos PathPlanner e BestPath a serem usados. Esses objetos são armazenados e utilizados no método \textit{execute} para calcular o percurso. Isso permite ao módulo não conhecer as variações de cada interface, desacoplando-o dos demais módulos.
 
@@ -174,7 +182,7 @@ A suíte de testes realizadas nessa primeira fase realizava testes unitários si
 
 O código final trabalha como descrito na seção 5.1, permitindo a livre escolha entre algoritmo de melhor caminho e definição da trajetória. A interface no robô é a única camada que o usuário precisa conhecer e, caso ainda não haja uma implementação para sua plataforma, desenvolvê-la faz-se necessário.
 
-O usuário precisará ainda baixar o código do lado servidor e rodá-lo em uma máquina próxima ao ambiente em que o robô trabalhará. Considerando que o Traveller trabalha com algoritmos globais e ambientes estáticos, o mesmo é recomendado apenas para ambientes fechados e bem conhecidos, como residências, escritórios ou fábricas. Nestes ambientes, um computador precisará ser instalado e com o Java e o \textit{framework} configurados. Será ainda preciso possuir comunicação \textit{blueooth} e que a mesma esteja habilitada.
+O usuário precisará ainda baixar o código do lado servidor e rodá-lo em uma máquina próxima ao ambiente em que o robô trabalhará. Considerando que o Traveller trabalha com algoritmos globais e ambientes estáticos, o mesmo é recomendado apenas para ambientes fechados e bem conhecidos, como residências, escritórios ou fábricas. Nestes ambientes, um computador precisará ser instalado e com o Java e o \textit{framework} configurados. Será ainda preciso possuir comunicação \textit{bluetooth} e que a mesma esteja habilitada.
 
 A figura 32 mostra um exemplo de código embarcado no robô Lego NXT usando o Traveller.
 
@@ -190,6 +198,17 @@ A decisão de portá-lo para um servidor externo foi devido aos testes de memór
 Caso queira, o usuário pode alterar o comportamento dos algoritmos ou implementar novos que sejam compatíveis com o \textit{framework}, uma vez que possui o código fonte instalado em seu computador e o mesmo foi estruturado para isso. Foi escolhido realizar a implementação básica de cada algoritmo, por serem soluções clássicas em seus meios. Assim, versões otimizadas dos algoritmos como os propostos por \cite{Souza2008} e \cite{Medeiros2011} não foram implementadas. Entretanto, podem ser incluídas como outras classes filhas da classe abstrata.
 
 Dos quatro algoritmos desenvolvidos, o algoritmo de Voronoi foi o único a apresentar falhas em seu resultado, realizando um percurso fora do esperado para o comportamento descrito no capítulo 2.4.2 e, na maioria das vezes, não conseguindo encontrar um percurso entre os pontos inicial e final. Todos os demais geram um grafo e devolvem uma lista de pontos compatível com o comportamento descrito no capítulo 2.4.
+
+Algumas observações referentes a relação dos algoritmos com a expansão dos obstáculos precisam ser feitas. O Grafo de Visibilidade precisa ter os obstáculos expandidos, obrigatoriamente, ou haverá a colisão. Portanto, o \textit{framework} força a expansão, mesmo que o usuário não a especifique. Para o algoritmo Wavefront, ele monta o grafo de forma diferente se os obstáculos forem ou não expandidos. Caso haja expansão, o Wavefront considera todos os oito vizinhos para montar o grafo. Caso não haja, o algoritmo considera apenas quatro vizinhos (excluindo as células na diagonal).
+
+A execução da controladora PathPlannerController, antes chamada diretamente pelo usuário, é agora feita pelo módulo \textit{Main}. A ordem de execução não foi alterado, porém algumas variáveis novas foram inclusas para tornar o sistema mais flexível. Hoje, o Traveller recebe os algorítmos a serem executados (em forma de String), o mapa (em forma de matriz de \textit{booleanos}), os pontos inicial e final, a largura do robô, a largura que cada célula da matriz representa no ambiente (na mesma medida que a largura do robô), o valor a ser considerado como livre no mapa e se os obstáculos devem ser expandidos ou não. A Figura 33 mostra a ordem em que os mesmos são lidos no servidor (e, consequentemente, a ordem em que são enviados pelo robô) e seu recimento pela controladora.
+
+\begin{figure}[h]
+	\centering
+	\label{fig33}
+		\includegraphics[keepaspectratio=true,scale=0.7]{figuras/main.PNG}
+	\caption{Ordem em que os dados devem ser enviados}
+\end{figure}
 
 Além dos algoritmos implementados, outros foram estudados, bem como analisadas suas visibilidades. Um deles foi o algoritmo D* \cite{Ferguson__2005_5119} para definição de trajetória, porém não incluso por seu uso não se encaixar no cenário de algoritmos globais e do Traveller.
 
@@ -231,7 +250,7 @@ O robô é considerado como um ponto (seu centro), o que pode gerar problemas se
 
 \begin{figure}[h]
 	\centering
-	\label{fig33}
+	\label{fig34}
 		\includegraphics[keepaspectratio=true,scale=0.5]{figuras/expansao.png}
 	\caption{Obstáculo real em preto e a expansão incrementada em amarelo \cite{MRIT_SITE}}
 \end{figure}
@@ -276,4 +295,4 @@ O Traveller Framework possui três \textit{hot-spots} em que pode ser escolhido 
 
 Internamente, o Traveller trabalha com um mapa do tipo malha de ocupação com valores inteiros. A comunicação do robô com o \textit{framework} se dará por uma classe dentro do robô, herdada de \textit{EmbeddedCommunicator}. Serão passados os pontos inicial e final para esta classe, além do mapa e de quais algoritmos deseja executar. O \textit{EmbeddedCommunicator} repassa as informações ao servidor que instanciará os objetos e executará o fluxo da resolução, presente na classe Controller.
 
-O \textit{framework} tem sete componentes: \textit{Graph} (responsável pelo grafo), \textit{Controller} (controlador do sistema), \textit{Map} (responsável pelo mapa), \textit{PathPlanner} (algoritmo global), \textit{BestPath} (algoritmo de melhor caminho), \textit{EmbeddedCommunicator} (responsável pela comunicação no lado do robô) e \textit{RobotCommunication} (responsável pela comunicação no lado do servidor). O desenvolvimento de cada um deles é embasado em boas práticas de programação e voltado à clareza e à simplicidade do código.
+O \textit{framework} tem oito componentes: \textit{Graph} (responsável pelo grafo), \textit{Controller} (controlador do sistema), \textit{Map} (responsável pelo mapa), \textit{PathPlanner} (algoritmo global), \textit{BestPath} (algoritmo de melhor caminho),  \textit{Main} (responsável por iniciar o sistema e desacoplar a comunicação do \textit{framework}) \textit{EmbeddedCommunicator} (responsável pela comunicação no lado do robô) e \textit{RobotCommunication} (responsável pela comunicação no lado do servidor). O desenvolvimento de cada um deles é embasado em boas práticas de programação e voltado à clareza e à simplicidade do código.
