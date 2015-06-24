@@ -1,4 +1,4 @@
-package robot;
+package test;
 
 import java.util.List;
 import traveller.communication.NXTCommunication;
