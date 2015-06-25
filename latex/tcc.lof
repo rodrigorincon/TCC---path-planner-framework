@@ -43,12 +43,12 @@
 \contentsline {figure}{\numberline {42}{\ignorespaces Trajet\IeC {\'o}rias para o mapa 4 (MRIT em vermelho e Traveller em azul) a) Quadtree, b) Grafo de Visibilidade, c) Voronoi, d) Wavefront}}{85}{figure.6.42}
 \contentsline {figure}{\numberline {43}{\ignorespaces Trajet\IeC {\'o}rias para o mapa 5 (MRIT em vermelho e Traveller em azul) a) Quadtree, b) Grafo de Visibilidade, c) Voronoi, d) Wavefront}}{86}{figure.6.43}
 \contentsline {figure}{\numberline {44}{\ignorespaces Trajet\IeC {\'o}rias para o mapa 6 (MRIT em vermelho e Traveller em azul) a) Quadtree, b) Grafo de Visibilidade, c) Voronoi, d) Wavefront}}{86}{figure.6.44}
-\contentsline {figure}{\numberline {45}{\ignorespaces tempo de processamento do mapa 1 com LinkedList}}{89}{figure.6.45}
-\contentsline {figure}{\numberline {46}{\ignorespaces tempo de processamento do mapa 1 com ArrayList}}{90}{figure.6.46}
+\contentsline {figure}{\numberline {45}{\ignorespaces tempo de processamento do mapa 1 com LinkedList}}{88}{figure.6.45}
+\contentsline {figure}{\numberline {46}{\ignorespaces tempo de processamento do mapa 1 com ArrayList}}{89}{figure.6.46}
 \contentsline {figure}{\numberline {47}{\ignorespaces tempo de processamento do mapa 3 com Quadtree}}{90}{figure.6.47}
-\contentsline {figure}{\numberline {48}{\ignorespaces tempo de processamento do mapa 3 com Grafo de Visibilidade}}{91}{figure.6.48}
+\contentsline {figure}{\numberline {48}{\ignorespaces tempo de processamento do mapa 3 com Grafo de Visibilidade}}{90}{figure.6.48}
 \contentsline {figure}{\numberline {49}{\ignorespaces tempo de processamento do mapa 3 com Voronoi}}{91}{figure.6.49}
-\contentsline {figure}{\numberline {50}{\ignorespaces tempo de processamento do mapa 3 com Wavefront}}{92}{figure.6.50}
+\contentsline {figure}{\numberline {50}{\ignorespaces tempo de processamento do mapa 3 com Wavefront}}{91}{figure.6.50}
 \contentsline {figure}{\numberline {51}{\ignorespaces mapa exemplo do \textit {hot-spot card} PathPlanner}}{103}{figure.A.51}
 \contentsline {figure}{\numberline {52}{\ignorespaces resultado do exemplo 1 do \textit {hot-spot card} PathPlanner}}{104}{figure.A.52}
 \contentsline {figure}{\numberline {53}{\ignorespaces mapa exemplo 2 do \textit {hot-spot card} PathPlanner}}{104}{figure.A.53}

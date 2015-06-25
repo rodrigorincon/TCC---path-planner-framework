@@ -87,10 +87,10 @@
 \contentsline {section}{\numberline {6.3}Testes unit\IeC {\'a}rios e de Integra\IeC {\c c}\IeC {\~a}o}{81}{section.6.3}
 \contentsline {subsection}{\numberline {6.3.1}Testes unit\IeC {\'a}rios e cobertura de c\IeC {\'o}digo}{81}{subsection.6.3.1}
 \contentsline {subsection}{\numberline {6.3.2}Testes de Integra\IeC {\c c}\IeC {\~a}o: Compara\IeC {\c c}\IeC {\~o}es Com o Simulador MRIT}{83}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Testes de Integra\IeC {\c c}\IeC {\~a}o: Desempenho}{89}{subsection.6.3.3}
-\contentsline {section}{\numberline {6.4}Testes Finais Com o Rob\IeC {\^o}}{92}{section.6.4}
-\contentsline {section}{\numberline {6.5}Observa\IeC {\c c}\IeC {\~o}es Sobre o Funcionamento dos Algoritmos}{93}{section.6.5}
-\contentsline {section}{\numberline {6.6}Resumo do Cap\IeC {\'\i }tulo}{94}{section.6.6}
+\contentsline {subsection}{\numberline {6.3.3}Testes de Integra\IeC {\c c}\IeC {\~a}o: Desempenho}{88}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Testes Finais Com o Rob\IeC {\^o}}{89}{section.6.4}
+\contentsline {section}{\numberline {6.5}Observa\IeC {\c c}\IeC {\~o}es Sobre o Funcionamento dos Algoritmos}{92}{section.6.5}
+\contentsline {section}{\numberline {6.6}Resumo do Cap\IeC {\'\i }tulo}{93}{section.6.6}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Conclus\IeC {\~a}o}}{95}{chapter.7}
 \contentsline {section}{\numberline {7.1}Sugest\IeC {\~a}o de Trabalhos Futuros}{95}{section.7.1}
