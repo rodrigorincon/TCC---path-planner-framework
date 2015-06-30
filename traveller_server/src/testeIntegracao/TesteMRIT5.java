@@ -64,9 +64,9 @@ public class TesteMRIT5 {
 	public void testeVisibilityGraph() {
 		String path_planner = "VisibilityGraph";
 		Path path = executeFramework(path_planner);
-		assertNotNull(path);		
-		assertEquals(path.getRoute().size(), 7);
-		assertEquals((int)path.getSize(), 51);
+		assertNotNull(path);
+		assertEquals(path.getRoute().size(), 5);
+		assertEquals((int)path.getSize(), 42);
 	}
 	
 	@Test

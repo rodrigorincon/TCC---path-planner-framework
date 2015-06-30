@@ -50,8 +50,6 @@ public class TesteMRIT6 {
 		String path_planner = "Wavefront";
 		Path path = executeFramework(path_planner);
 		assertNotNull(path);
-		for(int i=0; i<path.getRoute().size(); i++)
-			System.out.println(path.getRoute().get(i).toFloatString());
 		assertEquals(path.getRoute().size(), 45);
 		assertEquals((int)path.getSize(), 47);
 	}
@@ -61,8 +59,8 @@ public class TesteMRIT6 {
 		String path_planner = "VisibilityGraph";
 		Path path = executeFramework(path_planner);
 		assertNotNull(path);
-		assertEquals(path.getRoute().size(), 7);
-		assertEquals((int)path.getSize(), 55);
+		assertEquals(path.getRoute().size(), 5);
+		assertEquals((int)path.getSize(), 43);
 	}
 	
 	@Test

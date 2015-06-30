@@ -74,7 +74,7 @@ public class TesteMRIT3 {
 		String path_planner = "VisibilityGraph";
 		Path path = executeFramework(path_planner);
 		assertNotNull(path);
-		assertEquals(path.getRoute().size(), 6);
+		assertEquals(path.getRoute().size(), 5);
 		assertEquals((int)path.getSize(), 57);
 	}
 	
