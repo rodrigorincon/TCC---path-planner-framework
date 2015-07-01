@@ -25,10 +25,12 @@ public class Quadtree extends PathPlanner{
 		addFinalPoint();
 		addNodes();
 		addEdges();
+		//if the initial or the goal point isnt inside a bigger square
+		verifyInitialAndGoalPoints();
 		clearSquares();
 		return graph_returned;
 	}
-	
+
 	private Square verifySquare(int init_line, int init_column, int linesSquare, int columnsSquare){
 		Square new_square = null;
 		if(linesSquare < minimumSize || columnsSquare < minimumSize)
@@ -146,6 +148,55 @@ public class Quadtree extends PathPlanner{
 		return same_lines && same_collumns;
 	}
 	
+	private void verifyInitialAndGoalPoints() {
+		Node initial = graph_returned.getNode(graph_returned.getNumNodes()-2);
+		if(initial.getNumNeighbors()==0 && map.getPosition(initial.getIntCoordinates())==map.getFREE())
+			addEdgeToNearest(initial);
+		Node goal = graph_returned.getNode(graph_returned.getNumNodes()-1);
+		if(goal.getNumNeighbors()==0 && map.getPosition(goal.getIntCoordinates())==map.getFREE())
+			addEdgeToNearest(goal);
+	}
+	
+	private void addEdgeToNearest(Node node_to_add) {
+		Node nearest = null;
+		float smaller_dist = 9999;
+		//find the nearest node and the distance, if exist
+		for(int i=0; i<graph_returned.getNumNodes(); i++){
+			Node possible_neighbor = graph_returned.getNode(i);
+			if(node_to_add == possible_neighbor)
+				continue;
+			if( haveFreeRouteLine(node_to_add.getIntCoordinates()[Constants.COLUMN], node_to_add.getIntCoordinates()[Constants.LINE], 
+					possible_neighbor.getIntCoordinates()[Constants.COLUMN], possible_neighbor.getIntCoordinates()[Constants.LINE]) ){
+				if( nearest == null ){
+					nearest = possible_neighbor;
+					smaller_dist = calculateDistance(node_to_add, possible_neighbor);
+				}else{
+					float temp_dist = calculateDistance(node_to_add, possible_neighbor);
+					if(temp_dist < smaller_dist){
+						nearest = possible_neighbor;
+						smaller_dist = temp_dist;
+					}
+				}
+			}
+		}
+		//add the nodes
+		if(nearest != null)
+			node_to_add.addEdge(nearest, smaller_dist);
+	}
+	
+	private boolean haveFreeRouteLine(int x1, int y1, int x2, int y2){
+		if(Math.abs(x1 - x2) <= 1 && Math.abs(y1 - y2) <= 1){
+			boolean a = map.getPosition(y2, x2) == map.getFREE();
+			return a;
+		}
+		int diff_x = Math.abs(x1 - x2); 
+		int middle_x = diff_x/2 + Math.min(x1, x2);
+		int diff_y = (int)Math.abs(y1 - y2);
+		int middle_y = diff_y/2 + Math.min(y1, y2);
+		boolean b= haveFreeRouteLine(x1, y1, middle_x, middle_y) ? haveFreeRouteLine(middle_x, middle_y, x2, y2) : false;
+		return b;
+	}
+
 	private void clearSquares(){
 		while(!squares.isEmpty())
 			squares.remove(0);

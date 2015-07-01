@@ -130,14 +130,14 @@ public class Map {
 			if(diff_line == 0 && diff_col !=0){
 				control = true;
 				for(int col=Math.min(col1, col2)+1; col<Math.max(col1, col2); col++)
-					if(data[line1][col] == FREE)
+					if(data[line1][col] == FREE || bothUpDownSidesOccupied(line1, col) )
 						is_not_the_same_obstacle = true;
 			}
 			//if they are in the same column
 			else if(diff_line != 0 && diff_col == 0){
 				control = true;
 				for(int line=Math.min(line1, line2)+1; line<Math.max(line1, line2); line++)
-					if(data[line][col1] == FREE)
+					if(data[line][col1] == FREE || bothLeftRightSidesOccupied(line, col1))
 						is_not_the_same_obstacle = true;
 			}
 			//if they are in perfect diagonal
@@ -168,6 +168,17 @@ public class Map {
 		return response;
 	}
 	
+	private boolean bothUpDownSidesOccupied(int line, int col) {
+		boolean side1 = line-1 < 0 ? true : data[line-1][col]==OCCUPIED;
+		boolean side2 = line+1 >= data.length ? true : data[line+1][col]==OCCUPIED;
+		return side1 && side2;
+	}
+	private boolean bothLeftRightSidesOccupied(int line, int col) {
+		boolean side1 = col-1 < 0 ? true : data[line][col-1]==OCCUPIED;
+		boolean side2 = col+1 >= data.length ? true : data[line][col+1]==OCCUPIED;
+		return side1 && side2;
+	}
+
 	public int getNumLines(){
 		return data.length;
 	}

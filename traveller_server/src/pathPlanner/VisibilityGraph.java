@@ -38,7 +38,7 @@ public class VisibilityGraph  extends PathPlanner{
 	
 	private boolean haveFreeRouteLine(int x1, int y1, int x2, int y2){
 		if(Math.abs(x1 - x2) <= 1 && Math.abs(y1 - y2) <= 1){
-			boolean a = pointIsFinalLine(x2,y2) || map.getPosition(y2, x2) == map.getFREE();
+			boolean a = pointIsFinalLine(x2,y2) || map.getPosition(y2, x2) == map.getFREE() || pointBelongsToSameObstacleAndHasNeighborFree(x2,y2);
 			return a;
 		}
 		int diff_x = Math.abs(x1 - x2); 
@@ -49,6 +49,34 @@ public class VisibilityGraph  extends PathPlanner{
 		return b;
 	}
 	
+	/** if the line between the points is not 45º, it can pass in the obstacles cells neighboors
+	 * of initial or finla point and accuse a not free line when is possible throw the line. This
+	 * function fix this */
+	private boolean pointBelongsToSameObstacleAndHasNeighborFree(int x, int y) {
+		if( pointsInSameLine(x, y, init_line_x, init_line_y) ){
+			int increase = final_line_y > init_line_y ? 1 : final_line_y < init_line_y ?-1 : 0;
+			return map.getPosition(y+increase, x) == map.getFREE();
+		}if( pointsInSameCollumn(x, y, init_line_x, init_line_y) ){
+			int increase = final_line_x > init_line_x ? 1 : final_line_x < init_line_x ?-1 : 0;
+			return map.getPosition(y, x+increase) == map.getFREE();
+		}if( pointsInSameLine(x, y, final_line_x, final_line_y) ){
+			int increase = final_line_y > init_line_y ? -1 : final_line_y < init_line_y ?1 : 0;
+			return map.getPosition(y+increase, x) == map.getFREE();
+		}if( pointsInSameCollumn(x, y, final_line_x, final_line_y) ){
+			int increase = final_line_x > init_line_x ? -1 : final_line_x < init_line_x ?1 : 0;
+			return map.getPosition(y, x+increase) == map.getFREE();
+		}
+		return false;
+	}
+
+	private boolean pointsInSameCollumn(int x1, int y1, int x2,int y2) {
+		return x1 == x2 && map.getPosition(y1, x1) == map.getPosition(y2, x2);
+	}
+
+	private boolean pointsInSameLine(int x1, int y1, int x2, int y2) {
+		return y1 == y2 && map.getPosition(y1, x1) == map.getPosition(y2, x2);
+	}
+
 	private void addEdges(){
 		for(int i=0; i<graph_returned.getNumNodes(); i++){
 			Node actual = graph_returned.getNode(i);
