@@ -76,7 +76,7 @@
 \contentsline {subsection}{\numberline {5.4.4}\textit {Hot-spot} Descartados: O Mapa}{70}{subsection.5.4.4}
 \contentsline {section}{\numberline {5.5}Os Obst\IeC {\'a}culos}{71}{section.5.5}
 \contentsline {section}{\numberline {5.6}Boas Pr\IeC {\'a}ticas de Programa\IeC {\c c}\IeC {\~a}o}{72}{section.5.6}
-\contentsline {section}{\numberline {5.7}Resumo do Cap\IeC {\'\i }tulo}{75}{section.5.7}
+\contentsline {section}{\numberline {5.7}Resumo do Cap\IeC {\'\i }tulo}{74}{section.5.7}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Resultados obtidos}}{77}{chapter.6}
 \contentsline {section}{\numberline {6.1}Testes iniciais}{77}{section.6.1}

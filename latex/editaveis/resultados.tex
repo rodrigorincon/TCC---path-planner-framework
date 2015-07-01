@@ -2,7 +2,7 @@
 
 O desenvolvimento do Traveller foi, desde seu início, fortemente testado por uma suíte de testes que garantiam a integridade do código em um ambiente de mudanças constantes. Assim, foi possível garantir que mesmo inserindo novos códigos, módulos e alterando as classes já existentes, as funções continuavam em funcionamento. Quando alguma alteração mudava os resultados das saídas, os testes acusavam imediatamente.
 
-Porém, para uma suíte de testes garantir essa integridade, os testes realizados precisam cobrir as áreas passíveis de falhas e críticas do sistema. Um teste que verifica uma função muito simples ou que nunca muda não nos confere tanta integridade do sistema como uma que verifica se o sistema responde corretamente ao entrar com um mapa, o qual não permite chegar ao destino final. Para isso, a suíte de testes foi constantemente avaliada e revisada, buscando uma maior qualidade dos testes realizados.
+Porém, para uma suíte de testes garantir essa integridade, os testes realizados precisam cobrir as áreas passíveis de falhas e críticas do sistema. Um teste que verifica uma função muito simples ou que nunca muda não nos confere tanta integridade ao sistema como uma que verifica se o sistema responde corretamente ao entrar com um mapa, o qual não permite chegar ao destino final. Para isso, a suíte de testes foi constantemente avaliada e revisada, buscando uma maior qualidade dos testes realizados.
 
 A seguir serão descritos os testes realizados durante o desenvolvimento do Traveller \textit{Framework} e os impactos dos mesmos no desenvolvimento do sistema.
 
@@ -63,7 +63,7 @@ Ao embarcá-lo no Lego, houve novamente estouro de memória. No grafo gerado por
 
 \subsection{Decisões tomadas}
 
-Considerando que mesmo com mapas pequenos de 30x30 o Traveller pode não funcionar em alguns robôs e, principalmente, pelo teste com o mapa retirado do MRIT de 60x60 e 3 obstáculos não ter rodado no Lego, foi verificado que o consumo de memória do algoritmo Quadtree é muito alto e o \textit{framework} precisaria ser movido para fora do robô. Outros algoritmos, como o Wavefront e Grafo de Visibilidade, podem consumir bem menos memória, porém o \textit{framework} deve funcionar mesmo no pior caso. Dessa forma, a decisão de colocá-lo em um servidor foi tomada.
+Considerando que mesmo com mapas pequenos de 30x30 o Traveller pode não funcionar em alguns robôs e, principalmente, pelo teste com o mapa retirado do MRIT de 60x60 e 3 obstáculos não ter funcionado no kit da Lego, foi verificado que o consumo de memória do algoritmo Quadtree é muito alto e o \textit{framework} precisaria ser movido para fora do robô. Outros algoritmos, como o Wavefront e Grafo de Visibilidade, podem consumir bem menos memória, porém o \textit{framework} deve funcionar mesmo no pior caso. Dessa forma, a decisão de colocá-lo em um servidor foi tomada.
 
 Vale lembrar que um mapa de 60x60 pode ainda ser pequeno dependendo da área de atuação do robô e do seu tamanho, já que a proporção entre robô e a área influencia no tamanho da matriz que o mesmo gerará.
 
@@ -81,18 +81,18 @@ Os testes unitários realizados buscavam a validação dos algoritmos, dos compo
 
 Para os testes foram usados os mesmos mapas utilizados nos testes iniciais, que por seu tamanho reduzido permitiam calcular seus resultados manualmente para os quatro algoritmos e verificá-los com as funções do JUnit. Caso o algoritmo funcionasse nos casos testados, era considerado correto.
 
-Para o diagrama de Voronoi houve uma maior dificuldade de implementar os testes unitários, mesmo em mapas menores e com menos obstáculos, devido a complexidade de seu algoritmo. Como o algoritmo fazia uso de diversos métodos privados, a maior parte do algoritmo não pôde ser testada diretamente pelos testes automátizados. Entretanto, testes manuais mostraram o correto funcionamento da maioria das funções internas, e que a falha estava presente na criação das triangulações de Delauney, o ponto central do algoritmo.
+Para o diagrama de Voronoi houve uma maior dificuldade de implementar os testes unitários, mesmo em mapas menores e com menos obstáculos, devido a complexidade de seu algoritmo. Como o algoritmo fazia uso de diversos métodos privados, a maior parte do algoritmo não pôde ser testada diretamente pelos testes automatizados. Entretanto, testes manuais mostraram o correto funcionamento da maioria das funções internas, e que a falha estava presente na criação das triangulações de Delauney, o ponto central do algoritmo.
 
 Como a maioria dos métodos que executam a lógica é privado, foi verificado diretamente pelas funções do JUnit apenas as saídas dos algoritmos e se as mesmas eram totalmente compatíveis com os valores esperados. Caso as saídas fossem compatíveis em todos os casos, então os métodos internos estariam corretos.
 
 Algumas funções da classe \textit{Map} de maior complexidade e relevância também foram diretamente testadas. Os métodos de expansão dos obstáculos e de localizar e retornar os vértices dos obstáculos também foram verificados pela suíte de testes pela sua importância nos algoritmos por possuírem uma lógica mais elaborada que as demais da mesma classe. Quanto à expansão, foi expandido um obstáculo aonde o robô possuía o mesmo tamanho da célula da matriz (expanção de 1 célula), aonde o robô era menor (expansão também de 1 célula po arredondar para cima) e aonde o robô era 1,5 vezes maior (expansão de duas casas). Para a localização de vértices foram testados obstáculos retangulares, triangulares e hexagonais. Considerando que o mapa é uma matriz, todo polígono pentagonal ou maior à vizinhança do ponto seria a mesma.
 
-Além do JUnit, foi utilizado também o plugin Eclemma para a cobertuda de código (Figura 38). Este plugin é executado juntamente com os testes unitários e marca as linhas executadas e qual a porcentagem do código foi verificada naquele teste. Como a execução do algoritmo executava todos os métodos internos, as classes eram testadas e cobertas em sua maioria. Ao final de todos os testes, foi alcançada uma cobertura de código de 94,4\%.
+Além do JUnit, foi utilizado também o plugin Eclemma para a cobertuda de código (Figura 38). Este plugin é executado juntamente com os testes unitários e marca as linhas executadas e qual a porcentagem do código foi verificada naquele teste. Como a execução do algoritmo executava todos os métodos internos, as classes eram testadas e cobertas em sua maioria. Ao final de todos os testes, foi alcançada uma cobertura de código de 94,2\%.
 
 \begin{figure}[h]
 	\centering
 	\label{fig38}
-		\includegraphics[keepaspectratio=true,scale=0.6]{figuras/cobertura.PNG}
+		\includegraphics[keepaspectratio=true,scale=0.6]{figuras/cobertura.png}
 	\caption{Cobertura de código do \textit{framework}}
 \end{figure}
 
@@ -106,7 +106,7 @@ Uma vez montado os seis mapas, foi definido o algoritmo de menor caminho como Dj
 
 As figuras 39 à 44 mostram os mapas montados no simulador MRIT. As trajetórias em vermelho foram geradas pelo simulador, enquanto as azuis foram geradas pelo Traveller. Uma observação importante a ser feita é que tanto o simulador MRIT quanto o Traveller podem não retornar uma trajetória caso não consigam encontrar um caminho. Para o mapa 3, o MRIT não conseguiu encontrar uma solução para o Wavefront, para o mapa 5 não encontrou um caminho para o Voronoi e para o mapa 6 o único algoritmo a encontrar um percurso foi o Grafo de Visibilidade. Uma curiosidade interessante é que, quando o simulador não consegue gerar um percurso, os obstáculos somem, ficando apenas os pontos inicial e final no mapa (como visível nas Figuras 41, 43 e 44).
 
-Quanto ao Traveller, para os seis mapas criados, apenas o Voronoi apresentou problemas, sendo encontrado um resultado apenas para o primeiro mapa. No sexto mapa, além do Voronoi, o Quadtree também não encontrou um caminho. Isso se deve a ambos recortarem os ambientes livres em áreas e nenhum dos dois encontrar um espaço grande o suficiente para criar as áreas necessárias para ligar os pontos inicial e final.
+Quanto ao Traveller, para os seis mapas criados, apenas o Voronoi apresentou problemas, sendo encontrado um resultado apenas para o segundo mapa. No sexto mapa, além do Voronoi, o Quadtree também não encontrou um caminho. Isso se deve a ambos recortarem os ambientes livres em áreas e nenhum dos dois encontrar um espaço grande o suficiente para criar as áreas necessárias para ligar os pontos inicial e final.
 
 \begin{figure}[h]
 	\centering
@@ -152,111 +152,111 @@ Quanto ao Traveller, para os seis mapas criados, apenas o Voronoi apresentou pro
 
 Considerando as seis amostras, é possível analisar algumas semelhanças e diferenças entre as implementações dos algoritmos do simulador MRIT e do Traveller.
 
-Nos resultados do \textit{framework}, o Quadtree nem sempre parece está se digirindo ao ponto final. Ele pode, em alguns casos, seguir para outras direções ao longo do percurso, para depois virar em direção ao objetivo. Esse comportamento fez com que o Quadtree gerasse um caminho maior, com exceção do mapa 5. Foi observado também que diversas vezes o algoritmo do \textit{framework} contornou o obstaculo por um lado diferente do simulador, o que indica que a divisão do mapa em retângulos foi implementada d eforma diferente do simulador. O percurso gerado pelo Traveller também gerou um caminho menos retilíneo.
+Nos resultados do \textit{framework}, o Quadtree nem sempre parece está se digirindo ao ponto final. Ele pode, em alguns casos, seguir para outras direções ao longo do percurso, para depois virar em direção ao objetivo. Esse comportamento fez com que o Quadtree gerasse um caminho maior. Foi observado também que para os mapas 3 e 5 o algoritmo do \textit{framework} contornou o obstaculo por um lado diferente do simulador, o que indica que a divisão do mapa em retângulos foi implementada de forma diferente do simulador. O percurso gerado pelo Traveller também gerou um caminho menos retilíneo.
 
-Para o algoritmo Grafo de Visibilidade, o \textit{framework} gerou o mesmo caminho ou um muito proximo do simulador. Para o mapa 2 o caminho foi exatamnte o mesmo e, para os mapas 1 e 4, acredita-se que o caminho só não foi igual devido a um erro na implementação dos limites do mapa na suíte de testes. O Grafo de Visibilidade implementado pelo Traveller seguiu exatamente o que se esperava do algoritmo.
+Para o algoritmo Grafo de Visibilidade, o \textit{framework} gerou o mesmo caminho do simulador. O Grafo de Visibilidade implementado pelo Traveller seguiu exatamente o que se esperava do algoritmo.
 
-Como já comentado, o algoritmo Voronoi não conseguiu chegar a um resultado satisfatório. Para os seis mapas, apenas para o primeiro o algoritmo conseguiu gerar um caminho. Pelos testes realizados durante sua implementação, a falha no algoritmo está presente na criação dos triângulos de Delauney e validação das arestas destes triângulos.
+Como já comentado, o algoritmo Voronoi não conseguiu chegar a um resultado satisfatório. Para os seis mapas, apenas para o segundo o algoritmo conseguiu gerar um caminho. Pelos testes realizados durante sua implementação, a falha no algoritmo está presente na criação dos triângulos de Delauney e validação das arestas destes triângulos.
 
 Quanto ao algoritmo Wavefront, para os mapas 3 e 6 o simulador não conseguiu gerar um resultado, enquanto o \textit{framework} conseguiu. Quanto aos percursos gerados,
-estes não mudaram tanto, seguindo mais ou menos a mesma trajetória. A única exceção foi o mapa 5, em que o percurso do \textit{framework} passou por baixo de um obstaculo, diminuindo o caminho, enquanto o simulador foi por cima. O \textit{framework} gerou um caminho significativamente menor para a maioria dos casos, obtendo um resultado pior apenas para o mapa 4, onde a diferença foi mínima (1,9 unidades).
+estes não mudaram tanto, seguindo mais ou menos a mesma trajetória. A única exceção foi o mapa 5, em que o percurso do \textit{framework} contornou um obstáculo por um lado, diminuindo o caminho, enquanto o simulador contornou por outro lado. O \textit{framework} gerou um caminho significativamente menor para a maioria dos casos, obtendo um resultado pior apenas para o mapa 4, onde a diferença foi mínima (1,9 unidades).
 
 O tamanho dos percursos gerados por cada algoritmo em cada mapa pode ser visto nas Tabela 1 à 6.
 
 \begin{table}[h]
 	\centering
 	\label{tab01}
+	\caption{Tamanho dos percursos gerados pelo simulador e o \textit{framework} para o mapa 1}
 	\begin{tabular}{ccc}
 		\toprule
 		\textbf{Algoritmo} & \textbf{Traveller} & \textbf{MRIT} \\
 		\midrule
-Grafo de Visibilidade & 63.23   & 61.94 \\
-Voronoi 				  & 80.84   & 60.79 \\
-Quadtree				  & 68.81   & 63.78 \\
-Wavefront             & 63.2    & 67.88  \\
+Grafo de Visibilidade & 61.94   & 61.94 \\
+Voronoi 				  & X       & 60.79 \\
+Quadtree				  & 68.49   & 63.78 \\
+Wavefront             & 65.00    & 67.88  \\
 		\bottomrule
 	\end{tabular}
-	\caption{Tamanho dos percursos gerados pelo simulador e o \textit{framework} para o mapa 1}
 \end{table}
 
 \begin{table}[H]
 	\centering
 	\label{tab02}
+	\caption{Tamanho dos percursos gerados pelo simulador e o \textit{framework} para o mapa 2}
 	\begin{tabular}{ccc}
 		\toprule
 		\textbf{Algoritmo} & \textbf{Traveller} & \textbf{MRIT} \\
 		\midrule
 Grafo de Visibilidade & 49.13   & 49.13 \\
-Voronoi 				  & X       & 87 \\
-Quadtree				  & 58      & 54.46 \\
-Wavefront             & 50.2    & 56.8  \\
+Voronoi 				  & 70.69   & 87 \\
+Quadtree				  & 55.24   & 54.46 \\
+Wavefront             & 52.20    & 56.8  \\
 		\bottomrule
 	\end{tabular}
-	\caption{Tamanho dos percursos gerados pelo simulador e o \textit{framework} para o mapa 2}
 \end{table}
 
 \begin{table}[H]
 	\centering
 	\label{tab03}
+	\caption{Tamanho dos percursos gerados pelo simulador e o \textit{framework} para o mapa 3}
 	\begin{tabular}{ccc}
 		\toprule
 		\textbf{Algoritmo} & \textbf{Traveller} & \textbf{MRIT} \\
 		\midrule
-Grafo de Visibilidade & 57.57   & 57.52 \\
+Grafo de Visibilidade & 57.52   & 57.52 \\
 Voronoi 				  & X   		& 77.88 \\
 Quadtree				  & 77.38   & 66.57 \\
-Wavefront             & 54.6    & X  \\
+Wavefront             & 60.20    & X  \\
 		\bottomrule
 	\end{tabular}
-	\caption{Tamanho dos percursos gerados pelo simulador e o \textit{framework} para o mapa 3}
 \end{table}
 
 \begin{table}[H]
 	\centering
 	\label{tab04}
+	\caption{Tamanho dos percursos gerados pelo simulador e o \textit{framework} para o mapa 4}
 	\begin{tabular}{ccc}
 		\toprule
 		\textbf{Algoritmo} & \textbf{Traveller} & \textbf{MRIT} \\
 		\midrule
-Grafo de Visibilidade & 32   & 25.70 \\
-Voronoi 				  & X   & 39.14 \\
-Quadtree				  & 42   & 33.98 \\
-Wavefront             & 32    & 30.1  \\
+Grafo de Visibilidade & 28.94   & 28.94 \\
+Voronoi 				  & X       & 39.14 \\
+Quadtree				  & 44.39   & 33.98 \\
+Wavefront             & 32      & 30.1  \\
 		\bottomrule
 	\end{tabular}
-	\caption{Tamanho dos percursos gerados pelo simulador e o \textit{framework} para o mapa 4}
 \end{table}
 
 \begin{table}[H]
 	\centering
 	\label{tab05}
+	\caption{Tamanho dos percursos gerados pelo simulador e o \textit{framework} para o mapa 5}
 	\begin{tabular}{ccc}
 		\toprule
 		\textbf{Algoritmo} & \textbf{Traveller} & \textbf{MRIT} \\
 		\midrule
-Grafo de Visibilidade & 40.9   & 43.73 \\
+Grafo de Visibilidade & 43.73   & 43.73 \\
 Voronoi 				  & X      & X \\
-Quadtree				  & 53.1   & 53.28 \\
-Wavefront             & 42.2    & 55.75  \\
+Quadtree				  & 61.47   & 53.28 \\
+Wavefront             & 47.2    & 55.75  \\
 		\bottomrule
 	\end{tabular}
-	\caption{Tamanho dos percursos gerados pelo simulador e o \textit{framework} para o mapa 5}
 \end{table}
 
 \begin{table}[H]
 	\centering
 	\label{tab06}
+	\caption{Tamanho dos percursos gerados pelo simulador e o \textit{framework} para o mapa 6}
 	\begin{tabular}{ccc}
 		\toprule
 		\textbf{Algoritmo} & \textbf{Traveller} & \textbf{MRIT} \\
 		\midrule
-Grafo de Visibilidade & 55.2   & 33.21 \\
+Grafo de Visibilidade & 43.73   & 43.73 \\
 Voronoi 				  & X      & X \\
 Quadtree				  & X      & X \\
 Wavefront             & 47.2    & X  \\
 		\bottomrule
 	\end{tabular}
-	\caption{Tamanho dos percursos gerados pelo simulador e o \textit{framework} para o mapa 6}
 \end{table}
 
 \subsection{Testes de Integração: Desempenho}
@@ -317,7 +317,7 @@ Com o código-fonte do Traveller concluída e de posse dos resultados das simula
 
 O robô executou toda a comunicação de forma correta, enviando e recebendo os dados sem perdas nem alterações. O robô recebeu a lista de pontos e executou a movimentação entre os mesmos para os quatro algoritmos.
 
-Por fim, foi medido o tempo da comunicação entre o robô e o servidor. Para tanto, foi utilizado a biblioteca do próprio Java implementado no robô. Foram medidos dois tempos: o tempo para abrir a comunicação entre o robô e o servidor e o tempo para enviar os dados, o Traveller executar todo o fluxo de trabalho e enviar a resposta de volta para o robô. Para cada algoritmo foi medido três veses estes dois valores.
+Por fim, foi medido o tempo da comunicação entre o robô e o servidor. Para tanto, foi utilizado a biblioteca do próprio Java implementado no robô. Foram medidos dois tempos: o tempo para abrir a comunicação entre o robô e o servidor e o tempo para enviar os dados, o Traveller executar todo o fluxo de trabalho e enviar a resposta de volta para o robô. Para cada algoritmo foi medido três vezes estes dois valores.
 
 A abertura da comunicação entre as partes, em todas as 12 medidas, levou entre 4.6 segundos e 7.8 segundos. A média de tempo foi de 5.5 segundos. Para os algoritmos, o tempo de processamento real foi de: i) Quadtree teve média de 4.981 ii) Wavefront teve média de 7.078 segundos iii) Grafo de Visibilidade teve média de 4.389 segundos e iv) Voronoi teve média de 4.393 segundos.
 
@@ -326,6 +326,7 @@ Os tempos reais foram bastante discrepantes com os valores simulados, porém uma
 \begin{table}[h]
 	\centering
 	\label{tab07}
+	\caption{Tempos reais gasto pelos algortimos}
 	\begin{tabular}{c|c|c|c}
 		\toprule
 		\textbf{Algoritmo} & \textbf{Medida 1} & \textbf{Medida 2} & \textbf{Medida 3} \\
@@ -336,16 +337,15 @@ Quadtree				  & 4,462s  & 4,366s & 4,340s \\
 Wavefront             & 4,393s  & 4,365s & 4,422s  \\
 		\bottomrule
 	\end{tabular}
-	\caption{Tempos reais gasto pelos algortimos}
 \end{table}
 
 \section{Observações Sobre o Funcionamento dos Algoritmos}
 
-Uma observação importante a se fazer é em relação ao mapa 6. Ele foi desenhado propositalmente para que nenhum algoritmo conseguisse gerar um percurso nele. O ponto inicial foi cercado por obstáculos que, após expandidos, deixariam um espaço menor que a largura do robô e, assim, impedindo a geraão da trajetória. No simulador MRIT, o Grafo de Visibilidade conseguiu gerar uma solução mesmo com a distância entre os obstáculos sendo de uma célula e o robô ocupando duas.
+Uma observação importante a se fazer é em relação ao mapa 6. Ele foi desenhado propositalmente para que nenhum algoritmo conseguisse gerar um percurso nele. O ponto inicial foi cercado por obstáculos que, após expandidos, deixariam um espaço menor que a largura do robô e, assim, impedindo a geração da trajetória. No simulador MRIT, o Grafo de Visibilidade conseguiu gerar uma solução mesmo com a distância entre os obstáculos sendo de uma célula e o robô ocupando duas.
 
 No caso do Traveller, tanto o Grafo de Visibilidade quanto o Wavefront geraram uma solução. Este mapa permite avaliar algumas características importantes sobre os quatro algoritmos.
 
-O Quadtree e o Voronoi não são capazes de gerar uma solução em um ambiente como o do mapa 6 por trabalharem com divisão espacial. Ambos os algoritmos dividem o mapa em reigões e as interliga, o que os torna inviáveis em ambientes muito apertados. Em um cenário como o do mapa 6, os algoritmos não são capazes de criar uma região tão pequena e acabam por desconsiderar corredores estreitos.
+O Quadtree e o Voronoi não são capazes de gerar uma solução em um ambiente como o do mapa 6 por trabalharem com divisão espacial. Ambos os algoritmos dividem o mapa em regiões e as conecta, o que os torna inviáveis em ambientes muito apertados. Em um cenário como o do mapa 6, os algoritmos não são capazes de criar uma região tão pequena e acabam por desconsiderar corredores estreitos.
 
 Já os algoritmos Grafo de Visibilidade e Wavefront trabalham de forma linear. Ambos os algoritmos geram uma linha reta entre dois pontos quaisquer e, se essa linha reta for toda livre de obstáculos, então o robô poderá trafegar por ela.
 
@@ -355,9 +355,9 @@ Quanto ao Wavefront, este também considera que, se há ao menos uma célula liv
 
 \section{Resumo do Capítulo}
 
-Os primeiros testes realizados visavam testar a capacidade  de memória do kit utilizado, criando mapas grande e com muitos obstáculos. Foi então dimunuídos esses valores gradativamente até que o robô fosse capaz de armazená-los. Com esses testes foi verificado que mesmo com um mapa não muito grande e com poucos obstáculos a memória não suportava esse volume de dados. Portanto, foi definido que o núcleo do sistema seria migrado para um servidor e comunicado com o robô via \textit{bluetooth}.
+Os primeiros testes realizados visavam testar a capacidade  de memória do kit utilizado, criando mapas grandes e com muitos obstáculos. Foi então diminuídos esses valores gradativamente até que o robô fosse capaz de armazená-los. Com esses testes foi verificado que mesmo com um mapa não muito grande e com poucos obstáculos a memória não suportava esse volume de dados. Portanto, foi definido que o núcleo do sistema seria migrado para um servidor e comunicado com o robô via \textit{bluetooth}.
 
-Foi realizado testes unitários e de integração do \textit{framework} desenvolvido, visando garantir a qualidade do código. Cada algoritmo desenvolvido tinha um conjunto de classes de teste que verificavam o correto funcionamento do mesmo. Métodos mais complexos da classe Map também foram testados diretamente por testes unitários.
+Foram realizados testes unitários e de integração do \textit{framework} desenvolvido, visando garantir a qualidade do código. Cada algoritmo desenvolvido tinha um conjunto de classes de teste que verificavam o correto funcionamento do mesmo. Métodos mais complexos da classe Map também foram testados diretamente por testes unitários.
 
 Os testes de integração realizados envolveram seis ambientes diferentes, modelados e simulados no simulador MRIT. Foi medido o percurso para cada algoritmo em cada um dos seis mapas, tanto no simulador quanto no \textit{framework}. O Grafo de Visibilidade teve os mesmos resultados ou muito próximos, o Quadtree teve resultados um pouco maiores e menos retilíneos, o Wavefront teve resultados consideravelmente menores e o Voronoi conseguiu solucionar apenas um dos mapas.
 
