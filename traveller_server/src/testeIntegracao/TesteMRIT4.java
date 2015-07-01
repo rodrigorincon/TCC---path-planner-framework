@@ -46,7 +46,7 @@ public class TesteMRIT4 {
 	public void testeQuadtree() {
 		String path_planner = "Quadtree";
 		Path path = executeFramework(path_planner);
-		assertNotNull(path);		
+		assertNotNull(path);
 		assertEquals(path.getRoute().size(), 9);
 		assertEquals((int)path.getSize(), 44);
 	}

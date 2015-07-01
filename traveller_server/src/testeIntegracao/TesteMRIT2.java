@@ -23,12 +23,12 @@ public class TesteMRIT2 {
 			for(int j=0; j<60; j++)
 				mapa[i][j] = false;
 		}
-		for(int i=7; i<15; i++){
-			for(int j=15; j<23; j++)
+		for(int i=7; i<=15; i++){
+			for(int j=15; j<=23; j++)
 				mapa[j][i] = true;
 		}
-		for(int i=34; i<46; i++){
-			for(int j=19; j<27; j++)
+		for(int i=34; i<=46; i++){
+			for(int j=19; j<=27; j++)
 				mapa[j][i] = true;
 		}
 	}
@@ -51,8 +51,8 @@ public class TesteMRIT2 {
 	public void testeVoronoi() {
 		String path_planner = "Voronoi";
 		Path path = executeFramework(path_planner);
-		assertEquals(path.getRoute().size(), 15);
-		assertEquals((int)path.getSize(), 203);
+		assertEquals(path.getRoute().size(), 5);
+		assertEquals((int)path.getSize(), 70);
 	}
 	
 	@Test
@@ -60,8 +60,8 @@ public class TesteMRIT2 {
 		String path_planner = "Wavefront";
 		Path path = executeFramework(path_planner);
 		assertNotNull(path);
-		assertEquals(path.getRoute().size(), 40);
-		assertEquals((int)path.getSize(), 50);
+		assertEquals(path.getRoute().size(), 42);
+		assertEquals((int)path.getSize(), 52);
 	}
 	
 	@Test
@@ -69,8 +69,8 @@ public class TesteMRIT2 {
 		String path_planner = "VisibilityGraph";
 		Path path = executeFramework(path_planner);
 		assertNotNull(path);
-		assertEquals(path.getRoute().size(), 4);
-		assertEquals((int)path.getSize(), 48);
+		assertEquals(path.getRoute().size(), 3);
+		assertEquals((int)path.getSize(), 49);
 	}
 	
 	

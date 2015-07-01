@@ -1,6 +1,7 @@
 package testeIntegracao;
 
 import static org.junit.Assert.*;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -20,17 +21,17 @@ public class TesteMRIT1 {
 			for(int j=0; j<60; j++)
 				mapa[i][j] = false;
 		}
-		for(int i=19; i<31; i++){
-			for(int j=35; j<51; j++)
-				mapa[i][j] = true;
+		for(int i=19; i<=31; i++){
+			for(int j=35; j<=51; j++)
+				mapa[j][i] = true;
 		}
-		for(int i=7; i<15; i++){
-			for(int j=15; j<23; j++)
-				mapa[i][j] = true;
+		for(int i=7; i<=15; i++){
+			for(int j=15; j<=23; j++)
+				mapa[j][i] = true;
 		}
-		for(int i=34; i<46; i++){
-			for(int j=19; j<27; j++)
-				mapa[i][j] = true;
+		for(int i=34; i<=46; i++){
+			for(int j=19; j<=27; j++)
+				mapa[j][i] = true;
 		}
 	}
 	
@@ -44,7 +45,7 @@ public class TesteMRIT1 {
 		String path_planner = "Quadtree";
 		Path path = executeFramework(path_planner);
 		assertNotNull(path);
-		assertEquals(path.getRoute().size(), 13);
+		assertEquals(path.getRoute().size(), 14);
 		assertEquals((int)path.getSize(), 68);		
 	}
 	
@@ -53,8 +54,8 @@ public class TesteMRIT1 {
 		String path_planner = "Wavefront";
 		Path path = executeFramework(path_planner);
 		assertNotNull(path);
-		assertEquals(path.getRoute().size(), 49);
-		assertEquals((int)path.getSize(), 63);
+		assertEquals(path.getRoute().size(), 52);
+		assertEquals((int)path.getSize(), 65);
 	}
 	
 	@Test
@@ -62,7 +63,7 @@ public class TesteMRIT1 {
 		String path_planner = "VisibilityGraph";
 		Path path = executeFramework(path_planner);
 		assertNotNull(path);
-		assertEquals(path.getRoute().size(), 3);
+		assertEquals(path.getRoute().size(), 4);
 		assertEquals((int)path.getSize(), 61);
 	}
 	
@@ -70,9 +71,7 @@ public class TesteMRIT1 {
 	public void testeVoronoi() {
 		String path_planner = "Voronoi";
 		Path path = executeFramework(path_planner);
-		assertNotNull(path);
-		assertEquals(path.getRoute().size(), 4);
-		assertEquals((int)path.getSize(), 80);
+		assertEquals(path,null);
 	}
 	
 	private Path executeFramework(String path_planner){

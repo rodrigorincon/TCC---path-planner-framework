@@ -23,16 +23,16 @@ public class TesteMRIT5 {
 			for(int j=0; j<60; j++)
 				mapa[i][j] = false;
 		}
-		for(int i=19; i<30; i++){
-			for(int j=33; j<51; j++)
+		for(int i=19; i<=30; i++){
+			for(int j=33; j<=51; j++)
 				mapa[j][i] = true;
 		}
-		for(int i=5; i<15; i++){
-			for(int j=33; j<41; j++)
+		for(int i=5; i<=15; i++){
+			for(int j=33; j<=41; j++)
 				mapa[j][i] = true;
 		}
-		for(int i=34; i<46; i++){
-			for(int j=19; j<27; j++)
+		for(int i=34; i<=46; i++){
+			for(int j=19; j<=27; j++)
 				mapa[j][i] = true;
 		}
 	}
@@ -47,8 +47,8 @@ public class TesteMRIT5 {
 		String path_planner = "Quadtree";
 		Path path = executeFramework(path_planner);
 		assertNotNull(path);
-		assertEquals(path.getRoute().size(), 11);
-		assertEquals((int)path.getSize(), 59);
+		assertEquals(path.getRoute().size(), 16);
+		assertEquals((int)path.getSize(), 61);
 	}
 	
 	@Test
@@ -56,8 +56,8 @@ public class TesteMRIT5 {
 		String path_planner = "Wavefront";
 		Path path = executeFramework(path_planner);
 		assertNotNull(path);
-		assertEquals(path.getRoute().size(), 43);
-		assertEquals((int)path.getSize(), 46);
+		assertEquals(path.getRoute().size(), 45);
+		assertEquals((int)path.getSize(), 47);
 	}
 	
 	@Test
@@ -66,7 +66,7 @@ public class TesteMRIT5 {
 		Path path = executeFramework(path_planner);
 		assertNotNull(path);
 		assertEquals(path.getRoute().size(), 5);
-		assertEquals((int)path.getSize(), 42);
+		assertEquals((int)path.getSize(), 43);
 	}
 	
 	@Test
