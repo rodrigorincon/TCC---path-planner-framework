@@ -1,6 +1,8 @@
 \chapter[O Traveller Framework]{O Traveller Framework}
 
-A proposta deste trabalho foi a construção de um \textit{framework} de definição de trajetórias para robôs móveis, mais especificamente, algoritmos globais de definição de trajetória. Foram implementados os quatro algoritmos descritos no capítulo 2 (Grafo de Visibilidade, Voronoi, Quadtree e Wavefront). Um mapa do ambiente é recebido da camada de mapeamento e o algoritmo cria um grafo a partir dele, definindo os caminhos livres que podem ser percorridos. Após isso, é executado um algoritmo de melhor caminho (como Djikstra ou A*, por exemplo) para definir o caminho a ser percorrido pelo robô. 
+A proposta deste trabalho foi a construção de um \textit{framework} de definição de trajetórias para robôs móveis, mais especificamente, algoritmos globais de definição de trajetória. Foram implementados os quatro algoritmos descritos no capítulo 2 (Grafo de Visibilidade, Voronoi, Quadtree e Wavefront). Um mapa do ambiente é recebido das camadas acima da camada do \textit{framework} (como mostrado na Figura 4) e o algoritmo cria um grafo a partir dele, definindo os caminhos livres que podem ser percorridos. Após isso, é executado um algoritmo de melhor caminho (como Djikstra ou A*, por exemplo) para definir o caminho a ser percorrido pelo robô.
+
+É importante ressaltar que o Traveller não realiza o mapeamento, apenas o recebe pronto de outro módulo do robô e o utiliza.
 
 O núcleo do \textit{framework} roda em um computador fora do robô, como em um servidor local, e se comunica com o robô via comunicação \textit{bluetooth}. A escolha de desenvolver a solução fora da máquina será explicada no capítulo 6. No robô, uma classe encapsula a comunicação com o servidor e realiza a troca de mensagens. O servidor recebe os dados de entrada e opera os algoritmos para devolver ao robô a lista de pontos a serem percorridos.
 
@@ -13,7 +15,7 @@ A Figura 20 demonstra as tarefas principais do \textit{framework}, bem como suas
 	\caption{Estrutura do funcionamento do \textit{framework}}
 \end{figure} 
 
-A arquitetura geral do robô foi considerada como na Figura 21, orientada de acordo com a visão do autor \cite{Nehmzow2003}. Todas as abordagens da arquitetura de navegação seguiam uma lógica semelhante e apresentavam pequenas diferenças entre si. Assim sendo, esta estrutura mantêm as características apresentadas no capítulo 2.
+A arquitetura geral do robô foi considerada como na Figura 21, orientada de acordo com a visão apresentada em \cite{Nehmzow2003}. Todas as abordagens da arquitetura de navegação seguiam uma lógica semelhante e apresentavam pequenas diferenças entre si. Assim sendo, esta estrutura mantêm as características apresentadas no capítulo 2.
 
 \begin{figure}[h]
 	\centering
@@ -58,7 +60,7 @@ Este componente é o único que será executado dentro do robô e sua função �
 
 O módulo possui dois pacotes: \textit{communication}, que realiza a comunicação e possui a classe abstrata e suas implementações; e \textit{util}, que possui classes utilitárias para a mesma. Na classe abstrata são implementados os métodos que recebem os dados do robô e que devolvem a lista para o mesmo, além de organizar as trocas de mensagens para o correto envio de informações. Essa classe abstrata define o padrão de troca de informações através do padrão de projeto Template, estabelecendo a ordem em que as mensagens devem ser enviadas, porém não define como os métodos \textit{send} e \textit{receive} funcionam. Esses métodos são definidos pela classe filha, que deve ser construída pelo usuário de acordo com as bibliotecas do kit que utiliza.
 
-No pacote \textit{util} é definido uma classe de exceção que é a única retornada pela classe abstrata e suas implementações, abstraindo os erros possíveis para uma única classe. O pacote possui também a classe retornada pela comunicação, a classe \textit{Path}. A classe \textit{Path} possui o tamanho total do percurso entre o ponto inicial e final pelo percurso retornado e a lista de pontos (coordenadas em x e y) que o robô deverá seguir.
+No pacote \textit{util} é definido uma classe de exceção que é a única retornada pela classe abstrata e suas implementações, abstraindo os erros possíveis para uma única classe. O pacote possui também a classe retornada pela comunicação, a classe \textit{Path}. A classe \textit{Path} possui o tamanho total do percurso entre o ponto inicial e final pelo percurso retornado e a lista de pontos (coordenadas em \textit{x} e \textit{y}) que o robô deverá seguir.
 
 As únicas restrições feitas pela interface são: (i) que a comunicação seja \textit{bluetooth} para que o servidor consiga receber os dados, e (ii) que possam ser enviados \textit{strings} e \textit{arrays} de inteiros e booleanos pelo kit.
 
@@ -72,6 +74,8 @@ As únicas restrições feitas pela interface são: (i) que a comunicação seja
 \end{figure}
 
 Este módulo apenas recebe os dados do robô e os repassa adiante. Esse módulo possui apenas funções de iniciar e concluir a comunicação e de leitura e escrita pelo \textit{bluetooth}. Assim, toda comunicação e tratamento do \textit{bluetooth} fica encapsulado dentro dele e qualquer alteração na forma de comunicação não impactará no \textit{framework}. Este módulo também reorganiza os dados do mapa em uma nova matriz de booleanos para então repassá-los ao controlador. A Figura 24 mostra as principais funções do módulo.
+
+Para a comunicação \textit{bluetooth}, é utilizado o Bluecove versão 2.1.1 como citado no capítulo 3. A versão do \textit{bluetooth} é a versão 2.0. Caso precise trabalhar com outra versão do \textit{bluetooth}, basta trocar a biblioteca do Bluecove por uma compatível com a versão desejada.
 
 \subsection{Main}
 
@@ -94,9 +98,9 @@ O componente segue os princípios Controlador e Inversão de Controle. Em vez do
 
 Os padrões utilizados são o Fachada e a Injeção de Dependência.
 
-É também atribuído a esse módulo a responsabilidade por criar a estrutura local do mapa. O controlador inicializa o mapa, definindo os pontos inciais e finais. Adicionalmente, limpa a memória ao final do procedimento, delegando ao componente PathPlanner apenas a tarefa de utilizar o mapa.
+É também atribuído a esse módulo a responsabilidade por criar a estrutura local do mapa. O controlador inicializa o mapa, definindo os pontos iniciais e finais. Adicionalmente, limpa a memória ao final do procedimento, delegando ao componente PathPlanner apenas a tarefa de utilizar o mapa.
 
-O diagrama de sequência apresentado na seção 2.4 mostrou de forma bastante superficial o funcionamento do sistema para dar uma visão geral das funcionalidades e sequência de ações. O diagrama na Figura 26 demonstra de forma mais aprofundada como realmente é feito o trabalho do framework, com foco no componente controller.
+O diagrama de sequência apresentado na seção 2.4 mostrou de forma bastante superficial o funcionamento do sistema para dar uma visão geral das funcionalidades e sequência de ações. O diagrama na Figura 26 demonstra de forma mais aprofundada como realmente é feito o trabalho do framework, com foco no componente controller. Nele é visto a sequência de atividades que o componente Controller executa, começando no topo e conforme vai terminando vai executando as tarefas abaixo. O diagrama também evidencia as classes envolvidas, listadas lado a lado e mostrando a sequência de ações ao longo do tempo de cada uma, também de cima para baixo.
 
 \begin{figure}[h]
 	\centering
@@ -116,7 +120,7 @@ O diagrama de sequência apresentado na seção 2.4 mostrou de forma bastante su
 
 O componente Map armazena a estrutura do mapa em seu interior. O componente recebe do controlador os dados das posições e guarda essa referência dentro de si para fazer as alterações necessárias. O objeto Map centraliza os dados que a camada de sensoriamento fornece e funções específicas da definição de trajetória que agem sobre eles, como: definir pontos inicial e final; conferir pesos às posições (células); expandir obstáculos, e diferenciar espaços livres de obstáculos.
 
-Internamente, o mapa trabalhado é considerado uma matriz de inteiros, sendo convertido para esse formato logo no construtor da classe. Como esse módulo fica fora do robô, nenhuma alteração feita nos dados recebidos comprometerá os dados reais no robô. A Figura 27 mostra os principais atributos e métodos da classe.
+Internamente, o mapa trabalhado é considerado uma matriz de inteiros, sendo convertido para esse formato logo no construtor da classe. Essa alteração de booleano no mapa interno do robô para inteiro no servidor se deve a necessidade do algoritmo Wavefront de trabalhar com valores inteiros em cada célula. Como esse módulo fica fora do robô, nenhuma alteração feita nos dados recebidos comprometerá os dados reais no robô. A Figura 27 mostra os principais atributos e métodos da classe.
 
 \subsection{Path Planner}
 
@@ -127,9 +131,11 @@ Internamente, o mapa trabalhado é considerado uma matriz de inteiros, sendo con
 	\caption{Componente PathPlanner}
 \end{figure}
 
-O PathPlanner é o componente responsável por implementar os algoritmos de definição de trajetória. A classe abstrata PathPlanner carrega funções úteis às classes concretas e fornece um método abstrato que deve realizar o algoritmo. Cada subclasse sobrescreve \textit{resolution} e métodos específicos e cria um grafo diferente. A classe abstrata também possui um método Fábrica para definir qual subclasse dele será utilizada. A Figura 28 mostra a classe abstrata e todas as classes concretas implementadas.
+O PathPlanner é o componente responsável por implementar os algoritmos de definição de trajetória. A classe abstrata PathPlanner carrega funções úteis às classes concretas e fornece um método abstrato que deve realizar o algoritmo. Cada subclasse sobrescreve \textit{resolution} (responsável pela execução do algoritmo) e métodos específicos e cria um grafo diferente. A classe abstrata também possui um método Fábrica para definir qual subclasse dele será utilizada. A Figura 28 mostra a classe abstrata e todas as classes concretas implementadas.
 
-Graças à interface comum aos algoritmos é possível tratá-los de forma igual em todo o resto do sistema. O comportamento diferente entre eles (a criação do grafo) é abstraído para as subclasses, enquanto a superclasse se preocupa com o que for igual, definindo as entradas e saídas comuns. Isso segue o princípio de Variações Protegidas apresentado por \cite{Larman2005}, implementado através do padrão Strategy. O padrão Injeção de Dependência diminui seu acoplamento com o módulo Map, recebendo o mapa já pronto para trabalhar do controlador.
+Este componente é um dos \textit{hot-spots} do Traveller, graças à interface comum aos algoritmos. Esta interface possibilita tratá-los de forma igual em todo o resto do sistema. O comportamento diferente entre eles (a criação do grafo) é abstraído para as subclasses, enquanto a superclasse se preocupa com o que for igual, definindo as entradas e saídas comuns. Isso segue o princípio de Variações Protegidas apresentado por \cite{Larman2005}, implementado através do padrão Strategy. O padrão Injeção de Dependência diminui seu acoplamento com o módulo Map, recebendo o mapa já pronto para trabalhar do controlador.
+
+Para inserir novos algoritmos ao \textit{framework} ou versões otimizadas do mesmo, basta herdar da classe abstrata e implementar a lógica no método \textit{resolution}.
 
 \subsection{Graph}
 
@@ -153,11 +159,11 @@ A classe grafo possui métodos para a construção, busca e eliminação de nós
 	\caption{Componente BestPath}
 \end{figure}
 
-O Best Path é o componente que define o melhor caminho a ser executado pelo robô. Recebendo o grafo com os pontos navegáveis, este módulo define um trajeto a partir de alguma característica desejada (ex. menor caminho, menor curvatura e outras). Esta carecterística é definida pela subclasse escolhida pelo usuário. No caso, as duas subclasses mostradas no diagrama definem o percurso por menor caminho, porém novas extensões podem ser criadas para formar o trajeto a partir de outra característica. A Figura 30 mostra as três classes desenvolvidas.
+O Best Path é o componente que define o melhor caminho a ser executado pelo robô. Recebendo o grafo com os pontos navegáveis, este módulo define um trajeto a partir de alguma característica desejada (ex. menor caminho, menor curvatura, menor gasto de energia e outras). Esta carecterística é definida pela subclasse escolhida pelo usuário. No caso, as duas subclasses mostradas no diagrama definem o percurso por menor caminho, porém novas extensões podem ser criadas para formar o trajeto a partir de outra característica. A Figura 30 mostra as três classes desenvolvidas.
 
-Novamente, a classe abstrata BestPath define as características comuns a todos os algoritmos, determinando as entradas e saídas que receberão. A implementaçao de como trabalhar com o grafo e criar a lista de pontos pelos quais o robô passará dependerá da implementação escolhida.
+Este é outro \textit{hot-spot} do \textit{framework}, permitindo a fácil alteração pelo usuário e a troca dos algoritmos em tempo de execução. Assim como no pathPlanner, isto se deve à classe abstrata BestPath, que define as características comuns a todos os algoritmos, determinando as entradas e saídas que receberão. A implementaçao de como trabalhar com o grafo e criar a lista de pontos pelos quais o robô passará dependerá da implementação escolhida, que poderá seguir qualquer objetivo que o desenvolvedor da subclasse desejar.
 
-Assim como no componente pathPlanner, o princípio de Variações Protegidas é realizado através do padrão Strategy e a criação da classe é generalizada pelo padrão Fábrica.
+Assim como no componente pathPlanner, o princípio de Variações Protegidas é realizado através do padrão Strategy e a criação da classe é generalizada pelo padrão Fábrica. Como também acontece no pathPlanner, para inserir novos algoritmos ao \textit{framework} ou versões otimizadas do mesmo, basta herdar da classe abstrata e implementar a lógica no método \textit{definePath}.
 
 \section{O Protótipo}
 
@@ -176,7 +182,7 @@ A arquitetura do protótipo era próxima da atual e já implementava a maioria d
 
 A classe PathPlannerController tinha inicialmente como propósito servir de intermediário entre o usuário do \textit{framework} e as funções implementadas por ele. Essa era a classe principal do sistema em sua primeira versão, encapsulando todo o funcionamento e sendo chamada pelo usuário para realizar tudo. Isso mudou com o repasse ao servidor, mas a classe manteve sua função de gerenciar o fluxo de atividades.
 
-A suíte de testes realizadas nessa primeira fase realizava testes unitários simples sobre o código, verificando se o grafo montado pelo Quadtree estava como esperado, verificando se todos os nós que deveriam existir foram criados. Os testes também verificaram o caminho gerado pelo Djikstra, ou seja, se era o mesmo que o esperado para aquele mapa. Sete mapas pequenos foram desenhados e, seus grafos e caminho a ser percorrido, calculados a mão para validar os algoritmos. Os mapas possuíam entre 4 e 9 casas de largura e comprimento, podendo ser perfeitamente quadrados ou retangulares.
+A suíte de testes realizadas nessa primeira fase realizava testes unitários simples sobre o código, verificando se o grafo montado pelo Quadtree estava como esperado, verificando se todos os nós que deveriam existir foram criados. Os testes também verificaram o caminho gerado pelo Djikstra, ou seja, se era o mesmo que o esperado para aquele mapa. Sete mapas pequenos foram desenhados e, seus grafos e caminho a ser percorrido, calculados a mão para validar os algoritmos. Os mapas possuíam entre 4 e 9 casas de largura e comprimento, podendo ser perfeitamente quadrados ou retangulares. Ao final todos os testes foram bem sucedidos e as falhas encontradas pelos mesmos foram corrigidas.
 
 \section{A Versão Final}
 
@@ -199,9 +205,23 @@ Caso queira, o usuário pode alterar o comportamento dos algoritmos ou implement
 
 Dos quatro algoritmos desenvolvidos, o algoritmo de Voronoi foi o único a apresentar falhas em seu resultado, realizando um percurso fora do esperado para o comportamento descrito no capítulo 2.4.2 e, na maioria das vezes, não conseguindo encontrar um percurso entre os pontos inicial e final. Todos os demais geram um grafo e devolvem uma lista de pontos compatível com o comportamento descrito no capítulo 2.4.
 
-Algumas observações referentes a relação dos algoritmos com a expansão dos obstáculos precisam ser feitas. O Grafo de Visibilidade precisa ter os obstáculos expandidos, obrigatoriamente, ou haverá a colisão. Portanto, o \textit{framework} força a expansão, mesmo que o usuário não a especifique. Para o algoritmo Wavefront, ele monta o grafo de forma diferente se os obstáculos forem ou não expandidos. Caso haja expansão, o Wavefront considera todos os oito vizinhos para montar o grafo. Caso não haja, o algoritmo considera apenas quatro vizinhos (excluindo as células na diagonal).
+Algumas observações referentes à relação dos algoritmos com a expansão dos obstáculos precisam ser feitas. O Grafo de Visibilidade precisa ter os obstáculos expandidos, obrigatoriamente, ou haverá a colisão. Portanto, o \textit{framework} força a expansão, mesmo que o usuário não a especifique. Para o algoritmo Wavefront, ele monta o grafo de forma diferente se os obstáculos forem ou não expandidos. Caso haja expansão, o Wavefront considera todos os oito vizinhos para montar o grafo. Caso não haja, o algoritmo considera apenas quatro vizinhos (excluindo as células na diagonal).
 
-A execução da controladora PathPlannerController, antes chamada diretamente pelo usuário, é agora feita pelo módulo \textit{Main}. A ordem de execução não foi alterado, porém algumas variáveis novas foram inclusas para tornar o sistema mais flexível. Hoje, o Traveller recebe os algorítmos a serem executados (em forma de String), o mapa (em forma de matriz de \textit{booleanos}), os pontos inicial e final, a largura do robô, a largura que cada célula da matriz representa no ambiente (na mesma medida que a largura do robô), o valor a ser considerado como livre no mapa e se os obstáculos devem ser expandidos ou não. A Figura 33 mostra a ordem em que os mesmos são lidos no servidor (e, consequentemente, a ordem em que são enviados pelo robô) e seu recebimento pela controladora.
+A execução da controladora PathPlannerController, antes chamada diretamente pelo usuário, é agora feita pelo módulo \textit{Main}. A ordem de execução não foi alterado, porém algumas variáveis novas foram inclusas para tornar o sistema mais flexível. Hoje, as entradas recebidas pelo Traveller são:
+
+\begin{itemize}
+  \item O algoritmo de definição de trajetória (em forma de String);
+  \item O algoritmo de melhor caminho (em forma de String);
+  \item O mapa (em forma de matriz de booleanos);
+  \item O ponto inicial;
+  \item O ponto final;
+  \item A largura do robô;
+  \item A largura que cada célula da matriz representa no ambiente (na mesma medida que a largura do robô);
+  \item O valor a ser considerado como livre no mapa; e,
+  \item Se os obstáculos devem ser expandidos ou não.
+\end{itemize}
+
+A Figura 33 mostra a ordem em que os mesmos são lidos no servidor (e, consequentemente, a ordem em que são enviados pelo robô) e seu recebimento pela controladora.
 
 \begin{figure}[h]
 	\centering
@@ -257,7 +277,7 @@ O robô é considerado como um ponto (seu centro), o que pode gerar problemas se
 
 Vale lembrar que esta expansão pode mudar o percurso do robô. Um percurso passando entre dois obstáculos pode ser fechado por este incremento. Isso impede que o robô entre em corredores muito estreitos ou entre em regiões côncavas de um obstáculo.
 
-O Traveller permite a escolha da expansão ou não pelo usuário. A classe Map possui um atributo booleano que guarda se os obstáculos devem ou não ser expandidos. Por padrão, o \textit{framework} não expande. Ao expandir, o Traveller marca as células expandidas como ocupadas, sendo portanto, realizada a expansão apenas ao executar fluxo completo do \textit{framework}.
+O Traveller permte a escolha da expansão ou não pelo usuário. A classe Map possui um atributo booleano que guarda se os obstáculos devem ou não ser expandidos. Por padrão, o \textit{framework} não expande. Ao expandir, o Traveller marca as células expandidas como ocupadas, sendo portanto, realizada a expansão apenas ao executar fluxo completo do \textit{framework}.
 
 Outra consideração são os obstáculos côncavos. \cite{Siegwart2004} e \cite{Guzman2008} abordam a eliminação de pontos que formem áreas côncavas nos obstáculos. O simulador MRIT, citado também, segue esta abordagem. Outros autores como \cite{Thomsen2010} e \cite{Choset2005} não fazem esta consideração, pois nem sempre o espaço côncavo de um polígono é pequeno a ponto de ser perigoso e por vezes pode ser o único caminho até o objetivo. 
 

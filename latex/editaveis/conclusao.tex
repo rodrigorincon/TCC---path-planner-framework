@@ -2,17 +2,22 @@
 
 Neste trabalho foram estudados métodos de definição de trajetória e como estes métodos poderiam ser desacoplados dos detalhes físicos do robô em que são implementados. Foram estudados também os conceitos e técnicas para a construção de \textit{frameworks} e a construção de uma arquitetura de software facilmente compreensível e flexível. Com estas duas pesquisas, foi desenvolvido um \textit{framework} para a definição de trajetórias para robôs, buscando gerar um sistema o mais independente da plataforma ou kit construído. Para a simplificação do escopo e permitir o desacoplamento entre hardware e software, o \textit{framework} trabalha apenas com algoritmos globais.
 
+O desenvolvimento foi todo baseado na implementação de \textit{hot-spots}, que permitem a fácil troca entre os algoritmos e a mudança de comportamento sem impactar no restante do código. Foram levantados quatro \textit{hot-spots} e desenvolvidos três deles.
+
 O \textit{framework} implementado funciona em um servidor remoto e se comunica com o robô via \textit{bluetooth}, recebendo o mapa da região, os pontos inicial, final e outras variáveis de controle e é devolvida à máquina uma lista de coordenadas que deve ser seguida para chegar ao destino sem colidir com obstáculos. O usuário pode ainda escolher entre quatro algoritmos diferentes, além de poder desenvolver seus próprios algoritmos e usar a plataforma para o controle do fluxo de dados e validação dos mesmos.
 
 Para o desenvolvimento desta aplicação, foi seguido a visão da engenharia de software sobre a produção de sistemas complexos e como mantê-los simples, facilitando a compreensão e manutenção, além de ser projetado para a reutilização. Seguindo a visão da engenharia de software, foram realizados testes sobre o sistema durante o seu desenvolvimento, buscando garantir a qualidade do sistema final.
 
+Visando a continuidade do sistema, o mesmo será mantido com licença aberta, para o livre uso desde que referenciada a fonte. O \textit{link} para o código-fonte encontra-se no apêndice B.
+
 \section{Sugestão de Trabalhos Futuros}
 
-Visando a continuidade do sistema, o mesmo será mantido com licença aberta, para o livre uso desde que referenciado a fonte. Imaginando a perpetuidade do estudo e a constante melhoria do \textit{framework}, algumas sugestões de melhorias são indicadas para os interessados:
+Imaginando a perpetuidade do estudo e a constante melhoria do \textit{framework}, algumas sugestões de melhorias são indicadas para os interessados:
 
 \begin{enumerate}
 	\item Evoluir a implementação do algoritmo de Voronoi e melhorar a implementação do Quadtree para que se compare aos resultados retornados pelo simulador MRIT;
 	\item Desenvolver outros algoritmos de definição de trajetória e melhor caminho, ou mesmo versões otimizadas dos algortimos já implementados, como os referenciados neste trabalho;
-	\item Realizar uma seleção de pontos da lista de coordenadas retornadas, descartando pontos intermediários aonde a orientação do robô não é alterada; e,
-	\item Desenvolver um solução para que o robô possa enviar um mapa de qualquer tipo para o servidor e o mesmo consiga re-estruturá-lo de forma correta.
+	\item Realizar uma seleção de pontos da lista de coordenadas retornadas, descartando pontos intermediários aonde a orientação do robô não é alterada;
+	\item Implementar um algoritmo para suavização da trajetória; e,
+	\item Desenvolver um solução para que o robô possa enviar um mapa de qualquer tipo (matricial, topológico e geométrico) para o servidor e o mesmo consiga re-estruturá-lo de forma correta.
 \end{enumerate}

@@ -8,7 +8,7 @@ O termo robô foi criado em 1921 pelo dramaturgo tcheco Karel Capek, em sua obra
 
 \subsection{Definição de Robótica}
 
-\cite{Mataric2007} e \cite{Abreu2001} consideram máquinas movidas por engrenagens e vapor, séculos antes, como ancestrais dos robôs atuais por suas articulações e movimentos por vezes independentes de interação humana. Hoje ainda não há um consenso do que exatamente pode se enquadrar como robô. Segundo a RIA, Associação das Indústrias de Robótica (\cite{SITE_RIA}), um robô industrial é um ``manipulador reprogramável, multifuncional, projetado para mover material, ferramentas ou dispositivos especializados através de movimentos programáveis variados para desenvolver uma variedade de tarefas''. \cite{Abreu2001} apresenta mais definições de robôs industriais. 
+Alguns autores, como \cite{Mataric2007} e \cite{Abreu2001}, consideram máquinas movidas por engrenagens e vapor, séculos antes, como ancestrais dos robôs atuais por suas articulações e movimentos por vezes independentes de interação humana. Hoje ainda não há um consenso do que exatamente pode se enquadrar como robô. Segundo a RIA, Associação das Indústrias de Robótica (\cite{SITE_RIA}), um robô industrial é um ``manipulador reprogramável, multifuncional, projetado para mover material, ferramentas ou dispositivos especializados através de movimentos programáveis variados para desenvolver uma variedade de tarefas''. \cite{Abreu2001} apresenta mais definições de robôs industriais. 
 
 \cite{Mataric2007} apresenta uma definição mais genérica, que abrange não só robôs industriais, mas todos os grupos, segundo ele ``um robô é um sistema autônomo que existe no mundo físico, que reconhece o ambiente a volta e pode agir sobre ele para alcançar suas metas''.
 
@@ -65,7 +65,7 @@ Na área de software, a robótica móvel apresenta diversos desafios a serem sup
 
 A primeira dificuldade da navegação de um robô é a correta locomoção do robô. Podemos determinar o movimento do robô com cálculos complexos para o controle mecânico dos motores, considerando os tipos de rodas e distribuição do peso. O controle matemático do robô é dividido em controle cinemático (não considera efeitos dinâmicos provocados pelo movimento do robô, como atrito e derrapagem) e dinâmico (considera efeitos provocados pelo movimento, como atrito e derrapagem). A determinação do movimento e a orientação da máquina são feitas por uma série de equações e por operações lineares e vetoriais, considerando os planos cartesianos e a direção para onde aponta o robô \cite{Siegwart2004}. Ambos os modelos se baseiam em cálculos geométricos e nas propriedades do robô para realizar uma movimentação correta e atualizar a posição atual do robô.
 
-\subsection{Definição da Posição}
+\subsection{Localização}
 
 Outro desafio é definir a real posição da máquina. A locomoção nem sempre ocorre como esperado. Derrapagem, atoleiros e forças externas que empurram o robô geram uma alteração da sua real posição com a esperada inicialmente. Tanto o modelo cinemátco como no dinâmico são sensíveis a estas falhas devido a eles necessitarem da posição atual do robô. 
 
@@ -166,7 +166,7 @@ O problema do mapeamento é o gasto de memória, que nem sempre é algo muito di
 
 Porém, mesmo abstraindo o máximo de informações, o espaço ocupado na memória ainda será proporcional à quantidade de obstáculos na região. Assim, quanto mais denso de objetos for o mapa mais memória será ocupada e mais processamento será exigido \cite{Siegwart2004}.
 
-\subsection{Definindo Percursos Em Um Mapa}
+\subsection{Definindo Percursos em um Mapa}
 
 Há duas abordagens para a busca pelo menor caminho nos mapas, os \textit{roadmaps} e a decomposição celular.
 

@@ -2,7 +2,7 @@
 
 Neste trabalho foi seguido um modelo de pesquisa teórico, aplicado e experimental. Este trabalho foi embasado em pesquisa bibliográfica em cima dos temas definidos, que já foram bem abordados por diversos autores anteriormente. Com isso, já há uma metodologia a ser seguida (processo orientado a \textit{hot-spots}) e pesquisas e/ou simuladores nas áreas abordadas (como o MRIT de \cite{Guzman2008} ou as teses de \cite{Souza2008}, \cite{Thomsen2010} e \cite{Strandberg2004}), servindo de guia para implementação e modelo de comparação para os testes realizados.
 
-O tipo de pesquisa (em relação aos objetivos) foi majoritariamente exploratório, buscando conhecer e compreender o tema. Foi dispendido tempo com levantamento bibliográfico, estudando teses e artigos na área e analisando o que se encaixava no tema. Já o tipo de pesquisa para a abordagem (implementação) é híbrida, sendo quantitativa em relação às medidas de desempenho, coesão, acoplamento e qualidade dos resultados apresentado pelos algorítmos (os resultados podem ser comparados com outros estudos e medidos por testes) e qualitaiva, quanto às métricas subjetivas como legibilidade do código.
+O tipo de pesquisa (em relação aos objetivos) foi majoritariamente exploratório, buscando conhecer e compreender o tema. Foi dispendido tempo com levantamento bibliográfico, estudando teses e artigos na área e analisando o que se encaixava no tema. Já o tipo de pesquisa para a abordagem (implementação) é híbrida, sendo quantitativa em relação às medidas de desempenho, coesão, acoplamento e qualidade dos resultados apresentados pelos algorítmos (os resultados podem ser comparados com outros estudos e medidos por testes) e qualitaiva, quanto às métricas subjetivas como legibilidade do código.
 
 \section{Processo de produção}
 
@@ -12,11 +12,11 @@ Com base nestes estudos, foi feito então uma prova de conceito, desenvolvendo a
 
 A partir deste refinamento, foi dado início à produção do \textit{framework} por completo, seguindo o processo orientado a \textit{hot-spot} apresentado por \cite{Fayad1999} em combinação com os princípios ágeis, como refatoração, testes automatizados, detalhamento das atividades apenas ao implementá-la, dentre outros. A abordagem foi \textit{top-down}, focando cada iteração (ou \textit{sprint}) em uma funcionalidade e no módulo, com as classes correspondentes.
 
-A cada \textit{sprint} foi concluída uma tarefa que agreguasse valor ao produto ou ao trabalho de conclusão de curso, podendo ser essa tarefa um algoritmo, um módulo de estrutura de dados (como o Graph ou Map), uma interface e as interações de um componente completa e testada ou um teste da implementação no robô em ambiente controlado. A cada início de ciclo, era escolhida uma tarefa a ser realizada, revisada e refinada sua análise, levantado \textit{hot-spots} e desenvolvida e revista sua comunicação com os demais módulos. Foi dedicado um tempo para a reavaliação dos \textit{hot-spots} já desenvolvidos também e validação do produto entregue.
+A cada \textit{sprint} foi concluída uma tarefa que agreguasse valor ao produto ou ao trabalho de conclusão de curso, podendo ser essa tarefa um algoritmo, um módulo de estrutura de dados (como o Graph ou Map), uma interface e as interações de um componente completa e testada ou um teste da implementação no robô em ambiente controlado. A cada início de ciclo, era escolhida uma tarefa a ser realizada, revisada e refinada sua análise, definido \textit{hot-spots} e desenvolvida e revista sua comunicação com os demais módulos. Foi dedicado um tempo para a reavaliação dos \textit{hot-spots} já desenvolvidos assim como a validação do produto entregue.
 
 \section{Atividades e fluxo de atividades}
 
-Quase todas as atividades foram detalhadas na Figura 15. As inserções foram baseadas no processo do Scrum e nas atividades já relizadas ao longo deste trabalho. O diagrama de atividades completo é apresentado na figura 19.
+O fluxo de atividades deste trabalho foi baseado no processo mostrado na Figura 15. As inserções foram baseadas no processo do Scrum e nas atividades já relizadas ao longo deste trabalho. O diagrama de atividades completo é apresentado na figura 19.
 
 \begin{figure}[h]
 	\centering
@@ -31,7 +31,7 @@ Cada \textit{sprint} possuiu as seguintes atividades que foram realizadas:
 \begin{itemize}
   \item Selecionar as tarefas a serem feitas nesta iteração;
   \item Caso a atividade seja apenas pesquisa ou teste no robô, é executada a tarefa e ao seu fim verificado se há mais tarefas no backlog para selecioná-las;
-  \item Caso seja trabalho sobre o \textit{framework} é analisado se há algum \textit{hot-spot} nas funcionalidades selecionadas;
+  \item Caso seja trabalho sobre o \textit{framework}, é analisado se há algum \textit{hot-spot} nas funcionalidades selecionadas;
   \item Refinar o desenho do componente trabalhado caso necessário para receber a nova funcionalidade e o novo \textit{hot-spot} (se houver);
   \item Implementar a funcionalidade nova e rodar a suíte de testes;
   \item Fazer uma revisão de todo o sistema para ver se está evoluindo para o fim esperado e se há alguma falha arquitetural e,
@@ -50,12 +50,12 @@ As tarefas realizadas nas \textit{sprints} e que compuseram a construção deste
   \item Testar memória e processamento do \textit{framework} no robô;
   \item Criar ambientes de testes com base da ferramenta de simulação MRIT;
   \item Implementar algoritmo Wavefront;
-  \item Implementar expanção dos obstáculos;
+  \item Implementar expansão dos obstáculos;
   \item Implementar algoritmo Voronoi;
   \item Implementar algoritmo Grafo de Visibilidade;
   \item Implementar mudanças a partir do tamanho do robô;
-  \item Desenvolver serviço web para comunicar com o robô;
-  \item Desenvolver módulo embarcado no robô que se comunique com o serviço web;
+  \item Desenvolver serviço para comunicar o servidor com o robô;
+  \item Desenvolver módulo embarcado no robô que se comunique com o serviço externo;
   \item Avaliar possibilidade do mapa ser um novo \textit{hot-spot};
   \item Otimizar implementação do algoritmo;
   \item Revisar código;
